@@ -8,7 +8,7 @@ namespace reflexes.View
 
         public void DisplayGreetingMessage()
         {
-            ///Console.WriteLine(_greeting);
+            Console.WriteLine(_greeting);
         }
 
     }
