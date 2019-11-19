@@ -1,0 +1,11 @@
+C:\Users\Gustav\Desktop\2dv610\reflexes\reflexes\reflexes\bin\Release\netcoreapp2.2\reflexes.deps.json
+C:\Users\Gustav\Desktop\2dv610\reflexes\reflexes\reflexes\bin\Release\netcoreapp2.2\reflexes.runtimeconfig.json
+C:\Users\Gustav\Desktop\2dv610\reflexes\reflexes\reflexes\bin\Release\netcoreapp2.2\reflexes.runtimeconfig.dev.json
+C:\Users\Gustav\Desktop\2dv610\reflexes\reflexes\reflexes\bin\Release\netcoreapp2.2\reflexes.dll
+C:\Users\Gustav\Desktop\2dv610\reflexes\reflexes\reflexes\bin\Release\netcoreapp2.2\reflexes.pdb
+C:\Users\Gustav\Desktop\2dv610\reflexes\reflexes\reflexes\obj\Release\netcoreapp2.2\reflexes.csproj.CoreCompileInputs.cache
+C:\Users\Gustav\Desktop\2dv610\reflexes\reflexes\reflexes\obj\Release\netcoreapp2.2\reflexes.AssemblyInfoInputs.cache
+C:\Users\Gustav\Desktop\2dv610\reflexes\reflexes\reflexes\obj\Release\netcoreapp2.2\reflexes.AssemblyInfo.cs
+C:\Users\Gustav\Desktop\2dv610\reflexes\reflexes\reflexes\obj\Release\netcoreapp2.2\reflexes.dll
+C:\Users\Gustav\Desktop\2dv610\reflexes\reflexes\reflexes\obj\Release\netcoreapp2.2\reflexes.pdb
+C:\Users\Gustav\Desktop\2dv610\reflexes\reflexes\reflexes\obj\Release\netcoreapp2.2\reflexes.csprojAssemblyReference.cache
