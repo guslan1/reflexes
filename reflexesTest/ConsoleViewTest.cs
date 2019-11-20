@@ -17,7 +17,7 @@ namespace reflexesTest
                 var sut = new ConsoleView();
                 sut.DisplayGreetingMessage();
 
-                string expected = sut._greeting + "\r\n\r\n" + "" +  sut._greetingInstructions + "\r\n\r\n";
+                string expected = sut._greeting + "\r\n\r\n" + "" + sut._greetingInstructions + "\r\n\r\n";
                 Assert.Equal(expected, sw.ToString());
                 sw.Close();
             }
@@ -30,21 +30,31 @@ namespace reflexesTest
             {
                 Console.SetOut(sw);
 
-            var sut = new ConsoleView();
-            sut.DisplayEasyLevel();
+                var sut = new ConsoleView();
+                sut.DisplayEasyLevel();
 
-            string expected = sut._easyLevelMessage + "\r\n\r\n";
-            Assert.Equal(expected, sw.ToString());
-            sw.Close();
+
+                string expected = sut._easyLevelMessage + "\r\n\r\n";
+                Assert.Equal(expected, sw.ToString());
+                sw.Close();
+            }
         }
+
+        [Fact]
+        public void GameCompleted_ShouldDisplayGameCompleted()
+        {
+            using (StringWriter sw = new StringWriter())
+            {
+                Console.SetOut(sw);
+
+                var sut = new ConsoleView();
+                sut.GameCompleted();
+
+
+                string expected = sut._gameCompleted + "\r\n\r\n";
+                Assert.Equal(expected, sw.ToString());
+                sw.Close();
+            }
         }
-
-
-
-
-
-
-
-
     }
 }

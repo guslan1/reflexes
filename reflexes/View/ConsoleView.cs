@@ -9,6 +9,7 @@ namespace reflexes.View
         internal string _greeting = "Welcome to Reflexes!";
         internal string _greetingInstructions = "Pick a level to start training your reflexes.";
         internal string _easyLevelMessage = "Easy level starting in";
+        internal string _gameCompleted = "You win! Game completed.";
 
         public void DisplayGreetingMessage()
         {
@@ -22,6 +23,11 @@ namespace reflexes.View
         {
             Console.WriteLine(_easyLevelMessage);
             Console.WriteLine("");
+        }
+
+        public void GameCompleted()
+        {
+
         }
 
     }
