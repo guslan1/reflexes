@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.2",
-    "signature": "34b30581685d165a744ed79a2c8f08b131b87805"
+    "signature": "68e51db23f3ad622625a8481d7f34ec8c212ca0f"
   },
   "compilationOptions": {},
   "targets": {
@@ -10,6 +10,9 @@
         "dependencies": {
           "Microsoft.NET.Test.Sdk": "16.0.1",
           "Moq": "4.13.1",
+          "ReportGenerator": "4.3.6",
+          "coverlet.collector": "1.1.0",
+          "coverlet.msbuild": "2.7.0",
           "reflexes": "1.0.0",
           "xunit": "2.4.0",
           "xunit.runner.console": "2.4.1",
@@ -38,6 +41,8 @@
           }
         }
       },
+      "coverlet.collector/1.1.0": {},
+      "coverlet.msbuild/2.7.0": {},
       "Microsoft.CodeCoverage/16.0.1": {
         "runtime": {
           "lib/netcoreapp1.0/Microsoft.VisualStudio.CodeCoverage.Shim.dll": {
@@ -434,6 +439,7 @@
           }
         }
       },
+      "ReportGenerator/4.3.6": {},
       "runtime.native.System/4.3.0": {},
       "System.AppContext/4.1.0": {
         "dependencies": {
@@ -1081,6 +1087,9 @@
         }
       },
       "reflexes/1.0.0": {
+        "dependencies": {
+          "ReportGenerator": "4.3.6"
+        },
         "runtime": {
           "reflexes.dll": {}
         }
@@ -1099,6 +1108,20 @@
       "sha512": "sha512-b5rRL5zeaau1y/5hIbI+6mGw3cwun16YjkHZnV9RRT5UyUIFsgLmNXJ0YnIN9p8Hw7K7AbG1q1UclQVU3DinAQ==",
       "path": "castle.core/4.4.0",
       "hashPath": "castle.core.4.4.0.nupkg.sha512"
+    },
+    "coverlet.collector/1.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-OBxWQ4vNm+kVvKy8NTk6skRNMQCeQLqSqJ0xq19S0GLovHYTnVTcsjYgV54t6LnjjQ6mDADMcFvHMQHLoNQhIg==",
+      "path": "coverlet.collector/1.1.0",
+      "hashPath": "coverlet.collector.1.1.0.nupkg.sha512"
+    },
+    "coverlet.msbuild/2.7.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-AHs0G2xaPg9zUiyCC8yYzQLNLaRUKjN0eU8NwGA+eQJIXye1f21gmMIZXRJnkg5he46AohQZBg2TMjw9Z6Wt4A==",
+      "path": "coverlet.msbuild/2.7.0",
+      "hashPath": "coverlet.msbuild.2.7.0.nupkg.sha512"
     },
     "Microsoft.CodeCoverage/16.0.1": {
       "type": "package",
@@ -1176,6 +1199,13 @@
       "sha512": "sha512-U82mHQSKaIk+lpSVCbWYKNavmNH1i5xrExDEquU1i6I5pV6UMOqRnJRSlKO3cMPfcpp0RgDY+8jUXHdQ4IfXvw==",
       "path": "newtonsoft.json/9.0.1",
       "hashPath": "newtonsoft.json.9.0.1.nupkg.sha512"
+    },
+    "ReportGenerator/4.3.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-cV8zDEY56mReBmUan7lB2Lzzwt6hfzuat/I5P2xWrGWy+eG7g9mi8EKUm85xlqUvDoMHNz9Ei60m5YP/bIvf6A==",
+      "path": "reportgenerator/4.3.6",
+      "hashPath": "reportgenerator.4.3.6.nupkg.sha512"
     },
     "runtime.native.System/4.3.0": {
       "type": "package",

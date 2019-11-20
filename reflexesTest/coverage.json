@@ -1,0 +1,37 @@
+{
+  "reflexes.dll": {
+    "C:\\Users\\Gustav\\desktop\\2dv610\\reflexes\\reflexes\\Program.cs": {
+      "reflexes.Program": {
+        "System.Void reflexes.Program::Main(System.String[])": {
+          "Lines": {
+            "8": 0,
+            "10": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\Gustav\\desktop\\2dv610\\reflexes\\reflexes\\View\\ConsoleView.cs": {
+      "reflexes.View.ConsoleView": {
+        "System.Void reflexes.View.ConsoleView::DisplayGreetingMessage()": {
+          "Lines": {
+            "13": 1,
+            "14": 1,
+            "15": 1,
+            "16": 1,
+            "17": 1,
+            "18": 1
+          },
+          "Branches": []
+        },
+        "System.Void reflexes.View.ConsoleView::.ctor()": {
+          "Lines": {
+            "9": 1,
+            "10": 1
+          },
+          "Branches": []
+        }
+      }
+    }
+  }
+}

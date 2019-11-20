@@ -7,10 +7,20 @@ namespace reflexes.View
     public class ConsoleView
     {
         internal string _greeting = "Welcome to Reflexes!";
+        internal string _greetingInstructions = "Pick a level to start training your reflexes.";
+        internal string _easyLevelMessage = "Easy level starting in";
 
         public void DisplayGreetingMessage()
         {
             Console.WriteLine(_greeting);
+            Console.WriteLine("");
+            Console.WriteLine(_greetingInstructions);
+            Console.WriteLine("");
+        }
+
+        public void DisplayEasyLevel()
+        {
+        
         }
 
     }
