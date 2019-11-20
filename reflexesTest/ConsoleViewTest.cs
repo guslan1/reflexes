@@ -24,7 +24,7 @@ namespace reflexesTest
         }
 
         [Fact]
-        public void DisplayEasyLevel()
+        public void DisplayEasyLevel_ShouldDisplayEasyLevel()
         {
             using (StringWriter sw = new StringWriter())
             {
@@ -38,6 +38,8 @@ namespace reflexesTest
             sw.Close();
         }
         }
+
+
 
 
 
