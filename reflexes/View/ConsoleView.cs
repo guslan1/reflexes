@@ -27,7 +27,9 @@ namespace reflexes.View
 
         public void GameCompleted()
         {
-
+            Console.Clear();
+            Console.WriteLine(_gameCompleted);
+            Console.WriteLine("");
         }
 
     }
