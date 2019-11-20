@@ -8,7 +8,7 @@ namespace reflexesTest
     public class ConsoleViewTest
     {
         [Fact]
-        public void GreetingsMessage_ShouldShowGreeting()
+        public void DisplayGreetingsMessage_ShouldDisplayGreetingMessage()
         {
             using (StringWriter sw = new StringWriter())
             {
@@ -21,7 +21,12 @@ namespace reflexesTest
                 Assert.Equal(expected, sw.ToString());
                 sw.Close();
             }
-
         }
+
+
+
+
+
+
     }
 }
