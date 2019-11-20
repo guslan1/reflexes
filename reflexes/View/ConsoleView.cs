@@ -20,7 +20,8 @@ namespace reflexes.View
 
         public void DisplayEasyLevel()
         {
-        
+            Console.WriteLine(_easyLevelMessage);
+            Console.WriteLine("");
         }
 
     }

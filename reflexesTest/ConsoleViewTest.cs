@@ -33,7 +33,7 @@ namespace reflexesTest
             var sut = new ConsoleView();
             sut.DisplayEasyLevel();
 
-            string expected = sut._easyLevelMessage + "\r\n";
+            string expected = sut._easyLevelMessage + "\r\n\r\n";
             Assert.Equal(expected, sw.ToString());
             sw.Close();
         }
