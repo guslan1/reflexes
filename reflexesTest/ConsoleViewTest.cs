@@ -17,7 +17,7 @@ namespace reflexesTest
                 var sut = new ConsoleView();
                 sut.DisplayGreetingMessage();
 
-                string expected = sut._greeting + "\r\n";
+                string expected = sut._greeting + "\r\n" + "" +  sut._greetingInstructions + "";
                 Assert.Equal(expected, sw.ToString());
                 sw.Close();
             }
