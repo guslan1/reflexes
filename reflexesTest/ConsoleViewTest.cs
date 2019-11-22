@@ -40,21 +40,40 @@ namespace reflexesTest
             }
         }
 
-        [Fact]
-        public void GameCompleted_ShouldDisplayGameCompleted()
-        {
-            using (StringWriter sw = new StringWriter())
-            {
-                Console.SetOut(sw);
+        //[Fact]
+        //public void GameCompleted_ShouldDisplayGameCompleted()
+        //{
+        //    using (StringWriter sw = new StringWriter())
+        //    {
+        //        Console.SetOut(sw);
 
-                var sut = new ConsoleView();
-                sut.GameCompleted();
+        //        var sut = new ConsoleView();
+        //        sut.GameCompleted();
 
+        //        var input = new StringReader(expected.ToString());
+        //        Console.SetIn(input);
 
-                string expected = sut._gameCompleted + "\r\n\r\n";
-                Assert.Equal(expected, sw.ToString());
-                sw.Close();
-            }
-        }
+        //        string expected = sut._gameCompleted + "\r\n\r\n";
+        //        Assert.Equal(expected, sw.ToString());
+        //        sw.Close();
+        //    }
+        //}
+
+        //[Fact]
+        //public void GameReadkey_shouldRead()
+        //{
+
+        //    using (StringWriter sw = new StringWriter())
+        //    {
+        //        Console.SetOut(sw);
+        //        var input = new StringReader("T");
+        //        Console.SetIn(input);
+
+        //        sw.Close();
+        //        input.Close();
+        //    }
+
+        //}
+
     }
 }

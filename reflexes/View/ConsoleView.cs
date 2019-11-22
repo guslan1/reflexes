@@ -25,12 +25,19 @@ namespace reflexes.View
             Console.WriteLine("");
         }
 
-        public void GameCompleted()
-        {
-            Console.Clear();
-            Console.WriteLine(_gameCompleted);
-            Console.WriteLine("");
-        }
+        //public void GameCompleted()
+        //{
+        //    Console.WriteLine(_gameCompleted);
+        //    Console.WriteLine("");
+        //}
+
+        //public bool GameReadkey()
+        //{
+        //    bool keyPressed = false;
+        //    if ()
+        //    Console.ReadKey(true);
+        //}
+
 
     }
 }
