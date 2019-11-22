@@ -54,6 +54,10 @@ namespace reflexes.Model
         }
 
 
+        public void RemoveLetter()
+        {
+          
+        }
 
         public IReadOnlyList<string> getAlphabet
         {

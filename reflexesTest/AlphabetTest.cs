@@ -26,6 +26,16 @@ namespace reflexesTest
             bool actual = sut.IsAlphabetEmpty();
             Assert.Equal(expected, actual);
         }
+
+        [Fact]
+        public void RemoveLetter_ShouldRemoveOneLetter()
+        {
+            Alphabet sut = new Alphabet();
+            sut.RemoveLetter();
+            int expected = 24;
+            int actual = sut.WordsLeft();
+            Assert.Equal(expected, actual);
+        }
     }
 
 
