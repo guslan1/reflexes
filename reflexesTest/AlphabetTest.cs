@@ -28,15 +28,17 @@ namespace reflexesTest
         }
 
         [Fact]
-        public void RemoveLetter_ShouldRemoveOneLetter()
+        public void IsAlphabetEmpty_ShouldReturnFalse()
         {
             Alphabet sut = new Alphabet();
-            sut.RemoveLetter();
-            int expected = 24;
-            int actual = sut.WordsLeft();
+            bool expected = false;
+            bool actual = sut.IsAlphabetEmpty();
             Assert.Equal(expected, actual);
         }
+
+
+
+
+
     }
-
-
 }
