@@ -62,7 +62,7 @@ namespace reflexes.Model
 
         public void ClearAlphabet()
         {
-            
+            _randomAlphabet.Clear();
         }
 
     }
