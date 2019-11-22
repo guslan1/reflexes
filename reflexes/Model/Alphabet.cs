@@ -56,7 +56,7 @@ namespace reflexes.Model
 
         public void RemoveLetter()
         {
-          
+            _randomAlphabet.RemoveAt(0);
         }
 
         public IReadOnlyList<string> getAlphabet
