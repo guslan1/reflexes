@@ -53,10 +53,10 @@ namespace reflexes.Model
             return false;
         }
 
-        //public void RemoveLetter()
-        //{
-        //    _randomAlphabet.RemoveAt(0);
-        //}
+        public void RemoveLetter()
+        {
+
+        }
 
         public IReadOnlyList<string> getAlphabet
         {

@@ -36,7 +36,15 @@ namespace reflexesTest
             Assert.Equal(expected, actual);
         }
 
-
+        [Fact]
+        public void RemoveLetter_ShouldRemoveOneLetter()
+        {
+            Alphabet sut = new Alphabet();
+            int expected = 24;
+            sut.RemoveLetter();
+            int actual = sut.WordsLeft();
+            Assert.Equal(expected, actual);
+        }
 
 
 
