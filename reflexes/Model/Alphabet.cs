@@ -44,6 +44,26 @@ namespace reflexes.Model
             return _randomAlphabet.Count;
         }
 
+        public bool IsAlphabetEmpty()
+        {
+            if (getAlphabet.Count == 0)
+            {
+                return true;
+            }
+            return false;
+        }
+
+
+
+        public IReadOnlyList<string> getAlphabet
+        {
+            get { return _randomAlphabet.AsReadOnly(); }
+        }
+
+        public void ClearAlphabet()
+        {
+            
+        }
 
     }
 }
