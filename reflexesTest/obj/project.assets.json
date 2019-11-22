@@ -6445,11 +6445,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Gustav\\Desktop\\2dv610\\reflexes\\reflexesTest\\reflexesTest.csproj",
+      "projectUniqueName": "C:\\Users\\Gustav\\desktop\\2dv610\\reflexes\\reflexesTest\\reflexesTest.csproj",
       "projectName": "reflexesTest",
-      "projectPath": "C:\\Users\\Gustav\\Desktop\\2dv610\\reflexes\\reflexesTest\\reflexesTest.csproj",
+      "projectPath": "C:\\Users\\Gustav\\desktop\\2dv610\\reflexes\\reflexesTest\\reflexesTest.csproj",
       "packagesPath": "C:\\Users\\Gustav\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Gustav\\Desktop\\2dv610\\reflexes\\reflexesTest\\obj\\",
+      "outputPath": "C:\\Users\\Gustav\\desktop\\2dv610\\reflexes\\reflexesTest\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -6468,8 +6468,8 @@
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
-            "C:\\Users\\Gustav\\Desktop\\2dv610\\reflexes\\reflexes\\reflexes.csproj": {
-              "projectPath": "C:\\Users\\Gustav\\Desktop\\2dv610\\reflexes\\reflexes\\reflexes.csproj"
+            "C:\\Users\\Gustav\\desktop\\2dv610\\reflexes\\reflexes\\reflexes.csproj": {
+              "projectPath": "C:\\Users\\Gustav\\desktop\\2dv610\\reflexes\\reflexes\\reflexes.csproj"
             }
           }
         }
