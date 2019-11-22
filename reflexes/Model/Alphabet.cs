@@ -46,7 +46,7 @@ namespace reflexes.Model
 
         public bool IsAlphabetEmpty()
         {
-            if (getAlphabet.Count == 0)
+            if (GetAlphabet.Count == 0)
             {
                 return true;
             }
@@ -58,7 +58,7 @@ namespace reflexes.Model
             _randomAlphabet.RemoveAt(0);
         }
 
-        public IReadOnlyList<string> getAlphabet
+        public IReadOnlyList<string> GetAlphabet
         {
             get { return _randomAlphabet.AsReadOnly(); }
         }
