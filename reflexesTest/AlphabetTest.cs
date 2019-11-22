@@ -46,6 +46,38 @@ namespace reflexesTest
             Assert.Equal(expected, actual);
         }
 
+        [Fact]
+        public void GetLetter_ReturnsFirstCharacterInRandomAlphabet()
+        {
+            Alphabet sut = new Alphabet();
+            IReadOnlyList<string> randomAlphabet = sut.GetAlphabet;
+            string expected = randomAlphabet[0];
+            string actual = sut.GetLetter();
+            Assert.Equal(expected, actual);
+        }
+
+        [Fact]
+        public void RemoveLetter_RemovesFirstCharacterInRandomAlphabet()
+        {
+            Alphabet sut = new Alphabet();
+            string firstLetter = sut.GetLetter();
+            sut.RemoveLetter();
+            IReadOnlyList<string> currentAlphabet = sut.GetAlphabet;
+
+            bool actual = false;
+
+            foreach (string character in currentAlphabet)
+            { 
+                if (character == firstLetter)
+                {
+                    actual = true;
+                }
+            }
+
+            Assert.False(actual);
+
+        }
+
 
 
     }

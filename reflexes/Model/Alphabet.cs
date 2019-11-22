@@ -68,5 +68,10 @@ namespace reflexes.Model
             _randomAlphabet.Clear();
         }
 
+        public string GetLetter()
+        {
+            return _randomAlphabet[0];
+        }
+
     }
 }
