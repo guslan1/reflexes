@@ -60,6 +60,7 @@ namespace reflexesTest
         public void RemoveLetter_RemovesFirstCharacterInRandomAlphabet()
         {
             Alphabet sut = new Alphabet();
+
             string firstLetter = sut.GetLetter();
             sut.RemoveLetter();
             IReadOnlyList<string> currentAlphabet = sut.GetAlphabet;
@@ -73,9 +74,8 @@ namespace reflexesTest
                     actual = true;
                 }
             }
-
+   
             Assert.False(actual);
-
         }
 
 
