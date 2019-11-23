@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Diagnostics;
 using Xunit;
 using Moq;
 using reflexes.Model;
@@ -113,12 +114,51 @@ namespace reflexesTest
         }
 
         [Fact]
-        public void CreateStopwatch_SuccesfullyCreatesStopwatch()
+        public void CreateStopwatch_SuccessfullyCreatesStopwatch()
         {
             var sut = new ReflexGameImplemented();
+
+            sut.CreateStopwatch();
+
+            TimeSpan expected = new TimeSpan(0, 0, 0);
+            TimeSpan actual = sut.TimeElapsed;
+
+            Assert.Equal<TimeSpan>(expected, actual);
+        }
+
+        [Fact]
+        public void StartStopwatch_SuccesfullyStartsStopwatch()
+        {
+            var sut = new ReflexGameImplemented();
+
             sut.CreateStopwatch();
             sut.StartStopwatch();
+
+            TimeSpan expected = new TimeSpan(0, 0, 0);
+            TimeSpan actual = sut.TimeElapsed;
+
+            Assert.NotEqual<TimeSpan>(expected, actual);
         }
+
+        [Fact]
+        public void StopStopwatch_StoppingStopwatchWorks()
+        {
+            var sut = new ReflexGameImplemented();
+
+            sut.CreateStopwatch();
+            sut.StartStopwatch();
+
+            TimeSpan startTime = new TimeSpan(0, 0, 0);
+            
+            sut.StopStopwatch();
+
+            TimeSpan expected = sut.TimeElapsed;
+
+            TimeSpan actual = sut.TimeElapsed;
+
+            Assert.Equal<TimeSpan>(expected, actual);
+        }
+
 
 
 

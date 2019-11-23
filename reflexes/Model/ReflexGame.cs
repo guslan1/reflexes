@@ -22,5 +22,9 @@ namespace reflexes.Model
 
         void StartStopwatch();
 
+        void StopStopwatch();
+
+        TimeSpan TimeElapsed { get; }
+
     }
 }

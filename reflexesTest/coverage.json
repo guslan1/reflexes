@@ -226,19 +226,31 @@
         },
         "System.Void reflexes.Model.ReflexGameImplemented::CreateStopwatch()": {
           "Lines": {
-            "36": 1
+            "36": 3
           },
           "Branches": []
         },
         "System.Void reflexes.Model.ReflexGameImplemented::StartStopwatch()": {
           "Lines": {
-            "38": 1
+            "38": 2
+          },
+          "Branches": []
+        },
+        "System.Void reflexes.Model.ReflexGameImplemented::StopStopwatch()": {
+          "Lines": {
+            "40": 1
+          },
+          "Branches": []
+        },
+        "System.TimeSpan reflexes.Model.ReflexGameImplemented::get_TimeElapsed()": {
+          "Lines": {
+            "42": 4
           },
           "Branches": []
         },
         "System.Void reflexes.Model.ReflexGameImplemented::.ctor()": {
           "Lines": {
-            "16": 8
+            "16": 10
           },
           "Branches": []
         }
