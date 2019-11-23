@@ -12,6 +12,6 @@ namespace reflexes.Model
 
         bool IsGameCompleted();
 
-        
+        string getNewLetter();
     }
 }
