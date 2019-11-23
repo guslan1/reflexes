@@ -33,7 +33,9 @@ namespace reflexes.Model
 
         public void RemoveLetterFromAlphabet() => _alphabet.RemoveLetter();
 
+        public void CreateStopwatch() => _stopwatch = new Stopwatch();
 
+        public void StartStopwatch() => _stopwatch.Start();
 
 
     }
