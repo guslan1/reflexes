@@ -22,6 +22,8 @@ namespace reflexes.Model
             return _currentChar;
         }
 
+   
+
 
     }
 }

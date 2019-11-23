@@ -13,5 +13,8 @@ namespace reflexes.Model
         bool IsGameCompleted();
 
         string GetNewLetter();
+
+        bool IsCorrectInput(string character);
+
     }
 }

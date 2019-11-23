@@ -65,5 +65,41 @@ namespace reflexesTest
             string actual = sut.GetNewLetter();
             Assert.Equal(expected, actual);
         }
+
+        [Fact]
+        public void IsCorrectInput_ReturnsTrueIfCorrectLetter()
+        {
+            var sut = new ReflexGameImplemented();
+            var mockAlphabet = new Mock<Alphabet>();
+
+            string letter = "a";
+            mockAlphabet.Setup(alphabet => alphabet.GetLetter()).Returns(() => letter);
+
+            sut.StartGame(mockAlphabet.Object);
+            sut.GetNewLetter();
+
+            bool actual = sut.IsCorrectInput(letter);
+
+            Assert.True(actual);
+        }
+
+        [Fact]
+        public void IsCorrectInput_ReturnsFalseIfWrongLetter()
+        {
+            var sut = new ReflexGameImplemented();
+            var mockAlphabet = new Mock<Alphabet>();
+
+            string letter = "a";
+            mockAlphabet.Setup(alphabet => alphabet.GetLetter()).Returns(() => letter);
+
+            sut.StartGame(mockAlphabet.Object);
+            sut.GetNewLetter();
+
+            bool actual = sut.IsCorrectInput("b");
+
+            Assert.False(actual);
+        }
+
+
     }
 }
