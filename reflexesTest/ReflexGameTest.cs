@@ -139,25 +139,7 @@ namespace reflexesTest
 
             Assert.NotEqual<TimeSpan>(expected, actual);
         }
-
-        [Fact]
-        public void StopStopwatch_StoppingStopwatchWorks()
-        {
-            var sut = new ReflexGameImplemented();
-
-            sut.CreateStopwatch();
-            sut.StartStopwatch();
-
-            TimeSpan startTime = new TimeSpan(0, 0, 0);
-            
-            sut.StopStopwatch();
-
-            TimeSpan expected = sut.TimeElapsed;
-
-            TimeSpan actual = sut.TimeElapsed;
-
-            Assert.Equal<TimeSpan>(expected, actual);
-        }
+        
 
 
 
