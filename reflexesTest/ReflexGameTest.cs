@@ -51,11 +51,19 @@ namespace reflexesTest
             Assert.False(actual);
         }
 
+        [Fact]
+        public void getNewLetter_ReturnsCorrectLetterFromAlphabet()
+        {
+            var sut = new ReflexGameImplemented();
+            var mockAlphabet = new Mock<Alphabet>();
 
+            string letter = "a";
+            mockAlphabet.Setup(alphabet => alphabet.GetLetter()).Returns(() => letter);
+            sut.StartGame(mockAlphabet.Object);
 
-
-
-
-
+            string expected = "a";
+            string actual = sut.getNewLetter();
+            Assert.Equal(expected, actual);
+        }
     }
 }

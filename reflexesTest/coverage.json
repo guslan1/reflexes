@@ -181,19 +181,28 @@
       "reflexes.Model.ReflexGameImplemented": {
         "System.Void reflexes.Model.ReflexGameImplemented::StartGame(reflexes.Model.Alphabet)": {
           "Lines": {
-            "11": 2
+            "13": 4
           },
           "Branches": []
         },
         "System.Int32 reflexes.Model.ReflexGameImplemented::WordsLeft()": {
           "Lines": {
-            "13": 1
+            "15": 1
           },
           "Branches": []
         },
         "System.Boolean reflexes.Model.ReflexGameImplemented::IsGameCompleted()": {
           "Lines": {
-            "15": 1
+            "17": 2
+          },
+          "Branches": []
+        },
+        "System.String reflexes.Model.ReflexGameImplemented::getNewLetter()": {
+          "Lines": {
+            "20": 1,
+            "21": 1,
+            "22": 1,
+            "23": 1
           },
           "Branches": []
         }
