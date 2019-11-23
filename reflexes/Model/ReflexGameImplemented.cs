@@ -12,6 +12,7 @@ namespace reflexes.Model
 
         public int WordsLeft() => _alphabet.WordsLeft();
 
+        public bool IsGameCompleted() => _alphabet.IsAlphabetEmpty();
 
 
     }
