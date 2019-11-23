@@ -22,7 +22,22 @@ namespace reflexes.Model
             return _currentChar;
         }
 
-   
+        public bool IsCorrectInput(string character)
+        {
+            return ValidateCharacter(character);
+        }
+
+        private bool ValidateCharacter(string character)
+        {
+            if (character == _currentChar)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
 
 
     }
