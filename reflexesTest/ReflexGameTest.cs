@@ -26,7 +26,7 @@ namespace reflexesTest
         }
 
         [Fact]
-        public void WordsLeft_GameShouldBeCompleted()
+        public void IsGameCompleted_GameShouldBeCompleted()
         {
             var sut = new ReflexGameImplemented();
             var mockAlphabet = new Mock<Alphabet>();
@@ -39,7 +39,7 @@ namespace reflexesTest
         }
 
         [Fact]
-        public void WordsLeft_GameShouldNotBeCompleted()
+        public void IsGameCompleted_GameShouldNotBeCompleted()
         {
             var sut = new ReflexGameImplemented();
             var mockAlphabet = new Mock<Alphabet>();
@@ -52,7 +52,7 @@ namespace reflexesTest
         }
 
         [Fact]
-        public void getNewLetter_ReturnsCorrectLetterFromAlphabet()
+        public void GetNewLetter_ReturnsCorrectLetterFromAlphabet()
         {
             var sut = new ReflexGameImplemented();
             var mockAlphabet = new Mock<Alphabet>();
@@ -62,7 +62,7 @@ namespace reflexesTest
             sut.StartGame(mockAlphabet.Object);
 
             string expected = "a";
-            string actual = sut.getNewLetter();
+            string actual = sut.GetNewLetter();
             Assert.Equal(expected, actual);
         }
     }

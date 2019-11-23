@@ -197,7 +197,7 @@
           },
           "Branches": []
         },
-        "System.String reflexes.Model.ReflexGameImplemented::getNewLetter()": {
+        "System.String reflexes.Model.ReflexGameImplemented::GetNewLetter()": {
           "Lines": {
             "20": 1,
             "21": 1,

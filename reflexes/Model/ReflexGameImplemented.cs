@@ -16,7 +16,7 @@ namespace reflexes.Model
 
         public bool IsGameCompleted() => _alphabet.IsAlphabetEmpty();
 
-        public string getNewLetter()
+        public string GetNewLetter()
         {
             _currentChar = _alphabet.GetLetter();
             return _currentChar;
