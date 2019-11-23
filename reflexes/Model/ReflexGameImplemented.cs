@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Diagnostics;
 
 namespace reflexes.Model
 {
@@ -8,7 +9,11 @@ namespace reflexes.Model
     {
         private Alphabet _alphabet;
 
+        private Stopwatch _stopwatch;
+
         private string _currentChar;
+
+        internal string _failedToCreateStopwatch = "Unable to create an object of referencetype Stopwatch";
 
         public void StartGame(Alphabet alphabet) => _alphabet = alphabet;
 
@@ -27,6 +32,8 @@ namespace reflexes.Model
         private bool ValidateCharacter(string character) => character == _currentChar;
 
         public void RemoveLetterFromAlphabet() => _alphabet.RemoveLetter();
+
+
 
 
     }

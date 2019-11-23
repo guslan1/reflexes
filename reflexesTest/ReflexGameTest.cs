@@ -112,5 +112,16 @@ namespace reflexesTest
             mockAlphabet.Verify(alphabet => alphabet.RemoveLetter(), Times.Once());
         }
 
+        [Fact]
+        public void CreateStopwatch_SuccesfullyCreatesStopwatch()
+        {
+            var sut = new ReflexGameImplemented();
+            sut.CreateStopwatch();
+            sut.StartStopwatch();
+        }
+
+
+
+
     }
 }

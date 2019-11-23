@@ -18,5 +18,9 @@ namespace reflexes.Model
 
         void RemoveLetterFromAlphabet();
 
+        void CreateStopwatch();
+
+        void StartStopwatch();
+
     }
 }
