@@ -27,5 +27,7 @@ namespace reflexes.Model
         private bool ValidateCharacter(string character) => character == _currentChar;
 
 
+
+
     }
 }

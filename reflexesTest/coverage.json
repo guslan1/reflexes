@@ -181,7 +181,7 @@
       "reflexes.Model.ReflexGameImplemented": {
         "System.Void reflexes.Model.ReflexGameImplemented::StartGame(reflexes.Model.Alphabet)": {
           "Lines": {
-            "13": 6
+            "13": 7
           },
           "Branches": []
         },
@@ -215,6 +215,12 @@
         "System.Boolean reflexes.Model.ReflexGameImplemented::ValidateCharacter(System.String)": {
           "Lines": {
             "27": 2
+          },
+          "Branches": []
+        },
+        "System.Void reflexes.Model.ReflexGameImplemented::RemoveLetterFromAlphabet()": {
+          "Lines": {
+            "29": 1
           },
           "Branches": []
         }

@@ -16,5 +16,7 @@ namespace reflexes.Model
 
         bool IsCorrectInput(string character);
 
+        void RemoveLetterFromAlphabet();
+
     }
 }

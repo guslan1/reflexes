@@ -100,6 +100,17 @@ namespace reflexesTest
             Assert.False(actual);
         }
 
+        [Fact]
+        public void RemoveLetterFromAlphabet_SuccessfullyCallsMethodOnce()
+        {
+            var sut = new ReflexGameImplemented();
+            var mockAlphabet = new Mock<Alphabet>();
+            
+            sut.StartGame(mockAlphabet.Object);
+            sut.RemoveLetterFromAlphabet();
+
+            mockAlphabet.Verify(alphabet => alphabet.RemoveLetter(), Times.Once());
+        }
 
     }
 }
