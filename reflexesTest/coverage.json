@@ -33,9 +33,9 @@
         }
       }
     },
-    "C:\\Users\\Gustav\\desktop\\2dv610\\reflexes\\reflexes\\Model\\Alphabet.cs": {
-      "reflexes.Model.Alphabet": {
-        "System.Collections.Generic.List`1<System.String> reflexes.Model.Alphabet::RandomAlphabet(System.Collections.Generic.List`1<System.String>)": {
+    "C:\\Users\\Gustav\\desktop\\2dv610\\reflexes\\reflexes\\Model\\AlphabetImplemented.cs": {
+      "reflexes.Model.AlphabetImplemented": {
+        "System.Collections.Generic.List`1<System.String> reflexes.Model.AlphabetImplemented::RandomAlphabet(System.Collections.Generic.List`1<System.String>)": {
           "Lines": {
             "18": 6,
             "19": 6,
@@ -69,7 +69,7 @@
             }
           ]
         },
-        "System.Collections.Generic.List`1<System.String> reflexes.Model.Alphabet::AlphabetList()": {
+        "System.Collections.Generic.List`1<System.String> reflexes.Model.AlphabetImplemented::AlphabetList()": {
           "Lines": {
             "33": 6,
             "34": 6,
@@ -99,7 +99,7 @@
             }
           ]
         },
-        "System.Int32 reflexes.Model.Alphabet::WordsLeft()": {
+        "System.Int32 reflexes.Model.AlphabetImplemented::WordsLeft()": {
           "Lines": {
             "43": 2,
             "44": 2,
@@ -107,7 +107,7 @@
           },
           "Branches": []
         },
-        "System.Boolean reflexes.Model.Alphabet::IsAlphabetEmpty()": {
+        "System.Boolean reflexes.Model.AlphabetImplemented::IsAlphabetEmpty()": {
           "Lines": {
             "48": 2,
             "49": 2,
@@ -135,7 +135,7 @@
             }
           ]
         },
-        "System.Void reflexes.Model.Alphabet::RemoveLetter()": {
+        "System.Void reflexes.Model.AlphabetImplemented::RemoveLetter()": {
           "Lines": {
             "57": 2,
             "58": 2,
@@ -143,13 +143,13 @@
           },
           "Branches": []
         },
-        "System.Collections.Generic.IReadOnlyList`1<System.String> reflexes.Model.Alphabet::get_GetAlphabet()": {
+        "System.Collections.Generic.IReadOnlyList`1<System.String> reflexes.Model.AlphabetImplemented::get_GetAlphabet()": {
           "Lines": {
             "63": 12
           },
           "Branches": []
         },
-        "System.Void reflexes.Model.Alphabet::ClearAlphabet()": {
+        "System.Void reflexes.Model.AlphabetImplemented::ClearAlphabet()": {
           "Lines": {
             "67": 1,
             "68": 1,
@@ -157,7 +157,7 @@
           },
           "Branches": []
         },
-        "System.String reflexes.Model.Alphabet::GetLetter()": {
+        "System.String reflexes.Model.AlphabetImplemented::GetLetter()": {
           "Lines": {
             "72": 2,
             "73": 2,
@@ -165,13 +165,29 @@
           },
           "Branches": []
         },
-        "System.Void reflexes.Model.Alphabet::.ctor()": {
+        "System.Void reflexes.Model.AlphabetImplemented::.ctor()": {
           "Lines": {
             "9": 6,
             "12": 6,
             "13": 6,
             "14": 6,
             "15": 6
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\Gustav\\desktop\\2dv610\\reflexes\\reflexes\\Model\\ReflexGameImplemented.cs": {
+      "reflexes.Model.ReflexGameImplemented": {
+        "System.Void reflexes.Model.ReflexGameImplemented::StartGame(reflexes.Model.Alphabet)": {
+          "Lines": {
+            "11": 1
+          },
+          "Branches": []
+        },
+        "System.Int32 reflexes.Model.ReflexGameImplemented::WordsLeft()": {
+          "Lines": {
+            "13": 1
           },
           "Branches": []
         }

@@ -4,74 +4,19 @@ using System.Text;
 
 namespace reflexes.Model
 {
-    class Alphabet
+    public interface Alphabet
     {
-        private string[] _alphabetArray = new string[25] { "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "x", "y", "z" };
-        private List<string> _randomAlphabet;
+        int WordsLeft();
 
-        public Alphabet()
-        {
-            _randomAlphabet = RandomAlphabet(AlphabetList());
-        }
+        bool IsAlphabetEmpty();
 
-        private List<string> RandomAlphabet(List<string> alphabetList)
-        {
-            List<string> randomAlphabetList = new List<string>();
-            Random r = new Random();
-            int randomIndex = 0;
+        void RemoveLetter();
 
-            while (alphabetList.Count > 0)
-            {
-                randomIndex = r.Next(0, alphabetList.Count);
-                randomAlphabetList.Add(alphabetList[randomIndex]);
-                alphabetList.RemoveAt(randomIndex);
-            }
-            return randomAlphabetList;
-        }
+        IReadOnlyList<string> GetAlphabet { get; }
 
-        private List<string> AlphabetList()
-        {
-            List<string> alphabetList = new List<string>(25);
-            foreach (string character in _alphabetArray)
-            {
-                alphabetList.Add(character);
-            }
-            return alphabetList;
-        }
+        void ClearAlphabet();
 
-        public int WordsLeft()
-        {
-            return _randomAlphabet.Count;
-        }
-
-        public bool IsAlphabetEmpty()
-        {
-            if (GetAlphabet.Count == 0)
-            {
-                return true;
-            }
-            return false;
-        }
-
-        public void RemoveLetter()
-        {
-            _randomAlphabet.RemoveAt(0);
-        }
-
-        public IReadOnlyList<string> GetAlphabet
-        {
-            get { return _randomAlphabet.AsReadOnly(); }
-        }
-
-        public void ClearAlphabet()
-        {
-            _randomAlphabet.Clear();
-        }
-
-        public string GetLetter()
-        {
-            return _randomAlphabet[0];
-        }
+        string GetLetter();
 
     }
 }

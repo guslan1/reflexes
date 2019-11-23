@@ -11,7 +11,7 @@ namespace reflexesTest
         [Fact]
         public void WordsLeft_ShouldReturnAllLettersInAlphabet()
         {
-            Alphabet sut = new Alphabet();
+            AlphabetImplemented sut = new AlphabetImplemented();
             int expected = 25;
             int actual = sut.WordsLeft();
             Assert.Equal(expected, actual);
@@ -20,7 +20,7 @@ namespace reflexesTest
         [Fact]
         public void IsAlphabetEmpty_ShouldReturnTrue()
         {
-            Alphabet sut = new Alphabet();
+            AlphabetImplemented sut = new AlphabetImplemented();
             sut.ClearAlphabet();
             bool expected = true;
             bool actual = sut.IsAlphabetEmpty();
@@ -30,7 +30,7 @@ namespace reflexesTest
         [Fact]
         public void IsAlphabetEmpty_ShouldReturnFalse()
         {
-            Alphabet sut = new Alphabet();
+            AlphabetImplemented sut = new AlphabetImplemented();
             bool expected = false;
             bool actual = sut.IsAlphabetEmpty();
             Assert.Equal(expected, actual);
@@ -39,7 +39,7 @@ namespace reflexesTest
         [Fact]
         public void RemoveLetter_ShouldRemoveOneLetter()
         {
-            Alphabet sut = new Alphabet();
+            AlphabetImplemented sut = new AlphabetImplemented();
             int expected = 24;
             sut.RemoveLetter();
             int actual = sut.WordsLeft();
@@ -49,7 +49,7 @@ namespace reflexesTest
         [Fact]
         public void GetLetter_ReturnsFirstCharacterInRandomAlphabet()
         {
-            Alphabet sut = new Alphabet();
+            AlphabetImplemented sut = new AlphabetImplemented();
             IReadOnlyList<string> randomAlphabet = sut.GetAlphabet;
             string expected = randomAlphabet[0];
             string actual = sut.GetLetter();
@@ -59,7 +59,7 @@ namespace reflexesTest
         [Fact]
         public void RemoveLetter_RemovesFirstCharacterInRandomAlphabet()
         {
-            Alphabet sut = new Alphabet();
+            AlphabetImplemented sut = new AlphabetImplemented();
 
             string firstLetter = sut.GetLetter();
             sut.RemoveLetter();
@@ -77,6 +77,8 @@ namespace reflexesTest
    
             Assert.False(actual);
         }
+
+
 
 
 
