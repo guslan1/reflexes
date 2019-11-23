@@ -17,7 +17,7 @@ namespace reflexesTest
             var mockAlphabet = new Mock<Alphabet>();
 
             int count = 25;
-            mockAlphabet.Setup(foo => foo.WordsLeft()).Returns(() => count);
+            mockAlphabet.Setup(alphabet => alphabet.WordsLeft()).Returns(() => count);
             sut.StartGame(mockAlphabet.Object);
 
             int expected = 25;
