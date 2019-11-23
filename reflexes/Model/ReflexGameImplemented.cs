@@ -35,7 +35,11 @@ namespace reflexes.Model
 
         public void CreateStopwatch() => _stopwatch = new Stopwatch();
 
-   
+        public void StartStopwatch() => _stopwatch.Start();
+
+        public void StopStopwatch() => _stopwatch.Stop();
+
+        public TimeSpan TimeElapsed => _stopwatch.Elapsed;
 
 
     }
