@@ -26,7 +26,7 @@ namespace reflexes.Model
 
         private bool ValidateCharacter(string character) => character == _currentChar;
 
-
+        public void RemoveLetterFromAlphabet() => _alphabet.RemoveLetter();
 
 
     }
