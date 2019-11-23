@@ -9,5 +9,7 @@ namespace reflexes.Model
         void StartGame(Alphabet alphabet);
 
         int WordsLeft();
+
+        bool IsGameCompleted();
     }
 }

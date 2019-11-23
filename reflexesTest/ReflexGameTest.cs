@@ -25,5 +25,24 @@ namespace reflexesTest
             Assert.Equal(expected, actual);
         }
 
+        [Fact]
+        public void WordsLeft_GameShouldBeCompleted()
+        {
+            var sut = new ReflexGameImplemented();
+            var mockAlphabet = new Mock<Alphabet>();
+
+            mockAlphabet.Setup(alphabet => alphabet.IsAlphabetEmpty()).Returns(() => true);
+            sut.StartGame(mockAlphabet.Object);
+
+            bool actual = sut.IsGameCompleted();
+            Assert.True(actual);
+        }
+
+
+
+
+
+
+
     }
 }
