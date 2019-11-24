@@ -45,7 +45,7 @@ namespace reflexes.Model
 
         public TimeSpan TimeElapsed { get { return _stopwatch.Elapsed; } }
 
-
+        public bool IsInTime() => TimeElapsed < MaxTime;
 
 
     }
