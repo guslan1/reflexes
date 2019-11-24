@@ -181,89 +181,88 @@
       "reflexes.Model.ReflexGameImplemented": {
         "System.Void reflexes.Model.ReflexGameImplemented::StartGame(reflexes.Model.Alphabet)": {
           "Lines": {
-            "20": 7
+            "17": 7
           },
           "Branches": []
         },
         "System.TimeSpan reflexes.Model.ReflexGameImplemented::get_MaxTime()": {
           "Lines": {
-            "22": 6
+            "19": 14
           },
           "Branches": []
         },
         "System.Int32 reflexes.Model.ReflexGameImplemented::WordsLeft()": {
           "Lines": {
-            "24": 1
+            "21": 1
           },
           "Branches": []
         },
         "System.Boolean reflexes.Model.ReflexGameImplemented::IsGameCompleted()": {
           "Lines": {
-            "26": 2
+            "23": 2
           },
           "Branches": []
         },
         "System.String reflexes.Model.ReflexGameImplemented::GetNewLetter()": {
           "Lines": {
-            "29": 3,
-            "30": 3,
-            "31": 3,
-            "32": 3
+            "26": 3,
+            "27": 3,
+            "28": 3,
+            "29": 3
           },
           "Branches": []
         },
         "System.Boolean reflexes.Model.ReflexGameImplemented::IsCorrectInput(System.String)": {
           "Lines": {
-            "34": 2
+            "31": 2
           },
           "Branches": []
         },
         "System.Boolean reflexes.Model.ReflexGameImplemented::ValidateCharacter(System.String)": {
           "Lines": {
-            "36": 2
+            "33": 2
           },
           "Branches": []
         },
         "System.Void reflexes.Model.ReflexGameImplemented::RemoveLetterFromAlphabet()": {
           "Lines": {
-            "38": 1
+            "35": 1
           },
           "Branches": []
         },
         "System.Void reflexes.Model.ReflexGameImplemented::CreateStopwatch()": {
           "Lines": {
-            "40": 5
+            "37": 5
           },
           "Branches": []
         },
         "System.Void reflexes.Model.ReflexGameImplemented::StartStopwatch()": {
           "Lines": {
-            "42": 4
+            "39": 4
           },
           "Branches": []
         },
         "System.Void reflexes.Model.ReflexGameImplemented::StopStopwatch()": {
           "Lines": {
-            "44": 3
+            "41": 3
           },
           "Branches": []
         },
         "System.TimeSpan reflexes.Model.ReflexGameImplemented::get_TimeElapsed()": {
           "Lines": {
-            "48": 18
+            "43": 18
           },
           "Branches": []
         },
         "System.Boolean reflexes.Model.ReflexGameImplemented::IsInTime()": {
           "Lines": {
-            "50": 2
+            "45": 2
           },
           "Branches": []
         },
         "System.Void reflexes.Model.ReflexGameImplemented::.ctor()": {
           "Lines": {
-            "14": 12,
-            "18": 12
+            "15": 12
           },
           "Branches": []
         }
