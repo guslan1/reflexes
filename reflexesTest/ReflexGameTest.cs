@@ -2,6 +2,7 @@
 using Xunit;
 using Moq;
 using reflexes.Model;
+using System.Threading;
 
 namespace reflexesTest
 {
@@ -150,14 +151,35 @@ namespace reflexesTest
             sut.StopStopwatch();
 
             TimeSpan expected = sut.TimeElapsed;
-
             TimeSpan actual = sut.TimeElapsed;
 
             Assert.Equal<TimeSpan>(expected, actual);
         }
 
+        [Fact]
+        public void IsInTime_ShouldReturnTrue()
+        {
+            var sut = new ReflexGameImplemented();
 
+            sut.CreateStopwatch();
+            sut.StartStopwatch();
+            sut.StopStopwatch();
 
+            Assert.True(sut.IsInTime());
+        }
+
+        [Fact]
+        public void IsInTime_ShouldReturnFalse()
+        {
+            var sut = new ReflexGameImplemented();
+
+            sut.CreateStopwatch();
+            sut.StartStopwatch();
+            Thread.Sleep(3001);
+            sut.StopStopwatch();
+
+            Assert.False(sut.IsInTime());
+        }
 
 
     }

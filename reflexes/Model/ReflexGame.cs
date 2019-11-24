@@ -26,5 +26,9 @@ namespace reflexes.Model
 
         TimeSpan TimeElapsed { get; }
 
+        TimeSpan MaxTime { get; }
+
+        bool IsInTime();
+
     }
 }
