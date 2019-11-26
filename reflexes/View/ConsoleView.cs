@@ -30,6 +30,8 @@ namespace reflexes.View
 
         void DisplayPressAKeyToContinue();
 
+        string ReadKey();
+
 
     }
 }

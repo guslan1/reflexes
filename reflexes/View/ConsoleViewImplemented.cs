@@ -92,6 +92,6 @@ namespace reflexes.View
 
         public void DisplayPressAKeyToContinue() => Console.Write(_pressKeyToContinue);
 
-
+   
     }
 }
