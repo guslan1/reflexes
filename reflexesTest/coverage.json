@@ -75,19 +75,29 @@
           },
           "Branches": []
         },
+        "System.Void reflexes.View.ConsoleViewImplemented::GameOver(System.Int32)": {
+          "Lines": {
+            "63": 1,
+            "64": 1,
+            "65": 1,
+            "66": 1,
+            "67": 1
+          },
+          "Branches": []
+        },
         "System.Void reflexes.View.ConsoleViewImplemented::.ctor()": {
           "Lines": {
-            "10": 7,
-            "11": 7,
-            "12": 7,
-            "13": 7,
-            "14": 7,
-            "15": 7,
-            "16": 7,
-            "17": 7,
-            "18": 7,
-            "19": 7,
-            "20": 7
+            "10": 8,
+            "11": 8,
+            "12": 8,
+            "13": 8,
+            "14": 8,
+            "15": 8,
+            "16": 8,
+            "17": 8,
+            "18": 8,
+            "19": 8,
+            "20": 8
           },
           "Branches": []
         }

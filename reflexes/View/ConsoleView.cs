@@ -18,6 +18,8 @@ namespace reflexes.View
 
         int GetAction();
 
+        void GameOver(int wordsLeft);
+
 
     }
 }

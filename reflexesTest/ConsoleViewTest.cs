@@ -136,6 +136,28 @@ namespace reflexesTest
             }
         }
 
-      
+        [Fact]
+        public void GameOver_ShouldDisplay25WordsLeft()
+        {
+            using (StringWriter sw = new StringWriter())
+            {
+                Console.SetOut(sw);
+                var input = new StringReader("test");
+                Console.SetIn(input);
+
+                var sut = new ConsoleViewImplemented();
+                int wordsLeft = 25;
+                sut.GameOver(wordsLeft);
+
+                string expected = sut._gameOver1 + "25" + sut._gameOver2 + "\r\n";
+                Assert.Equal(expected, sw.ToString());
+                sw.Close();
+                input.Close();
+                Console.SetOut(new StreamWriter(Console.OpenStandardOutput()));
+            }
+        }
+
+
+
     }
 }
