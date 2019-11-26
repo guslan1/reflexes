@@ -177,7 +177,24 @@ namespace reflexesTest
             }
         }
 
+        [Fact]
+        public void TooLongTime_ShouldDisplayTooLongTime()
+        {
+            using (StringWriter sw = new StringWriter())
+            {
+                Console.SetOut(sw);
+                var input = new StringReader("test");
+                Console.SetIn(input);
 
+                var sut = new ConsoleViewImplemented();
+                sut.TooLongTime();
 
+                string expected = sut._tooLongTime + "\r\n\r\n";
+                Assert.Equal(expected, sw.ToString());
+                sw.Close();
+                input.Close();
+                Console.SetOut(new StreamWriter(Console.OpenStandardOutput()));
+            }
+        }
     }
 }

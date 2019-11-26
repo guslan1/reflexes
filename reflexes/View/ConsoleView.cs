@@ -22,6 +22,8 @@ namespace reflexes.View
 
         void GameCompleted();
 
+        void TooLongTime();
+
 
     }
 }
