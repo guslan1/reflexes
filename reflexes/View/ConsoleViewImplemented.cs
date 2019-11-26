@@ -59,7 +59,12 @@ namespace reflexes.View
             return input;
         }
 
- 
+        public void GameOver(int wordsLeft)
+        {
+            Console.Write(_gameOver1);
+            Console.Write(wordsLeft);
+            Console.WriteLine(_gameOver2);
+        }
 
 
 
