@@ -72,7 +72,12 @@ namespace reflexes.View
             Console.WriteLine("");
         }
 
-   
+        public void TooLongTime()
+        {
+            Console.WriteLine(_tooLongTime);
+            Console.WriteLine("");
+        }
+
 
     }
 }
