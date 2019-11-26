@@ -55,7 +55,6 @@ namespace reflexesTest
                     expected += choice;
                     expected += "\r\n";
                 }
-
                 sut.DisplayMenuChoices();
 
                 Assert.Equal(expected, sw.ToString());
