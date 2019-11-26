@@ -90,7 +90,7 @@ namespace reflexes.View
 
         public string GetInput() => Console.ReadLine();
 
-      
+        public void DisplayPressAKeyToContinue() => Console.Write(_pressKeyToContinue);
 
 
     }
