@@ -14,7 +14,7 @@ namespace reflexesTest
             {
                 Console.SetOut(sw);
 
-                var sut = new ConsoleView();
+                var sut = new ConsoleViewImplemented();
                 sut.DisplayGreetingMessage();
 
                 string expected = sut._greeting + "\r\n\r\n" + "" + sut._greetingInstructions + "\r\n\r\n";
@@ -30,7 +30,7 @@ namespace reflexesTest
             {
                 Console.SetOut(sw);
 
-                var sut = new ConsoleView();
+                var sut = new ConsoleViewImplemented();
                 sut.DisplayEasyLevel();
 
 
@@ -40,40 +40,57 @@ namespace reflexesTest
             }
         }
 
+        [Fact]
+        public void DisplayMenuChoices_ShouldDisplayMenuChoices()
+        {
+            using (StringWriter sw = new StringWriter())
+            {
+                Console.SetOut(sw);
+
+                var sut = new ConsoleViewImplemented();
+                string expected = "";
+
+                foreach (string choice in sut._nextActionArray)
+                {
+                    expected += choice;
+                    expected += "\r\n";
+                }
+
+                sut.DisplayMenuChoices();
+
+                Assert.Equal(expected, sw.ToString());
+                sw.Close();
+            }
+        }
+
         //[Fact]
-        //public void GameCompleted_ShouldDisplayGameCompleted()
+        //public void GetNextAction_ShouldReturnTrue()
         //{
         //    using (StringWriter sw = new StringWriter())
         //    {
         //        Console.SetOut(sw);
-
-        //        var sut = new ConsoleView();
-        //        sut.GameCompleted();
-
-        //        var input = new StringReader(expected.ToString());
+        //        var input = new StringReader("1");
         //        Console.SetIn(input);
 
-        //        string expected = sut._gameCompleted + "\r\n\r\n";
+        //        var v = new ConsoleViewImplemented();
+        //        string firstAction = "";
+
+        //        foreach (string choice in v._nextActionArray)
+        //        {
+        //            firstAction += choice;
+        //            firstAction += "\r\n";
+        //        }
+
+        //        v.GetNextAction();
+
+        //        string expected = v._greeting + "\r\n\r\n" + v._greetingInstructions + "\r\n\r\n" + firstAction;
         //        Assert.Equal(expected, sw.ToString());
         //        sw.Close();
-        //    }
-        //}
-
-        //[Fact]
-        //public void GameReadkey_shouldRead()
-        //{
-
-        //    using (StringWriter sw = new StringWriter())
-        //    {
-        //        Console.SetOut(sw);
-        //        var input = new StringReader("T");
-        //        Console.SetIn(input);
-
-        //        sw.Close();
         //        input.Close();
+        //        Console.SetOut(new StreamWriter(Console.OpenStandardOutput()));
         //    }
-
         //}
+
 
     }
 }

@@ -12,8 +12,6 @@ namespace reflexes.Model
         private Stopwatch _stopwatch;
         private string _currentChar;
 
-        internal string _failedToCreateStopwatch = "Unable to create an object of referencetype Stopwatch";
-
         public void StartGame(Alphabet alphabet) => _alphabet = alphabet;
 
         public TimeSpan MaxTime { get; } = new TimeSpan(0, 0, 3);

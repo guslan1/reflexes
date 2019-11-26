@@ -1,33 +1,68 @@
 {
   "reflexes.dll": {
-    "C:\\Users\\Gustav\\desktop\\2dv610\\reflexes\\reflexes\\View\\ConsoleView.cs": {
-      "reflexes.View.ConsoleView": {
-        "System.Void reflexes.View.ConsoleView::DisplayGreetingMessage()": {
-          "Lines": {
-            "15": 1,
-            "16": 1,
-            "17": 1,
-            "18": 1,
-            "19": 1,
-            "20": 1
-          },
-          "Branches": []
-        },
-        "System.Void reflexes.View.ConsoleView::DisplayEasyLevel()": {
+    "C:\\Users\\Gustav\\desktop\\2dv610\\reflexes\\reflexes\\View\\ConsoleViewImplemented.cs": {
+      "reflexes.View.ConsoleViewImplemented": {
+        "System.Void reflexes.View.ConsoleViewImplemented::DisplayGreetingMessage()": {
           "Lines": {
             "23": 1,
             "24": 1,
             "25": 1,
-            "26": 1
+            "26": 1,
+            "27": 1,
+            "28": 1
           },
           "Branches": []
         },
-        "System.Void reflexes.View.ConsoleView::.ctor()": {
+        "System.Void reflexes.View.ConsoleViewImplemented::DisplayEasyLevel()": {
           "Lines": {
-            "9": 2,
-            "10": 2,
-            "11": 2,
-            "12": 2
+            "31": 1,
+            "32": 1,
+            "33": 1,
+            "34": 1
+          },
+          "Branches": []
+        },
+        "System.Void reflexes.View.ConsoleViewImplemented::DisplayMenuChoices()": {
+          "Lines": {
+            "37": 1,
+            "38": 11,
+            "39": 4,
+            "40": 4,
+            "41": 4,
+            "42": 1
+          },
+          "Branches": [
+            {
+              "Line": 38,
+              "Offset": 34,
+              "EndOffset": 13,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 4
+            },
+            {
+              "Line": 38,
+              "Offset": 34,
+              "EndOffset": 36,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 1
+            }
+          ]
+        },
+        "System.Void reflexes.View.ConsoleViewImplemented::.ctor()": {
+          "Lines": {
+            "10": 3,
+            "11": 3,
+            "12": 3,
+            "13": 3,
+            "14": 3,
+            "15": 3,
+            "16": 3,
+            "17": 3,
+            "18": 3,
+            "19": 3,
+            "20": 3
           },
           "Branches": []
         }
@@ -181,88 +216,82 @@
       "reflexes.Model.ReflexGameImplemented": {
         "System.Void reflexes.Model.ReflexGameImplemented::StartGame(reflexes.Model.Alphabet)": {
           "Lines": {
-            "17": 7
+            "15": 7
           },
           "Branches": []
         },
         "System.TimeSpan reflexes.Model.ReflexGameImplemented::get_MaxTime()": {
           "Lines": {
-            "19": 14
+            "17": 14
           },
           "Branches": []
         },
         "System.Int32 reflexes.Model.ReflexGameImplemented::WordsLeft()": {
           "Lines": {
-            "21": 1
+            "19": 1
           },
           "Branches": []
         },
         "System.Boolean reflexes.Model.ReflexGameImplemented::IsGameCompleted()": {
           "Lines": {
-            "23": 2
+            "21": 2
           },
           "Branches": []
         },
         "System.String reflexes.Model.ReflexGameImplemented::GetNewLetter()": {
           "Lines": {
+            "24": 3,
+            "25": 3,
             "26": 3,
-            "27": 3,
-            "28": 3,
-            "29": 3
+            "27": 3
           },
           "Branches": []
         },
         "System.Boolean reflexes.Model.ReflexGameImplemented::IsCorrectInput(System.String)": {
           "Lines": {
-            "31": 2
+            "29": 2
           },
           "Branches": []
         },
         "System.Boolean reflexes.Model.ReflexGameImplemented::ValidateCharacter(System.String)": {
           "Lines": {
-            "33": 2
+            "31": 2
           },
           "Branches": []
         },
         "System.Void reflexes.Model.ReflexGameImplemented::RemoveLetterFromAlphabet()": {
           "Lines": {
-            "35": 1
+            "33": 1
           },
           "Branches": []
         },
         "System.Void reflexes.Model.ReflexGameImplemented::CreateStopwatch()": {
           "Lines": {
-            "37": 5
+            "35": 5
           },
           "Branches": []
         },
         "System.Void reflexes.Model.ReflexGameImplemented::StartStopwatch()": {
           "Lines": {
-            "39": 4
+            "37": 4
           },
           "Branches": []
         },
         "System.Void reflexes.Model.ReflexGameImplemented::StopStopwatch()": {
           "Lines": {
-            "41": 3
+            "39": 3
           },
           "Branches": []
         },
         "System.TimeSpan reflexes.Model.ReflexGameImplemented::get_TimeElapsed()": {
           "Lines": {
-            "43": 18
+            "41": 18
           },
           "Branches": []
         },
         "System.Boolean reflexes.Model.ReflexGameImplemented::IsInTime()": {
           "Lines": {
-            "45": 2
-          },
-          "Branches": []
-        },
-        "System.Void reflexes.Model.ReflexGameImplemented::.ctor()": {
-          "Lines": {
-            "15": 12
+            "43": 2
           },
           "Branches": []
         }
