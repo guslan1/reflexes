@@ -196,5 +196,27 @@ namespace reflexesTest
                 Console.SetOut(new StreamWriter(Console.OpenStandardOutput()));
             }
         }
+
+        [Fact]
+        public void PresentLetter_ShouldPresentLetter()
+        {
+            using (StringWriter sw = new StringWriter())
+            {
+                Console.SetOut(sw);
+                var input = new StringReader("test");
+                Console.SetIn(input);
+
+                var sut = new ConsoleViewImplemented();
+                string testLetter = "a";
+                sut.PresentLetter(testLetter);
+
+                string expected = sut._presentLetterInfo + testLetter + "\r\n\r\n";
+                Assert.Equal(expected, sw.ToString());
+                sw.Close();
+                input.Close();
+                Console.SetOut(new StreamWriter(Console.OpenStandardOutput()));
+            }
+        }
+
     }
 }

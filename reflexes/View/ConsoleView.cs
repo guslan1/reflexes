@@ -24,6 +24,8 @@ namespace reflexes.View
 
         void TooLongTime();
 
+        void PresentLetter(string letter);
+
 
     }
 }
