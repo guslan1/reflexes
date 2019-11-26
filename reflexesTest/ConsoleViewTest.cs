@@ -96,34 +96,46 @@ namespace reflexesTest
             }
         }
 
-        //[Fact]
-        //public void GetNextAction_ShouldReturnTrue()
-        //{
-        //    using (StringWriter sw = new StringWriter())
-        //    {
-        //        Console.SetOut(sw);
-        //        var input = new StringReader("1");
-        //        Console.SetIn(input);
+        [Fact]
+        public void GetAction_ShouldReturnOne()
+        {
+            Console.SetOut(new StreamWriter(Console.OpenStandardOutput()));
+            string choice = "1";
+            var input = new StringReader(choice);
+            Console.SetIn(input);
 
-        //        var v = new ConsoleViewImplemented();
-        //        string firstAction = "";
+            using (StringWriter sw = new StringWriter())
+            {
+                var sut = new ConsoleViewImplemented();
+                int result = sut.GetAction();
 
-        //        foreach (string choice in v._nextActionArray)
-        //        {
-        //            firstAction += choice;
-        //            firstAction += "\r\n";
-        //        }
+                int expected = 1;
 
-        //        v.GetNextAction();
+                Assert.Equal(expected, result);
+                input.Close();
+            }
+        }
 
-        //        string expected = v._greeting + "\r\n\r\n" + v._greetingInstructions + "\r\n\r\n" + firstAction;
-        //        Assert.Equal(expected, sw.ToString());
-        //        sw.Close();
-        //        input.Close();
-        //        Console.SetOut(new StreamWriter(Console.OpenStandardOutput()));
-        //    }
-        //}
+        [Fact]
+        public void GetAction_ShouldReturnZero()
+        {
+            Console.SetOut(new StreamWriter(Console.OpenStandardOutput()));
+            string choice = "a";
+            var input = new StringReader(choice);
+            Console.SetIn(input);
 
+            using (StringWriter sw = new StringWriter())
+            {
+                var sut = new ConsoleViewImplemented();
+                int result = sut.GetAction();
 
+                int expected = 0;
+
+                Assert.Equal(expected, result);
+                input.Close();
+            }
+        }
+
+      
     }
 }

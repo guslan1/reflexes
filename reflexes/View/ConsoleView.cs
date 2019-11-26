@@ -16,5 +16,8 @@ namespace reflexes.View
 
         void DisplayLevelSelection();
 
+        int GetAction();
+
+
     }
 }
