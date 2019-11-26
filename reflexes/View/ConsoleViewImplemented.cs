@@ -46,7 +46,7 @@ namespace reflexes.View
             Console.WriteLine(_selectLevelClarificationMessage);
         }
 
-     
+
 
     }
 }

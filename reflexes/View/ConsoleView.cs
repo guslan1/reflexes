@@ -14,6 +14,7 @@ namespace reflexes.View
 
         void DisplayLevelSelectionClarification();
 
-  
+        void DisplayLevelSelection();
+
     }
 }

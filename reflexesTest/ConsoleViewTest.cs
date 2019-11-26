@@ -79,6 +79,23 @@ namespace reflexesTest
             }
         }
 
+        [Fact]
+        public void DisplayLevelSelection_ShouldDisplayLevelSelection()
+        {
+            using (StringWriter sw = new StringWriter())
+            {
+                Console.SetOut(sw);
+
+                var sut = new ConsoleViewImplemented();
+                string expected = sut._selectLevelMessage;
+
+                sut.DisplayLevelSelection();
+
+                Assert.Equal(expected, sw.ToString());
+                sw.Close();
+            }
+        }
+
         //[Fact]
         //public void GetNextAction_ShouldReturnTrue()
         //{
