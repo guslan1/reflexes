@@ -157,6 +157,26 @@ namespace reflexesTest
             }
         }
 
+        [Fact]
+        public void GameCompleted_ShouldDisplayGameCompleted()
+        {
+            using (StringWriter sw = new StringWriter())
+            {
+                Console.SetOut(sw);
+                var input = new StringReader("test");
+                Console.SetIn(input);
+
+                var sut = new ConsoleViewImplemented();
+                sut.GameCompleted();
+
+                string expected = sut._gameCompleted + "\r\n\r\n";
+                Assert.Equal(expected, sw.ToString());
+                sw.Close();
+                input.Close();
+                Console.SetOut(new StreamWriter(Console.OpenStandardOutput()));
+            }
+        }
+
 
 
     }
