@@ -18,6 +18,7 @@ namespace reflexes.View
         internal string _presentLetterInfo = "Type the letter: ";
         internal string _tooLongTime = "You answered too late.";
         internal string[] _nextActionArray = new string[] { "1. Easy", "2. Medium", "3. Hard", "4. Exit" };
+        internal string _pressKeyToContinue = "\n   Press a key to continue   ";
 
         public void DisplayGreetingMessage()
         {
@@ -88,7 +89,8 @@ namespace reflexes.View
         }
 
         public string GetInput() => Console.ReadLine();
-        
+
+      
 
 
     }

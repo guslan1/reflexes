@@ -238,5 +238,25 @@ namespace reflexesTest
             }
         }
 
+        [Fact]
+        public void DisplayPressAKeyToContinue_ShouldDisplayPressAKeyToContinue()
+        {
+            using (StringWriter sw = new StringWriter())
+            {
+                Console.SetOut(sw);
+                var input = new StringReader("test");
+                Console.SetIn(input);
+
+                var sut = new ConsoleViewImplemented();
+                sut.DisplayPressAKeyToContinue();
+
+                string expected = sut._pressKeyToContinue;
+                Assert.Equal(expected, sw.ToString());
+                sw.Close();
+                input.Close();
+                Console.SetOut(new StreamWriter(Console.OpenStandardOutput()));
+            }
+        }
+
     }
 }

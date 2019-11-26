@@ -28,6 +28,8 @@ namespace reflexes.View
 
         string GetInput();
 
+        void DisplayPressAKeyToContinue();
+
 
     }
 }
