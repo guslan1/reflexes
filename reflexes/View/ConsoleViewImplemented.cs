@@ -79,7 +79,13 @@ namespace reflexes.View
         }
 
 
- 
+        public void PresentLetter(string letter)
+        {
+            Console.Write(_presentLetterInfo);
+            Console.Write(letter);
+            Console.WriteLine("");
+            Console.WriteLine("");
+        }
 
 
     }
