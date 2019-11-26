@@ -41,7 +41,10 @@ namespace reflexes.View
             }
         }
 
- 
+        public void DisplayLevelSelectionClarification()
+        {
+            Console.WriteLine(_selectLevelClarificationMessage);
+        }
 
      
 
