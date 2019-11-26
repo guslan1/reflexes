@@ -51,7 +51,12 @@ namespace reflexes.View
             Console.Write(_selectLevelMessage);
         }
 
-   
+        public int GetAction()
+        {
+            int input;
+            int.TryParse(Console.ReadLine(), out input);
+            return input;
+        }
 
 
     }
