@@ -218,5 +218,25 @@ namespace reflexesTest
             }
         }
 
+        [Fact]
+        public void GetInput_ShouldReturnStringInput()
+        {
+            Console.SetOut(new StreamWriter(Console.OpenStandardOutput()));
+            string action = "a";
+            var input = new StringReader(action);
+            Console.SetIn(input);
+
+            using (StringWriter sw = new StringWriter())
+            {
+                var sut = new ConsoleViewImplemented();
+                string result = sut.GetInput();
+
+                string expected = "a";
+
+                Assert.Equal(expected, result);
+                input.Close();
+            }
+        }
+
     }
 }

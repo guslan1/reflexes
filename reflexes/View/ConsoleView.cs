@@ -26,6 +26,8 @@ namespace reflexes.View
 
         void PresentLetter(string letter);
 
+        string GetInput();
+
 
     }
 }
