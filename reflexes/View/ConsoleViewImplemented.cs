@@ -87,7 +87,10 @@ namespace reflexes.View
             Console.WriteLine("");
         }
 
-
+        public string GetInput()
+        {
+            return Console.ReadLine();
+        }
 
 
     }
