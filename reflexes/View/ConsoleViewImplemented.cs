@@ -66,7 +66,7 @@ namespace reflexes.View
             Console.WriteLine(_gameOver2);
         }
 
-        public void GameCompletedd()
+        public void GameCompleted()
         {
             Console.WriteLine(_gameCompleted);
             Console.WriteLine("");
