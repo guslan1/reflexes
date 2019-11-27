@@ -172,19 +172,6 @@ namespace reflexesTest
         }
 
         [Fact]
-        public void EasyMode_WhenInTimeReturnsFalse()
-        {
-            var mockReflexGame = new Mock<ReflexGame>();
-            var mockConsoleView = new Mock<ConsoleView>();
-
-            var levelController = new LevelControllerImplemented(mockReflexGame.Object, mockConsoleView.Object);
-            mockReflexGame.Setup(game => game.IsInTime()).Returns(true);
-
-
-            Assert.False(levelController.EasyMode());
-        }
-
-        [Fact]
         public void EasyMode_IfNotCorrectInputGameOverIsCalled()
         {
             var mockReflexGame = new Mock<ReflexGame>();

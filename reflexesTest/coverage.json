@@ -384,36 +384,36 @@
       "reflexes.Controller.LevelControllerImplemented": {
         "System.Boolean reflexes.Controller.LevelControllerImplemented::EasyMode()": {
           "Lines": {
-            "20": 17,
-            "21": 17,
+            "20": 16,
+            "21": 16,
             "22": 3,
             "23": 3,
             "24": 3,
             "25": 3,
             "26": 3,
-            "29": 14,
-            "30": 14,
-            "31": 14,
-            "32": 14,
-            "34": 14,
-            "35": 14,
-            "37": 14,
+            "29": 13,
+            "30": 13,
+            "31": 13,
+            "32": 13,
+            "34": 13,
+            "35": 13,
+            "37": 13,
             "38": 9,
             "39": 9,
             "40": 9,
             "41": 9,
             "42": 9,
             "43": 9,
-            "46": 5,
-            "47": 4,
-            "48": 4,
-            "49": 4,
-            "50": 4,
-            "51": 4,
+            "46": 4,
+            "47": 3,
+            "48": 3,
+            "49": 3,
+            "50": 3,
+            "51": 3,
             "54": 1,
             "59": 1,
             "60": 1,
-            "61": 17
+            "61": 16
           },
           "Branches": [
             {
@@ -430,7 +430,7 @@
               "EndOffset": 60,
               "Path": 1,
               "Ordinal": 1,
-              "Hits": 14
+              "Hits": 13
             },
             {
               "Line": 37,
@@ -446,7 +446,7 @@
               "EndOffset": 214,
               "Path": 1,
               "Ordinal": 3,
-              "Hits": 5
+              "Hits": 4
             },
             {
               "Line": 46,
@@ -454,7 +454,7 @@
               "EndOffset": 235,
               "Path": 0,
               "Ordinal": 4,
-              "Hits": 4
+              "Hits": 3
             },
             {
               "Line": 46,
@@ -468,11 +468,11 @@
         },
         "System.Void reflexes.Controller.LevelControllerImplemented::.ctor(reflexes.Model.ReflexGame,reflexes.View.ConsoleView)": {
           "Lines": {
-            "13": 18,
-            "14": 18,
-            "15": 18,
-            "16": 18,
-            "17": 18
+            "13": 17,
+            "14": 17,
+            "15": 17,
+            "16": 17,
+            "17": 17
           },
           "Branches": []
         }
