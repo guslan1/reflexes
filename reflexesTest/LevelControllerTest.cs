@@ -82,5 +82,17 @@ namespace reflexesTest
             levelController.EasyMode();
             mockReflexGame.Verify(game => game.CreateStopwatch(), Times.Once());
         }
+
+        [Fact]
+        public void EasyMode_ShouldCallStartStopwatch()
+        {
+            var mockReflexGame = new Mock<ReflexGame>();
+            var mockConsoleView = new Mock<ConsoleView>();
+
+            var levelController = new LevelControllerImplemented(mockReflexGame.Object, mockConsoleView.Object);
+
+            levelController.EasyMode();
+            mockReflexGame.Verify(game => game.StartStopwatch(), Times.Once());
+        }
     }
 }
