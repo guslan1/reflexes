@@ -210,6 +210,19 @@ namespace reflexesTest
             mockConsoleView.Verify(view => view.DisplayPressAKeyToContinue(), Times.Once());
         }
 
+        [Fact]
+        public void EasyMode_IfNotCorrectInputReadKeyIsCalled()
+        {
+            var mockReflexGame = new Mock<ReflexGame>();
+            var mockConsoleView = new Mock<ConsoleView>();
+
+            var levelController = new LevelControllerImplemented(mockReflexGame.Object, mockConsoleView.Object);
+            mockReflexGame.Setup(game => game.IsCorrectInput("test")).Returns(false);
+
+            levelController.EasyMode();
+            mockConsoleView.Verify(view => view.ReadKey(), Times.Once());
+        }
+
 
     }
 }
