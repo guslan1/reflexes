@@ -15,6 +15,7 @@ namespace reflexes.Controller
             _reflexGame = reflexGame;
             _consoleView = consoleView;
         }
+
         public bool EasyMode()
         {
             if (_reflexGame.IsGameCompleted())
@@ -48,12 +49,15 @@ namespace reflexes.Controller
                     _consoleView.DisplayPressAKeyToContinue();
                     _consoleView.ReadKey();
                     return false;
-
                 }
 
-                return true;
-            }
+        
 
+
+
+
+            }
+            return true;
         }
     }
 }
