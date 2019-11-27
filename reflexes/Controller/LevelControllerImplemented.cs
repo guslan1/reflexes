@@ -36,6 +36,7 @@ namespace reflexes.Controller
                 if (!_reflexGame.IsInTime())
                 {
                     _consoleView.TooLongTime();
+                    _consoleView.GameOver(_reflexGame.WordsLeft());
                     return false;
                 }
             }
