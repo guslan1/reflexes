@@ -45,6 +45,7 @@ namespace reflexes.Controller
                 if (!_reflexGame.IsCorrectInput(input))
                 {
                     _consoleView.GameOver(_reflexGame.WordsLeft());
+                    _consoleView.DisplayPressAKeyToContinue();
                     return false;
 
                 }
