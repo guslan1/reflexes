@@ -38,6 +38,7 @@ namespace reflexes.Controller
                     _consoleView.TooLongTime();
                     _consoleView.GameOver(_reflexGame.WordsLeft());
                     _consoleView.DisplayPressAKeyToContinue();
+                    _consoleView.ReadKey();
                     return false;
                 }
 
