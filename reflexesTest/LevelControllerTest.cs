@@ -171,18 +171,18 @@ namespace reflexesTest
             mockConsoleView.Verify(view => view.ReadKey(), Times.Once());
         }
 
-        //[Fact]
-        //public void EasyMode_WhenInTimeReturnsFalse()
-        //{
-        //    var mockReflexGame = new Mock<ReflexGame>();
-        //    var mockConsoleView = new Mock<ConsoleView>();
+        [Fact]
+        public void EasyMode_WhenInTimeReturnsFalse()
+        {
+            var mockReflexGame = new Mock<ReflexGame>();
+            var mockConsoleView = new Mock<ConsoleView>();
 
-        //    var levelController = new LevelControllerImplemented(mockReflexGame.Object, mockConsoleView.Object);
-        //    mockReflexGame.Setup(game => game.IsInTime()).Returns(true);
+            var levelController = new LevelControllerImplemented(mockReflexGame.Object, mockConsoleView.Object);
+            mockReflexGame.Setup(game => game.IsInTime()).Returns(true);
 
 
-        //    Assert.False(levelController.EasyMode());
-        //}
+            Assert.False(levelController.EasyMode());
+        }
 
         [Fact]
         public void EasyMode_IfNotCorrectInputGameOverIsCalled()
