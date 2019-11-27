@@ -384,27 +384,29 @@
       "reflexes.Controller.LevelControllerImplemented": {
         "System.Boolean reflexes.Controller.LevelControllerImplemented::EasyMode()": {
           "Lines": {
-            "19": 10,
-            "20": 10,
+            "19": 13,
+            "20": 13,
             "21": 3,
             "22": 3,
             "23": 3,
             "24": 3,
             "25": 3,
-            "28": 7,
-            "29": 7,
-            "30": 7,
-            "31": 7,
-            "33": 7,
-            "34": 7,
-            "36": 7,
-            "37": 7,
-            "38": 7,
-            "39": 7,
-            "40": 7,
-            "42": 0,
-            "43": 0,
-            "44": 10
+            "28": 10,
+            "29": 10,
+            "30": 10,
+            "31": 10,
+            "33": 10,
+            "34": 10,
+            "36": 10,
+            "37": 9,
+            "38": 9,
+            "39": 9,
+            "40": 9,
+            "41": 9,
+            "42": 9,
+            "45": 1,
+            "46": 1,
+            "47": 13
           },
           "Branches": [
             {
@@ -421,7 +423,7 @@
               "EndOffset": 60,
               "Path": 1,
               "Ordinal": 1,
-              "Hits": 7
+              "Hits": 10
             },
             {
               "Line": 36,
@@ -429,25 +431,25 @@
               "EndOffset": 150,
               "Path": 0,
               "Ordinal": 2,
-              "Hits": 7
+              "Hits": 9
             },
             {
               "Line": 36,
               "Offset": 148,
-              "EndOffset": 190,
+              "EndOffset": 214,
               "Path": 1,
               "Ordinal": 3,
-              "Hits": 0
+              "Hits": 1
             }
           ]
         },
         "System.Void reflexes.Controller.LevelControllerImplemented::.ctor(reflexes.Model.ReflexGame,reflexes.View.ConsoleView)": {
           "Lines": {
-            "13": 11,
-            "14": 11,
-            "15": 11,
-            "16": 11,
-            "17": 11
+            "13": 14,
+            "14": 14,
+            "15": 14,
+            "16": 14,
+            "17": 14
           },
           "Branches": []
         }
