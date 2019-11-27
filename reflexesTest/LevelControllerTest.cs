@@ -118,5 +118,18 @@ namespace reflexesTest
             levelController.EasyMode();
             mockReflexGame.Verify(game => game.StopStopwatch(), Times.Once());
         }
+
+        [Fact]
+        public void EasyMode_WhenNotInTimeTooLongTimeIsCalled()
+        {
+            var mockReflexGame = new Mock<ReflexGame>();
+            var mockConsoleView = new Mock<ConsoleView>();
+
+            var levelController = new LevelControllerImplemented(mockReflexGame.Object, mockConsoleView.Object);
+            mockReflexGame.Setup(game => game.IsInTime()).Returns(false);
+
+            levelController.EasyMode();
+            mockConsoleView.Verify(view => view.TooLongTime(), Times.Once());
+        }
     }
 }
