@@ -33,6 +33,11 @@ namespace reflexes.Controller
                 string input = _consoleView.GetInput();
                 _reflexGame.StopStopwatch();
 
+                if (!_reflexGame.IsInTime())
+                {
+                    _consoleView.TooLongTime();
+                    return false;
+                }
             }
             return true;
         }
