@@ -24,7 +24,11 @@ namespace reflexes.Controller
                 _consoleView.ReadKey();
                 return false;
             }
-       
+            else
+            {
+                _consoleView.PresentLetter(_reflexGame.GetNewLetter());
+
+            }
             return true;
         }
 
