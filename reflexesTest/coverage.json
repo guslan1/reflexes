@@ -384,20 +384,27 @@
       "reflexes.Controller.LevelControllerImplemented": {
         "System.Boolean reflexes.Controller.LevelControllerImplemented::EasyMode()": {
           "Lines": {
-            "19": 6,
-            "20": 6,
+            "19": 10,
+            "20": 10,
             "21": 3,
             "22": 3,
             "23": 3,
             "24": 3,
             "25": 3,
-            "28": 3,
-            "29": 3,
-            "30": 3,
-            "31": 3,
-            "32": 3,
-            "33": 3,
-            "34": 6
+            "28": 7,
+            "29": 7,
+            "30": 7,
+            "31": 7,
+            "33": 7,
+            "34": 7,
+            "36": 7,
+            "37": 7,
+            "38": 7,
+            "39": 7,
+            "40": 7,
+            "42": 0,
+            "43": 0,
+            "44": 10
           },
           "Branches": [
             {
@@ -411,20 +418,36 @@
             {
               "Line": 20,
               "Offset": 14,
-              "EndOffset": 57,
+              "EndOffset": 60,
               "Path": 1,
               "Ordinal": 1,
-              "Hits": 3
+              "Hits": 7
+            },
+            {
+              "Line": 36,
+              "Offset": 148,
+              "EndOffset": 150,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 7
+            },
+            {
+              "Line": 36,
+              "Offset": 148,
+              "EndOffset": 190,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
             }
           ]
         },
         "System.Void reflexes.Controller.LevelControllerImplemented::.ctor(reflexes.Model.ReflexGame,reflexes.View.ConsoleView)": {
           "Lines": {
-            "13": 7,
-            "14": 7,
-            "15": 7,
-            "16": 7,
-            "17": 7
+            "13": 11,
+            "14": 11,
+            "15": 11,
+            "16": 11,
+            "17": 11
           },
           "Branches": []
         }
