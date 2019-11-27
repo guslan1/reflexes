@@ -21,10 +21,10 @@ namespace reflexes.Controller
             {
                 _consoleView.GameCompleted();
                 _consoleView.DisplayPressAKeyToContinue();
-
+               
                 return false;
             }
-  
+           
             return true;
         }
 
