@@ -42,6 +42,12 @@ namespace reflexes.Controller
                     return false;
                 }
 
+                if (!_reflexGame.IsCorrectInput(input))
+                {
+                    _consoleView.GameOver(_reflexGame.WordsLeft());
+                    return false;
+                }
+
                 return true;
             }
 
