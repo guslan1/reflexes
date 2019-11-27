@@ -42,9 +42,9 @@ namespace reflexes.Controller
                     return false;
                 }
 
+                return true;
             }
-            return true;
-        }
 
+        }
     }
 }
