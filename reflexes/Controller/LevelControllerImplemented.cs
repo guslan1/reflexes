@@ -28,6 +28,7 @@ namespace reflexes.Controller
             {
                 _consoleView.PresentLetter(_reflexGame.GetNewLetter());
                 _reflexGame.CreateStopwatch();
+                _reflexGame.StartStopwatch();
             }
             return true;
         }
