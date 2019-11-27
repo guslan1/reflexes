@@ -11,7 +11,7 @@ namespace reflexesTest
     {
 
         [Fact]
-        public void LevelController_InstantiatingShouldReturnReferenceTypeLevelController()
+        public void LevelController_NewLevelControllerShouldReturnLevelController()
         {
             var reflexGame = new ReflexGameImplemented();
             var consoleView = new ConsoleViewImplemented();
