@@ -51,7 +51,7 @@ namespace reflexes.Controller
                     return false;
                 }
 
-        
+                _reflexGame.RemoveLetterFromAlphabet();
 
 
 
