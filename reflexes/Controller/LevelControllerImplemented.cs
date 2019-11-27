@@ -24,7 +24,7 @@ namespace reflexes.Controller
                 _consoleView.ReadKey();
                 return false;
             }
-            
+       
             return true;
         }
 
