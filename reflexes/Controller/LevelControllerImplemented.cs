@@ -27,7 +27,6 @@ namespace reflexes.Controller
             else
             {
                 _consoleView.PresentLetter(_reflexGame.GetNewLetter());
-
             }
             return true;
         }
