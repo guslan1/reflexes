@@ -46,6 +46,7 @@ namespace reflexes.Controller
                 {
                     _consoleView.GameOver(_reflexGame.WordsLeft());
                     return false;
+
                 }
 
                 return true;
