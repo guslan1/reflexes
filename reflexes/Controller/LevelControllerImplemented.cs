@@ -31,6 +31,7 @@ namespace reflexes.Controller
                 _reflexGame.StartStopwatch();
 
                 string input = _consoleView.GetInput();
+                _reflexGame.StopStopwatch();
 
             }
             return true;
