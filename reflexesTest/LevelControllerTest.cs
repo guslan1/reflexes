@@ -227,7 +227,7 @@ namespace reflexesTest
         }
 
         [Fact]
-        public void EasyMode_IfCorrectInputInTimeRemoveLetterFromAlphabetIsCalledd()
+        public void EasyMode_IfCorrectInputInTimeRemoveLetterFromAlphabetIsCalled()
         {
             var mockReflexGame = new Mock<ReflexGame>();
             var mockConsoleView = new Mock<ConsoleView>();
