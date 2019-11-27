@@ -20,11 +20,10 @@ namespace reflexes.Controller
             if (_reflexGame.IsGameCompleted())
             {
                 _consoleView.GameCompleted();
-                _consoleView.DisplayPressAKeyToContinue();
-                _consoleView.ReadKey();
+       
                 return false;
             }
-        
+  
             return true;
         }
 
