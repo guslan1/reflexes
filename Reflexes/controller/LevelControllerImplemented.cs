@@ -16,11 +16,6 @@ namespace reflexes.Controller
             _consoleView = consoleView;
         }
 
-        public void EasyModee()
-        {
-            _reflexGame.MaxTime = _reflexGame.EasyMode;
-        }
-
         public bool EasyMode()
         {
             if (_reflexGame.IsGameCompleted())
