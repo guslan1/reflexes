@@ -43,6 +43,7 @@ namespace reflexes.Controller
                     default:
                         _consoleView.DisplayLevelSelectionClarification();
                         _consoleView.DisplayPressAKeyToContinue();
+                        _consoleView.ReadKey();
                         break;
                 }
 
