@@ -38,10 +38,10 @@ namespace reflexes.Controller
                         while (_levelController.EasyMode()) ;
                         break;
                     case 2:
-                        _consoleView.DisplayEasyLevel();
+                        
                         break;
                     case 3:
-                        _consoleView.DisplayEasyLevel();
+                       
                         break;
                     case 4:
                         keepGoing = false;
