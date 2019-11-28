@@ -20,5 +20,32 @@ namespace reflexes.Controller
             _levelController = levelController;
         }
 
+        public void RunApplication()
+        {
+            int nextAction;
+            bool keepGoing = true;
+            while (keepGoing)
+            {
+
+
+                switch (nextAction)
+                {
+                    case 1:
+                        break;
+                    case 2:
+                        break;
+                    case 3:
+                        break;
+                    case 4:
+                        keepGoing = false;
+                        break;
+                    default:
+                        break;
+                }
+
+            }
+        }
+
+
     }
 }
