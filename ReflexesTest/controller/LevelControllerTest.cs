@@ -249,7 +249,6 @@ namespace reflexesTest
             levelController.EasyModee();
 
             mockReflexGame.VerifyGet(game => game.EasyMode);
-
         }
 
         [Fact]
@@ -262,6 +261,18 @@ namespace reflexesTest
             levelController.Medium();
 
             mockReflexGame.VerifySet(game => game.MaxTime = It.IsAny<TimeSpan>(), Times.Once());
+        }
+
+        [Fact]
+        public void Medium_ShouldGetMedium()
+        {
+            var mockReflexGame = new Mock<ReflexGame>();
+            var mockConsoleView = new Mock<ConsoleView>();
+
+            var levelController = new LevelControllerImplemented(mockReflexGame.Object, mockConsoleView.Object);
+            levelController.Medium();
+
+            mockReflexGame.VerifyGet(game => game.MediumMode);
         }
 
     }

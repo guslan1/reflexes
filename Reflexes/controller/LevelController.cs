@@ -11,5 +11,7 @@ namespace reflexes.Controller
         void EasyModee();
 
         void Medium();
+
+        void Hard();
     }
 }
