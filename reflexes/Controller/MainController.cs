@@ -26,6 +26,7 @@ namespace reflexes.Controller
             bool keepGoing = true;
             while (keepGoing)
             {
+                _consoleView.DisplayGreetingMessage();
                 nextAction = _consoleView.GetAction();
 
                 switch (nextAction)
