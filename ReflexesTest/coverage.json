@@ -1,6 +1,6 @@
 {
   "Reflexes.dll": {
-    "C:\\Users\\Gustav\\desktop\\2dv610\\reflexes\\reflexes\\View\\ConsoleViewImplemented.cs": {
+    "C:\\Users\\Gustav\\desktop\\2dv610\\reflexes\\reflexes\\view\\ConsoleViewImplemented.cs": {
       "reflexes.View.ConsoleViewImplemented": {
         "System.Void reflexes.View.ConsoleViewImplemented::DisplayGreetingMessage()": {
           "Lines": {
@@ -151,7 +151,7 @@
         }
       }
     },
-    "C:\\Users\\Gustav\\desktop\\2dv610\\reflexes\\reflexes\\Model\\AlphabetImplemented.cs": {
+    "C:\\Users\\Gustav\\desktop\\2dv610\\reflexes\\reflexes\\model\\AlphabetImplemented.cs": {
       "reflexes.Model.AlphabetImplemented": {
         "System.Collections.Generic.List`1<System.String> reflexes.Model.AlphabetImplemented::RandomAlphabet(System.Collections.Generic.List`1<System.String>)": {
           "Lines": {
@@ -295,92 +295,98 @@
         }
       }
     },
-    "C:\\Users\\Gustav\\desktop\\2dv610\\reflexes\\reflexes\\Model\\ReflexGameImplemented.cs": {
+    "C:\\Users\\Gustav\\desktop\\2dv610\\reflexes\\reflexes\\model\\ReflexGameImplemented.cs": {
       "reflexes.Model.ReflexGameImplemented": {
         "System.Void reflexes.Model.ReflexGameImplemented::StartGame(reflexes.Model.Alphabet)": {
           "Lines": {
-            "15": 7
+            "16": 7
           },
           "Branches": []
         },
         "System.TimeSpan reflexes.Model.ReflexGameImplemented::get_MaxTime()": {
           "Lines": {
-            "17": 16
+            "18": 6
           },
           "Branches": []
         },
         "System.Int32 reflexes.Model.ReflexGameImplemented::WordsLeft()": {
           "Lines": {
-            "19": 1
+            "20": 1
           },
           "Branches": []
         },
         "System.Boolean reflexes.Model.ReflexGameImplemented::IsGameCompleted()": {
           "Lines": {
-            "21": 2
+            "22": 2
           },
           "Branches": []
         },
         "System.String reflexes.Model.ReflexGameImplemented::GetNewLetter()": {
           "Lines": {
-            "24": 3,
             "25": 3,
             "26": 3,
-            "27": 3
+            "27": 3,
+            "28": 3
           },
           "Branches": []
         },
         "System.Boolean reflexes.Model.ReflexGameImplemented::IsCorrectInput(System.String)": {
           "Lines": {
-            "29": 2
+            "30": 2
           },
           "Branches": []
         },
         "System.Boolean reflexes.Model.ReflexGameImplemented::ValidateCharacter(System.String)": {
           "Lines": {
-            "31": 2
+            "32": 2
           },
           "Branches": []
         },
         "System.Void reflexes.Model.ReflexGameImplemented::RemoveLetterFromAlphabet()": {
           "Lines": {
-            "33": 1
+            "34": 1
           },
           "Branches": []
         },
         "System.Void reflexes.Model.ReflexGameImplemented::CreateStopwatch()": {
           "Lines": {
-            "35": 5
+            "36": 5
           },
           "Branches": []
         },
         "System.Void reflexes.Model.ReflexGameImplemented::StartStopwatch()": {
           "Lines": {
-            "37": 4
+            "38": 4
           },
           "Branches": []
         },
         "System.Void reflexes.Model.ReflexGameImplemented::StopStopwatch()": {
           "Lines": {
-            "39": 3
+            "40": 3
           },
           "Branches": []
         },
         "System.TimeSpan reflexes.Model.ReflexGameImplemented::get_TimeElapsed()": {
           "Lines": {
-            "41": 18
+            "42": 18
           },
           "Branches": []
         },
         "System.Boolean reflexes.Model.ReflexGameImplemented::IsInTime()": {
           "Lines": {
-            "43": 2
+            "44": 2
+          },
+          "Branches": []
+        },
+        "System.Void reflexes.Model.ReflexGameImplemented::.ctor()": {
+          "Lines": {
+            "14": 14
           },
           "Branches": []
         }
       }
     },
-    "C:\\Users\\Gustav\\desktop\\2dv610\\reflexes\\reflexes\\Controller\\LevelControllerImplemented.cs": {
+    "C:\\Users\\Gustav\\desktop\\2dv610\\reflexes\\reflexes\\controller\\LevelControllerImplemented.cs": {
       "reflexes.Controller.LevelControllerImplemented": {
         "System.Boolean reflexes.Controller.LevelControllerImplemented::EasyMode()": {
           "Lines": {
@@ -478,7 +484,7 @@
         }
       }
     },
-    "C:\\Users\\Gustav\\desktop\\2dv610\\reflexes\\reflexes\\Controller\\MainController.cs": {
+    "C:\\Users\\Gustav\\desktop\\2dv610\\reflexes\\reflexes\\controller\\MainController.cs": {
       "reflexes.Controller.MainController": {
         "System.Void reflexes.Controller.MainController::RunApplication()": {
           "Lines": {

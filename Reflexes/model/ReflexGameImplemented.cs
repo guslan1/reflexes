@@ -11,10 +11,11 @@ namespace reflexes.Model
 
         private Stopwatch _stopwatch;
         private string _currentChar;
+        private TimeSpan _maxTime = new TimeSpan(0, 0, 3);
 
         public void StartGame(Alphabet alphabet) => _alphabet = alphabet;
 
-        public TimeSpan MaxTime { get; } = new TimeSpan(0, 0, 3);
+        public TimeSpan MaxTime { get { return _maxTime; } set { _maxTime = value; } }
 
         public int WordsLeft() => _alphabet.WordsLeft();
 
