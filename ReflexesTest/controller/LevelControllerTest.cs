@@ -252,5 +252,17 @@ namespace reflexesTest
 
         }
 
+        [Fact]
+        public void Medium_ShouldSetMaxTime()
+        {
+            var mockReflexGame = new Mock<ReflexGame>();
+            var mockConsoleView = new Mock<ConsoleView>();
+
+            var levelController = new LevelControllerImplemented(mockReflexGame.Object, mockConsoleView.Object);
+            levelController.Medium();
+
+            mockReflexGame.VerifySet(game => game.MaxTime = It.IsAny<TimeSpan>(), Times.Once());
+        }
+
     }
 }
