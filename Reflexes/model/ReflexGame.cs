@@ -28,6 +28,8 @@ namespace reflexes.Model
 
         TimeSpan EasyMode { get; }
 
+        TimeSpan MediumMode { get; }
+
         TimeSpan MaxTime { get; set; }
 
         bool IsInTime();
