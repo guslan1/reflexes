@@ -34,6 +34,7 @@ namespace reflexes.Controller
                 switch (nextAction)
                 {
                     case 1:
+                        _reflexGame.StartGame(new AlphabetImplemented());
                         _consoleView.DisplayEasyLevel();
                         while (_levelController.EasyMode());
                         break;
