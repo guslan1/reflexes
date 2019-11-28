@@ -204,7 +204,7 @@ namespace reflexesTest
         }
 
         [Fact]
-        public void HardMode_ShouldGetTwoSecondTimeSpan()
+        public void HardMode_ShouldGetOneSecondTimeSpan()
         {
             var sut = new ReflexGameImplemented();
 
