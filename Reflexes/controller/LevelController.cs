@@ -8,7 +8,7 @@ namespace reflexes.Controller
     {
         bool EasyMode();
 
-        void EasyModee();
+        void Easy();
 
         void Medium();
 

@@ -406,50 +406,60 @@
     },
     "C:\\Users\\Gustav\\desktop\\2dv610\\reflexes\\reflexes\\controller\\LevelControllerImplemented.cs": {
       "reflexes.Controller.LevelControllerImplemented": {
-        "System.Void reflexes.Controller.LevelControllerImplemented::EasyModee()": {
+        "System.Void reflexes.Controller.LevelControllerImplemented::Easy()": {
           "Lines": {
-            "20": 1,
-            "21": 1,
-            "22": 1
+            "19": 2
+          },
+          "Branches": []
+        },
+        "System.Void reflexes.Controller.LevelControllerImplemented::Medium()": {
+          "Lines": {
+            "21": 2
+          },
+          "Branches": []
+        },
+        "System.Void reflexes.Controller.LevelControllerImplemented::Hard()": {
+          "Lines": {
+            "23": 2
           },
           "Branches": []
         },
         "System.Boolean reflexes.Controller.LevelControllerImplemented::EasyMode()": {
           "Lines": {
-            "25": 16,
             "26": 16,
-            "27": 3,
+            "27": 16,
             "28": 3,
             "29": 3,
             "30": 3,
             "31": 3,
-            "34": 13,
+            "32": 3,
             "35": 13,
             "36": 13,
             "37": 13,
-            "39": 13,
+            "38": 13,
             "40": 13,
-            "42": 13,
-            "43": 9,
+            "41": 13,
+            "43": 13,
             "44": 9,
             "45": 9,
             "46": 9,
             "47": 9,
             "48": 9,
-            "51": 4,
-            "52": 3,
+            "49": 9,
+            "52": 4,
             "53": 3,
             "54": 3,
             "55": 3,
             "56": 3,
-            "59": 1,
-            "64": 1,
+            "57": 3,
+            "60": 1,
             "65": 1,
-            "66": 16
+            "66": 1,
+            "67": 16
           },
           "Branches": [
             {
-              "Line": 26,
+              "Line": 27,
               "Offset": 14,
               "EndOffset": 16,
               "Path": 0,
@@ -457,7 +467,7 @@
               "Hits": 3
             },
             {
-              "Line": 26,
+              "Line": 27,
               "Offset": 14,
               "EndOffset": 60,
               "Path": 1,
@@ -465,7 +475,7 @@
               "Hits": 13
             },
             {
-              "Line": 42,
+              "Line": 43,
               "Offset": 148,
               "EndOffset": 150,
               "Path": 0,
@@ -473,7 +483,7 @@
               "Hits": 9
             },
             {
-              "Line": 42,
+              "Line": 43,
               "Offset": 148,
               "EndOffset": 214,
               "Path": 1,
@@ -481,7 +491,7 @@
               "Hits": 4
             },
             {
-              "Line": 51,
+              "Line": 52,
               "Offset": 233,
               "EndOffset": 235,
               "Path": 0,
@@ -489,7 +499,7 @@
               "Hits": 3
             },
             {
-              "Line": 51,
+              "Line": 52,
               "Offset": 233,
               "EndOffset": 287,
               "Path": 1,
@@ -500,11 +510,11 @@
         },
         "System.Void reflexes.Controller.LevelControllerImplemented::.ctor(reflexes.Model.ReflexGame,reflexes.View.ConsoleView)": {
           "Lines": {
-            "13": 19,
-            "14": 19,
-            "15": 19,
-            "16": 19,
-            "17": 19
+            "13": 24,
+            "14": 24,
+            "15": 24,
+            "16": 24,
+            "17": 24
           },
           "Branches": []
         }
