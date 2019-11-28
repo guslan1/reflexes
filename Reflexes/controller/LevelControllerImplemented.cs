@@ -22,7 +22,7 @@ namespace reflexes.Controller
 
         public void Hard() => _reflexGame.MaxTime = _reflexGame.HardMode;
 
-        public bool EasyMode()
+        public bool Play()
         {
             if (_reflexGame.IsGameCompleted())
             {

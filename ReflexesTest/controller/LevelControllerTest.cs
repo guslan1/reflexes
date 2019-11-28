@@ -21,7 +21,7 @@ namespace reflexesTest
         }
 
         [Fact]
-        public void EasyMode_WhenGameIsCompletedGameCompletedIsCalled()
+        public void Play_WhenGameIsCompletedGameCompletedIsCalled()
         {
             var mockReflexGame = new Mock<ReflexGame>();
             var mockConsoleView = new Mock<ConsoleView>();
@@ -29,12 +29,12 @@ namespace reflexesTest
             var levelController = new LevelControllerImplemented(mockReflexGame.Object, mockConsoleView.Object);
             mockReflexGame.Setup(game => game.IsGameCompleted()).Returns(true);
 
-            levelController.EasyMode();
+            levelController.Play();
             mockConsoleView.Verify(view => view.GameCompleted(), Times.Once());
         }
 
         [Fact]
-        public void EasyMode_WhenGameIsCompletedDisplayPressAKeyToContinueIsCalled()
+        public void Play_WhenGameIsCompletedDisplayPressAKeyToContinueIsCalled()
         {
             var mockReflexGame = new Mock<ReflexGame>();
             var mockConsoleView = new Mock<ConsoleView>();
@@ -42,12 +42,12 @@ namespace reflexesTest
             var levelController = new LevelControllerImplemented(mockReflexGame.Object, mockConsoleView.Object);
             mockReflexGame.Setup(game => game.IsGameCompleted()).Returns(true);
 
-            levelController.EasyMode();
+            levelController.Play();
             mockConsoleView.Verify(view => view.DisplayPressAKeyToContinue(), Times.Once());
         }
 
         [Fact]
-        public void EasyMode_WhenGameIsCompletedReadKeyIsCalled()
+        public void Play_WhenGameIsCompletedReadKeyIsCalled()
         {
             var mockReflexGame = new Mock<ReflexGame>();
             var mockConsoleView = new Mock<ConsoleView>();
@@ -55,72 +55,72 @@ namespace reflexesTest
             var levelController = new LevelControllerImplemented(mockReflexGame.Object, mockConsoleView.Object);
             mockReflexGame.Setup(game => game.IsGameCompleted()).Returns(true);
 
-            levelController.EasyMode();
+            levelController.Play();
             mockConsoleView.Verify(view => view.ReadKey(), Times.Once());
         }
 
         [Fact]
-        public void EasyMode_ShouldCallPresentLetterWithGetNewLetterAsArgument()
+        public void Play_ShouldCallPresentLetterWithGetNewLetterAsArgument()
         {
             var mockReflexGame = new Mock<ReflexGame>();
             var mockConsoleView = new Mock<ConsoleView>();
 
             var levelController = new LevelControllerImplemented(mockReflexGame.Object, mockConsoleView.Object);
 
-            levelController.EasyMode();
+            levelController.Play();
             mockConsoleView.Verify(view => view.PresentLetter(mockReflexGame.Object.GetNewLetter()), Times.Once());
         }
 
         [Fact]
-        public void EasyMode_ShouldCallCreateStopwatch()
+        public void Play_ShouldCallCreateStopwatch()
         {
             var mockReflexGame = new Mock<ReflexGame>();
             var mockConsoleView = new Mock<ConsoleView>();
 
             var levelController = new LevelControllerImplemented(mockReflexGame.Object, mockConsoleView.Object);
 
-            levelController.EasyMode();
+            levelController.Play();
             mockReflexGame.Verify(game => game.CreateStopwatch(), Times.Once());
         }
 
         [Fact]
-        public void EasyMode_ShouldCallStartStopwatch()
+        public void Play_ShouldCallStartStopwatch()
         {
             var mockReflexGame = new Mock<ReflexGame>();
             var mockConsoleView = new Mock<ConsoleView>();
 
             var levelController = new LevelControllerImplemented(mockReflexGame.Object, mockConsoleView.Object);
 
-            levelController.EasyMode();
+            levelController.Play();
             mockReflexGame.Verify(game => game.StartStopwatch(), Times.Once());
         }
 
         [Fact]
-        public void EasyMode_ShouldCallGetInput()
+        public void Play_ShouldCallGetInput()
         {
             var mockReflexGame = new Mock<ReflexGame>();
             var mockConsoleView = new Mock<ConsoleView>();
 
             var levelController = new LevelControllerImplemented(mockReflexGame.Object, mockConsoleView.Object);
 
-            levelController.EasyMode();
+            levelController.Play();
             mockConsoleView.Verify(view => view.GetInput(), Times.Once());
         }
 
         [Fact]
-        public void EasyMode_ShouldCallStopStopwatch()
+        public void Play_ShouldCallStopStopwatch()
         {
             var mockReflexGame = new Mock<ReflexGame>();
             var mockConsoleView = new Mock<ConsoleView>();
 
             var levelController = new LevelControllerImplemented(mockReflexGame.Object, mockConsoleView.Object);
 
-            levelController.EasyMode();
+            levelController.Play();
             mockReflexGame.Verify(game => game.StopStopwatch(), Times.Once());
         }
 
         [Fact]
-        public void EasyMode_WhenNotInTimeTooLongTimeIsCalled()
+        public void Play_WhenNotInTimeTooLongTimeIsCalled()
         {
             var mockReflexGame = new Mock<ReflexGame>();
             var mockConsoleView = new Mock<ConsoleView>();
@@ -128,12 +128,12 @@ namespace reflexesTest
             var levelController = new LevelControllerImplemented(mockReflexGame.Object, mockConsoleView.Object);
             mockReflexGame.Setup(game => game.IsInTime()).Returns(false);
 
-            levelController.EasyMode();
+            levelController.Play();
             mockConsoleView.Verify(view => view.TooLongTime(), Times.Once());
         }
 
         [Fact]
-        public void EasyMode_WhenNotInTimeGameOverIsCalledWithWordsLeftAsArgument()
+        public void Play_WhenNotInTimeGameOverIsCalledWithWordsLeftAsArgument()
         {
             var mockReflexGame = new Mock<ReflexGame>();
             var mockConsoleView = new Mock<ConsoleView>();
@@ -141,12 +141,12 @@ namespace reflexesTest
             var levelController = new LevelControllerImplemented(mockReflexGame.Object, mockConsoleView.Object);
             mockReflexGame.Setup(game => game.IsInTime()).Returns(false);
 
-            levelController.EasyMode();
+            levelController.Play();
             mockConsoleView.Verify(view => view.GameOver(mockReflexGame.Object.WordsLeft()), Times.Once());
         }
 
         [Fact]
-        public void EasyMode_WhenNotInTimeDisplayPressAKeyToContinueIsCalled()
+        public void Play_WhenNotInTimeDisplayPressAKeyToContinueIsCalled()
         {
             var mockReflexGame = new Mock<ReflexGame>();
             var mockConsoleView = new Mock<ConsoleView>();
@@ -154,12 +154,12 @@ namespace reflexesTest
             var levelController = new LevelControllerImplemented(mockReflexGame.Object, mockConsoleView.Object);
             mockReflexGame.Setup(game => game.IsInTime()).Returns(false);
 
-            levelController.EasyMode();
+            levelController.Play();
             mockConsoleView.Verify(view => view.DisplayPressAKeyToContinue(), Times.Once());
         }
 
         [Fact]
-        public void EasyMode_WhenNotInTimeReadKeyIsCalled()
+        public void Play_WhenNotInTimeReadKeyIsCalled()
         {
             var mockReflexGame = new Mock<ReflexGame>();
             var mockConsoleView = new Mock<ConsoleView>();
@@ -167,12 +167,12 @@ namespace reflexesTest
             var levelController = new LevelControllerImplemented(mockReflexGame.Object, mockConsoleView.Object);
             mockReflexGame.Setup(game => game.IsInTime()).Returns(false);
 
-            levelController.EasyMode();
+            levelController.Play();
             mockConsoleView.Verify(view => view.ReadKey(), Times.Once());
         }
 
         [Fact]
-        public void EasyMode_IfNotCorrectInputGameOverIsCalled()
+        public void Play_IfNotCorrectInputGameOverIsCalled()
         {
             var mockReflexGame = new Mock<ReflexGame>();
             var mockConsoleView = new Mock<ConsoleView>();
@@ -181,12 +181,12 @@ namespace reflexesTest
             mockReflexGame.Setup(game => game.IsInTime()).Returns(true);
             mockReflexGame.Setup(game => game.IsCorrectInput(mockConsoleView.Object.GetInput())).Returns(false);
 
-            levelController.EasyMode();
+            levelController.Play();
             mockConsoleView.Verify(view => view.GameOver(mockReflexGame.Object.WordsLeft()), Times.Once());
         }
 
         [Fact]
-        public void EasyMode_IfNotCorrectInputDisplayPressAKeyToContinueIsCalled()
+        public void Play_IfNotCorrectInputDisplayPressAKeyToContinueIsCalled()
         {
             var mockReflexGame = new Mock<ReflexGame>();
             var mockConsoleView = new Mock<ConsoleView>();
@@ -195,12 +195,12 @@ namespace reflexesTest
             mockReflexGame.Setup(game => game.IsInTime()).Returns(true);
             mockReflexGame.Setup(game => game.IsCorrectInput(mockConsoleView.Object.GetInput())).Returns(false);
 
-            levelController.EasyMode();
+            levelController.Play();
             mockConsoleView.Verify(view => view.DisplayPressAKeyToContinue(), Times.Once());
         }
 
         [Fact]
-        public void EasyMode_IfNotCorrectInputReadKeyIsCalled()
+        public void Play_IfNotCorrectInputReadKeyIsCalled()
         {
             var mockReflexGame = new Mock<ReflexGame>();
             var mockConsoleView = new Mock<ConsoleView>();
@@ -209,12 +209,12 @@ namespace reflexesTest
             mockReflexGame.Setup(game => game.IsInTime()).Returns(true);
             mockReflexGame.Setup(game => game.IsCorrectInput(mockConsoleView.Object.GetInput())).Returns(false);
 
-            levelController.EasyMode();
+            levelController.Play();
             mockConsoleView.Verify(view => view.ReadKey(), Times.Once());
         }
 
         [Fact]
-        public void EasyMode_IfCorrectInputInTimeRemoveLetterFromAlphabetIsCalled()
+        public void Play_IfCorrectInputInTimeRemoveLetterFromAlphabetIsCalled()
         {
             var mockReflexGame = new Mock<ReflexGame>();
             var mockConsoleView = new Mock<ConsoleView>();
@@ -223,7 +223,7 @@ namespace reflexesTest
             mockReflexGame.Setup(game => game.IsInTime()).Returns(true);
             mockReflexGame.Setup(game => game.IsCorrectInput(mockConsoleView.Object.GetInput())).Returns(true);
 
-            levelController.EasyMode();
+            levelController.Play();
             mockReflexGame.Verify(game => game.RemoveLetterFromAlphabet(), Times.Once());
         }
 

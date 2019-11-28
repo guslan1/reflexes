@@ -424,7 +424,7 @@
           },
           "Branches": []
         },
-        "System.Boolean reflexes.Controller.LevelControllerImplemented::EasyMode()": {
+        "System.Boolean reflexes.Controller.LevelControllerImplemented::Play()": {
           "Lines": {
             "26": 16,
             "27": 16,

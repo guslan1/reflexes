@@ -141,11 +141,11 @@ namespace reflexesTest
             var mockLevelController = new Mock<LevelController>();
 
             var mainController = new MainController(mockReflexGame.Object, mockConsoleView.Object, mockLevelController.Object);
-            mockLevelController.SetupSequence(levelController => levelController.EasyMode()).Returns(true).Returns(false);
+            mockLevelController.SetupSequence(levelController => levelController.Play()).Returns(true).Returns(false);
             mockConsoleView.SetupSequence(view => view.GetAction()).Returns(1).Returns(4);
 
             mainController.RunApplication();
-            mockLevelController.Verify(levelcontroller => levelcontroller.EasyMode(), Times.AtLeastOnce());
+            mockLevelController.Verify(levelcontroller => levelcontroller.Play(), Times.AtLeastOnce());
         }
 
         [Fact]
