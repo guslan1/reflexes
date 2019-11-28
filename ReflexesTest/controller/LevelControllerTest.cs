@@ -228,25 +228,25 @@ namespace reflexesTest
         }
 
         [Fact]
-        public void EasyModee_ShouldSetMaxTime()
+        public void Easy_ShouldSetMaxTime()
         {
             var mockReflexGame = new Mock<ReflexGame>();
             var mockConsoleView = new Mock<ConsoleView>();
 
             var levelController = new LevelControllerImplemented(mockReflexGame.Object, mockConsoleView.Object);
-            levelController.EasyModee();
+            levelController.Easy();
 
             mockReflexGame.VerifySet(game => game.MaxTime = It.IsAny<TimeSpan>(), Times.Once());
         }
 
         [Fact]
-        public void EasyModee_ShouldGetEasyMode()
+        public void Easy_ShouldGetEasyMode()
         {
             var mockReflexGame = new Mock<ReflexGame>();
             var mockConsoleView = new Mock<ConsoleView>();
 
             var levelController = new LevelControllerImplemented(mockReflexGame.Object, mockConsoleView.Object);
-            levelController.EasyModee();
+            levelController.Easy();
 
             mockReflexGame.VerifyGet(game => game.EasyMode);
         }

@@ -16,15 +16,9 @@ namespace reflexes.Controller
             _consoleView = consoleView;
         }
 
-        public void EasyModee()
-        {
-            _reflexGame.MaxTime = _reflexGame.EasyMode;
-        }
+        public void Easy() => _reflexGame.MaxTime = _reflexGame.EasyMode;
 
-        public void Medium()
-        {
-            _reflexGame.MaxTime = _reflexGame.MediumMode;
-        }
+        public void Medium() => _reflexGame.MaxTime = _reflexGame.MediumMode;
 
         public void Hard() => _reflexGame.MaxTime = _reflexGame.HardMode;
 
