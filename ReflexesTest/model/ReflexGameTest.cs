@@ -192,6 +192,16 @@ namespace reflexesTest
             Assert.Equal(expected, actual);
         }
 
+        [Fact]
+        public void MediumMode_ShouldGetTwoSecondTimeSpan()
+        {
+            var sut = new ReflexGameImplemented();
+
+            var actual = sut.MediumMode;
+            var expected = new TimeSpan(0, 0, 2);
+
+            Assert.Equal(expected, actual);
+        }
 
     }
 }
