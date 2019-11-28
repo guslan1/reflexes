@@ -28,6 +28,7 @@ namespace reflexes.Controller
             {
                 _consoleView.DisplayGreetingMessage();
                 _consoleView.DisplayMenuChoices();
+                _consoleView.DisplayLevelSelection();
                 nextAction = _consoleView.GetAction();
 
                 switch (nextAction)
