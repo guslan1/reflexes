@@ -35,7 +35,7 @@ namespace reflexes.Controller
                 {
                     case 1:
                         _consoleView.DisplayEasyLevel();
-                        while (_levelController.EasyMode()) ;
+                        while (_levelController.EasyMode());
                         break;
                     case 2:
                         _consoleView.DisplayEasyLevel();
