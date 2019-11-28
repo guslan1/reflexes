@@ -41,6 +41,7 @@ namespace reflexes.Controller
                         keepGoing = false;
                         break;
                     default:
+                        _consoleView.DisplayLevelSelectionClarification();
                         break;
                 }
 
