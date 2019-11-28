@@ -31,6 +31,7 @@ namespace reflexes.Controller
                 switch (nextAction)
                 {
                     case 1:
+                        _consoleView.DisplayEasyLevel();
                         break;
                     case 2:
                         break;
