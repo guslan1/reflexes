@@ -203,5 +203,16 @@ namespace reflexesTest
             Assert.Equal(expected, actual);
         }
 
+        [Fact]
+        public void HardMode_ShouldGetTwoSecondTimeSpan()
+        {
+            var sut = new ReflexGameImplemented();
+
+            var actual = sut.HardMode;
+            var expected = new TimeSpan(0, 0, 1);
+
+            Assert.Equal(expected, actual);
+        }
+
     }
 }
