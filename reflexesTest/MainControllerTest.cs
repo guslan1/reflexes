@@ -120,5 +120,19 @@ namespace reflexesTest
             mockConsoleView.Verify(view => view.DisplayMenuChoices(), Times.Once());
         }
 
+        [Fact]
+        public void RunApplication_ShouldCallDisplayLevelSelection()
+        {
+            var mockReflexGame = new Mock<ReflexGame>();
+            var mockConsoleView = new Mock<ConsoleView>();
+            var mockLevelController = new Mock<LevelController>();
+
+            var mainController = new MainController(mockReflexGame.Object, mockConsoleView.Object, mockLevelController.Object);
+            mockConsoleView.Setup(view => view.GetAction()).Returns(4);
+
+            mainController.RunApplication();
+            mockConsoleView.Verify(view => view.DisplayLevelSelection(), Times.Once());
+        }
+
     }
 }
