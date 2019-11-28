@@ -7,5 +7,7 @@ namespace reflexes.Controller
     public interface LevelController
     {
         bool EasyMode();
+
+        void EasyModee();
     }
 }
