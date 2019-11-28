@@ -287,5 +287,17 @@ namespace reflexesTest
             mockReflexGame.VerifySet(game => game.MaxTime = It.IsAny<TimeSpan>(), Times.Once());
         }
 
+        [Fact]
+        public void Hard_ShouldGetHard()
+        {
+            var mockReflexGame = new Mock<ReflexGame>();
+            var mockConsoleView = new Mock<ConsoleView>();
+
+            var levelController = new LevelControllerImplemented(mockReflexGame.Object, mockConsoleView.Object);
+            levelController.Hard();
+
+            mockReflexGame.VerifyGet(game => game.HardMode);
+        }
+
     }
 }
