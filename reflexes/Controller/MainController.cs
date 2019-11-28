@@ -42,6 +42,7 @@ namespace reflexes.Controller
                         break;
                     default:
                         _consoleView.DisplayLevelSelectionClarification();
+                        _consoleView.DisplayPressAKeyToContinue();
                         break;
                 }
 
