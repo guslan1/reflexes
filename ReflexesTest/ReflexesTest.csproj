@@ -27,7 +27,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\reflexes\reflexes.csproj" />
+    <ProjectReference Include="..\reflexes\Reflexes.csproj" />
   </ItemGroup>
 
 </Project>

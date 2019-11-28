@@ -1,5 +1,5 @@
 {
-  "reflexes.dll": {
+  "Reflexes.dll": {
     "C:\\Users\\Gustav\\desktop\\2dv610\\reflexes\\reflexes\\View\\ConsoleViewImplemented.cs": {
       "reflexes.View.ConsoleViewImplemented": {
         "System.Void reflexes.View.ConsoleViewImplemented::DisplayGreetingMessage()": {
