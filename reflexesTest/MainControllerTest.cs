@@ -35,7 +35,6 @@ namespace reflexesTest
             mockConsoleView.Verify(view => view.GetAction(), Times.Once());
         }
 
-
         [Fact]
         public void RunApplication_ShouldCallDisplayEasyLevel()
         {
@@ -142,11 +141,14 @@ namespace reflexesTest
             var mockLevelController = new Mock<LevelController>();
 
             var mainController = new MainController(mockReflexGame.Object, mockConsoleView.Object, mockLevelController.Object);
+            mockLevelController.SetupSequence(levelController => levelController.EasyMode()).Returns(true).Returns(false);
             mockConsoleView.SetupSequence(view => view.GetAction()).Returns(1).Returns(4);
 
             mainController.RunApplication();
-            mockLevelController.Verify(levelcontroller => levelcontroller.EasyMode(), Times.Once());
+            mockLevelController.Verify(levelcontroller => levelcontroller.EasyMode(), Times.AtLeastOnce());
         }
+
+    
 
 
     }
