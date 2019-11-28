@@ -181,6 +181,17 @@ namespace reflexesTest
             Assert.False(sut.IsInTime());
         }
 
+        [Fact]
+        public void EasyMode_ShouldGetThreeSecondTimeSpan()
+        {
+            var sut = new ReflexGameImplemented();
+
+            var actual = sut.EasyMode;
+            var expected = new TimeSpan(0, 0, 3);
+
+            Assert.Equal(expected, actual);
+        }
+
 
     }
 }

@@ -8,10 +8,11 @@ namespace reflexes.Model
     public class ReflexGameImplemented : ReflexGame
     {
         private Alphabet _alphabet;
-
         private Stopwatch _stopwatch;
         private string _currentChar;
         private TimeSpan _maxTime = new TimeSpan(0, 0, 3);
+
+        public TimeSpan EasyMode => new TimeSpan(0, 0, 3);
 
         public void StartGame(Alphabet alphabet) => _alphabet = alphabet;
 
