@@ -16,6 +16,8 @@ namespace reflexes.Model
 
         public TimeSpan MediumMode => new TimeSpan(0, 0, 2);
 
+        public TimeSpan HardMode => new TimeSpan(0, 0, 1);
+
         public void StartGame(Alphabet alphabet) => _alphabet = alphabet;
 
         public TimeSpan MaxTime { get { return _maxTime; } set { _maxTime = value; } }
