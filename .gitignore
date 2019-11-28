@@ -3,6 +3,13 @@
 ##
 ## Get latest from https://github.com/github/gitignore/blob/master/VisualStudio.gitignore
 
+# Bin & Obj folders
+bin/
+obj/
+
+# Xunit files
+.xunit.runner.json
+
 # User-specific files
 *.rsuser
 *.suo
