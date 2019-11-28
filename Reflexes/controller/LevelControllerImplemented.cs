@@ -21,6 +21,11 @@ namespace reflexes.Controller
             _reflexGame.MaxTime = _reflexGame.EasyMode;
         }
 
+        public void Medium()
+        {
+            _reflexGame.MaxTime = _reflexGame.MediumMode;
+        }
+
         public bool EasyMode()
         {
             if (_reflexGame.IsGameCompleted())
