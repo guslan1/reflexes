@@ -10,6 +10,8 @@ namespace reflexes.View
 
         void DisplayEasyLevel();
 
+        void DisplayMediumLevel();
+
         void DisplayMenuChoices();
 
         void DisplayLevelSelectionClarification();

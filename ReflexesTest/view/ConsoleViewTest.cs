@@ -50,7 +50,6 @@ namespace reflexesTest
                 var sut = new ConsoleViewImplemented();
                 sut.DisplayMediumLevel();
 
-
                 string expected = sut._mediumLevelMessage + "\r\n\r\n";
                 Assert.Equal(expected, sw.ToString());
                 sw.Close();
