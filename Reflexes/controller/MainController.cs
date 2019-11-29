@@ -37,7 +37,6 @@ namespace reflexes.Controller
                         break;
                     case 2:
                         _reflexGame.StartGame(new AlphabetImplemented());
-                        _consoleView.DisplayMediumLevel();
                         _levelController.Medium();
                         while (_levelController.Play()) ;
                         break;
@@ -58,7 +57,5 @@ namespace reflexes.Controller
 
             }
         }
-
-
     }
 }
