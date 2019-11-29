@@ -171,18 +171,18 @@
       "reflexes.Model.AlphabetImplemented": {
         "System.Collections.Generic.List`1<System.String> reflexes.Model.AlphabetImplemented::RandomAlphabet(System.Collections.Generic.List`1<System.String>)": {
           "Lines": {
-            "17": 18,
-            "18": 18,
-            "19": 18,
-            "20": 18,
-            "22": 468,
-            "23": 450,
-            "24": 450,
-            "25": 450,
-            "26": 450,
-            "27": 450,
-            "28": 18,
-            "29": 18
+            "17": 19,
+            "18": 19,
+            "19": 19,
+            "20": 19,
+            "22": 494,
+            "23": 475,
+            "24": 475,
+            "25": 475,
+            "26": 475,
+            "27": 475,
+            "28": 19,
+            "29": 19
           },
           "Branches": [
             {
@@ -191,7 +191,7 @@
               "EndOffset": 17,
               "Path": 1,
               "Ordinal": 1,
-              "Hits": 450
+              "Hits": 475
             },
             {
               "Line": 22,
@@ -199,20 +199,20 @@
               "EndOffset": 68,
               "Path": 0,
               "Ordinal": 0,
-              "Hits": 18
+              "Hits": 19
             }
           ]
         },
         "System.Collections.Generic.List`1<System.String> reflexes.Model.AlphabetImplemented::AlphabetList()": {
           "Lines": {
-            "32": 18,
-            "33": 18,
-            "34": 954,
-            "35": 450,
-            "36": 450,
-            "37": 450,
-            "38": 18,
-            "39": 18
+            "32": 19,
+            "33": 19,
+            "34": 1007,
+            "35": 475,
+            "36": 475,
+            "37": 475,
+            "38": 19,
+            "39": 19
           },
           "Branches": [
             {
@@ -221,7 +221,7 @@
               "EndOffset": 21,
               "Path": 1,
               "Ordinal": 1,
-              "Hits": 450
+              "Hits": 475
             },
             {
               "Line": 34,
@@ -229,83 +229,53 @@
               "EndOffset": 45,
               "Path": 0,
               "Ordinal": 0,
-              "Hits": 18
+              "Hits": 19
             }
           ]
         },
-        "System.Int32 reflexes.Model.AlphabetImplemented::WordsLeft()": {
+        "System.Collections.Generic.IReadOnlyList`1<System.String> reflexes.Model.AlphabetImplemented::get_GetAlphabet()": {
           "Lines": {
-            "42": 2,
-            "43": 2,
-            "44": 2
+            "41": 5
           },
           "Branches": []
         },
         "System.Boolean reflexes.Model.AlphabetImplemented::IsAlphabetEmpty()": {
           "Lines": {
-            "47": 2,
-            "48": 2,
-            "49": 1,
-            "50": 1,
-            "52": 1,
-            "53": 2
-          },
-          "Branches": [
-            {
-              "Line": 48,
-              "Offset": 17,
-              "EndOffset": 19,
-              "Path": 0,
-              "Ordinal": 0,
-              "Hits": 1
-            },
-            {
-              "Line": 48,
-              "Offset": 17,
-              "EndOffset": 24,
-              "Path": 1,
-              "Ordinal": 1,
-              "Hits": 1
-            }
-          ]
-        },
-        "System.Void reflexes.Model.AlphabetImplemented::RemoveLetter()": {
-          "Lines": {
-            "56": 2,
-            "57": 2,
-            "58": 2
-          },
-          "Branches": []
-        },
-        "System.Collections.Generic.IReadOnlyList`1<System.String> reflexes.Model.AlphabetImplemented::get_GetAlphabet()": {
-          "Lines": {
-            "62": 12
-          },
-          "Branches": []
-        },
-        "System.Void reflexes.Model.AlphabetImplemented::ClearAlphabet()": {
-          "Lines": {
-            "66": 1,
-            "67": 1,
-            "68": 1
+            "46": 2
           },
           "Branches": []
         },
         "System.String reflexes.Model.AlphabetImplemented::GetLetter()": {
           "Lines": {
-            "71": 2,
-            "72": 2,
-            "73": 2
+            "48": 2
+          },
+          "Branches": []
+        },
+        "System.Int32 reflexes.Model.AlphabetImplemented::WordsLeft()": {
+          "Lines": {
+            "50": 2
+          },
+          "Branches": []
+        },
+        "System.Void reflexes.Model.AlphabetImplemented::RemoveLetter()": {
+          "Lines": {
+            "52": 2
+          },
+          "Branches": []
+        },
+        "System.Void reflexes.Model.AlphabetImplemented::ClearAlphabetForTestOnly()": {
+          "Lines": {
+            "54": 1
           },
           "Branches": []
         },
         "System.Void reflexes.Model.AlphabetImplemented::.ctor()": {
           "Lines": {
-            "8": 18,
-            "11": 18,
-            "12": 18,
-            "13": 18,
-            "14": 18
+            "8": 19,
+            "11": 19,
+            "12": 19,
+            "13": 19,
+            "14": 19
           },
           "Branches": []
         }

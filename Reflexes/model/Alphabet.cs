@@ -4,16 +4,17 @@ namespace reflexes.Model
 {
     public interface Alphabet
     {
-        int WordsLeft();
-
-        bool IsAlphabetEmpty();
-
-        void RemoveLetter();
 
         IReadOnlyList<string> GetAlphabet { get; }
 
-        void ClearAlphabet();
+        bool IsAlphabetEmpty();
 
         string GetLetter();
+
+        int WordsLeft();
+
+        void RemoveLetter();
+
+        void ClearAlphabetForTestOnly();
     }
 }

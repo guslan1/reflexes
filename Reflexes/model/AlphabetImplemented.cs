@@ -38,39 +38,16 @@ namespace reflexes.Model
             return alphabetList;
         }
 
-        public int WordsLeft()
-        {
-            return _randomAlphabet.Count;
-        }
+        public IReadOnlyList<string> GetAlphabet => _randomAlphabet.AsReadOnly();
 
-        public bool IsAlphabetEmpty()
-        {
-            if (GetAlphabet.Count == 0)
-            {
-                return true;
-            }
-            return false;
-        }
+        public bool IsAlphabetEmpty() => GetAlphabet.Count == 0;
 
-        public void RemoveLetter()
-        {
-            _randomAlphabet.RemoveAt(0);
-        }
+        public string GetLetter() => _randomAlphabet[0];
 
-        public IReadOnlyList<string> GetAlphabet
-        {
-            get { return _randomAlphabet.AsReadOnly(); }
-        }
+        public int WordsLeft() => _randomAlphabet.Count;
 
-        public void ClearAlphabet()
-        {
-            _randomAlphabet.Clear();
-        }
+        public void RemoveLetter() => _randomAlphabet.RemoveAt(0);
 
-        public string GetLetter()
-        {
-            return _randomAlphabet[0];
-        }
-
+        public void ClearAlphabetForTestOnly() => _randomAlphabet.Clear();
     }
 }
