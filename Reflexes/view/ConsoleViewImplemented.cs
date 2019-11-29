@@ -13,6 +13,7 @@ namespace reflexes.View
         internal string _selectLevelClarificationMessage = "\n MAKE A SELECTION! 0 to 4.\n";
         internal string _easyLevelMessage = "\n PLAYING EASY LEVEL! \n";
         internal string _mediumLevelMessage = "\n PLAYING MEDIUM LEVEL! \n";
+        internal string _hardLevelMessage = "\n PLAYING HARD LEVEL! \n";
         internal string _gameCompleted = "You win! Game completed.";
         internal string _gameOver1 = "You lost with ";
         internal string _gameOver2 = " characters remaining.";
@@ -38,6 +39,12 @@ namespace reflexes.View
         public void DisplayMediumLevel()
         {
             Console.WriteLine(_mediumLevelMessage);
+            Console.WriteLine("");
+        }
+
+        public void DisplayHardLevel()
+        {
+            Console.WriteLine(_hardLevelMessage);
             Console.WriteLine("");
         }
 

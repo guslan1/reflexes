@@ -12,6 +12,8 @@ namespace reflexes.View
 
         void DisplayMediumLevel();
 
+        void DisplayHardLevel();
+
         void DisplayMenuChoices();
 
         void DisplayLevelSelectionClarification();
