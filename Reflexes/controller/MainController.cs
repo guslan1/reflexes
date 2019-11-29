@@ -48,7 +48,7 @@ namespace reflexes.Controller
                         while (_levelController.Play()) ;
                         break;
                     case 4:
-
+                        keepGoing = false;
                         break;
                     default:
                         _consoleView.DisplayLevelSelectionClarification();
