@@ -36,7 +36,7 @@ namespace reflexesTest
         }
 
         [Fact]
-        public void RunApplication_ShouldCallDisplayEasyLevel()
+        public void RunApplication_CaseOneShouldCallDisplayEasyLevel()
         {
             var mockReflexGame = new Mock<ReflexGame>();
             var mockConsoleView = new Mock<ConsoleView>();
@@ -134,7 +134,7 @@ namespace reflexesTest
         }
 
         [Fact]
-        public void RunApplication_ShouldCallEasyMode()
+        public void RunApplication_CaseOneShouldCallPlay()
         {
             var mockReflexGame = new Mock<ReflexGame>();
             var mockConsoleView = new Mock<ConsoleView>();
@@ -177,7 +177,7 @@ namespace reflexesTest
         }
 
         [Fact]
-        public void RunApplication_ShouldCallStartGameWithAlphabetImplementedAsArgument()
+        public void RunApplication_CaseOneShouldCallStartGameWithAlphabetImplementedAsArgument()
         {
             var mockReflexGame = new Mock<ReflexGame>();
             var mockConsoleView = new Mock<ConsoleView>();
