@@ -9,7 +9,6 @@ namespace reflexesTest
 {
     public class LevelControllerTest
     {
-
         [Fact]
         public void LevelController_NewLevelControllerShouldReturnLevelController()
         {
@@ -18,6 +17,78 @@ namespace reflexesTest
             var controller = new LevelControllerImplemented(reflexGame, consoleView);
 
             Assert.IsType<LevelControllerImplemented>(controller);
+        }
+
+        [Fact]
+        public void Easy_ShouldSetMaxTime()
+        {
+            var mockReflexGame = new Mock<ReflexGame>();
+            var mockConsoleView = new Mock<ConsoleView>();
+
+            var levelController = new LevelControllerImplemented(mockReflexGame.Object, mockConsoleView.Object);
+            levelController.Easy();
+
+            mockReflexGame.VerifySet(game => game.MaxTime = It.IsAny<TimeSpan>(), Times.Once());
+        }
+
+        [Fact]
+        public void Easy_ShouldGetEasyMode()
+        {
+            var mockReflexGame = new Mock<ReflexGame>();
+            var mockConsoleView = new Mock<ConsoleView>();
+
+            var levelController = new LevelControllerImplemented(mockReflexGame.Object, mockConsoleView.Object);
+            levelController.Easy();
+
+            mockReflexGame.VerifyGet(game => game.EasyMode);
+        }
+
+        [Fact]
+        public void Medium_ShouldSetMaxTime()
+        {
+            var mockReflexGame = new Mock<ReflexGame>();
+            var mockConsoleView = new Mock<ConsoleView>();
+
+            var levelController = new LevelControllerImplemented(mockReflexGame.Object, mockConsoleView.Object);
+            levelController.Medium();
+
+            mockReflexGame.VerifySet(game => game.MaxTime = It.IsAny<TimeSpan>(), Times.Once());
+        }
+
+        [Fact]
+        public void Medium_ShouldGetMediumMode()
+        {
+            var mockReflexGame = new Mock<ReflexGame>();
+            var mockConsoleView = new Mock<ConsoleView>();
+
+            var levelController = new LevelControllerImplemented(mockReflexGame.Object, mockConsoleView.Object);
+            levelController.Medium();
+
+            mockReflexGame.VerifyGet(game => game.MediumMode);
+        }
+
+        [Fact]
+        public void Hard_ShouldSetMaxTime()
+        {
+            var mockReflexGame = new Mock<ReflexGame>();
+            var mockConsoleView = new Mock<ConsoleView>();
+
+            var levelController = new LevelControllerImplemented(mockReflexGame.Object, mockConsoleView.Object);
+            levelController.Hard();
+
+            mockReflexGame.VerifySet(game => game.MaxTime = It.IsAny<TimeSpan>(), Times.Once());
+        }
+
+        [Fact]
+        public void Hard_ShouldGetHardMode()
+        {
+            var mockReflexGame = new Mock<ReflexGame>();
+            var mockConsoleView = new Mock<ConsoleView>();
+
+            var levelController = new LevelControllerImplemented(mockReflexGame.Object, mockConsoleView.Object);
+            levelController.Hard();
+
+            mockReflexGame.VerifyGet(game => game.HardMode);
         }
 
         [Fact]
@@ -172,7 +243,7 @@ namespace reflexesTest
         }
 
         [Fact]
-        public void Play_IfNotCorrectInputGameOverIsCalled()
+        public void Play_IfNotCorrectInputGameOverIsCalledWithWordsLeftAsArgument()
         {
             var mockReflexGame = new Mock<ReflexGame>();
             var mockConsoleView = new Mock<ConsoleView>();
@@ -226,78 +297,5 @@ namespace reflexesTest
             levelController.Play();
             mockReflexGame.Verify(game => game.RemoveLetterFromAlphabet(), Times.Once());
         }
-
-        [Fact]
-        public void Easy_ShouldSetMaxTime()
-        {
-            var mockReflexGame = new Mock<ReflexGame>();
-            var mockConsoleView = new Mock<ConsoleView>();
-
-            var levelController = new LevelControllerImplemented(mockReflexGame.Object, mockConsoleView.Object);
-            levelController.Easy();
-
-            mockReflexGame.VerifySet(game => game.MaxTime = It.IsAny<TimeSpan>(), Times.Once());
-        }
-
-        [Fact]
-        public void Easy_ShouldGetEasyMode()
-        {
-            var mockReflexGame = new Mock<ReflexGame>();
-            var mockConsoleView = new Mock<ConsoleView>();
-
-            var levelController = new LevelControllerImplemented(mockReflexGame.Object, mockConsoleView.Object);
-            levelController.Easy();
-
-            mockReflexGame.VerifyGet(game => game.EasyMode);
-        }
-
-        [Fact]
-        public void Medium_ShouldSetMaxTime()
-        {
-            var mockReflexGame = new Mock<ReflexGame>();
-            var mockConsoleView = new Mock<ConsoleView>();
-
-            var levelController = new LevelControllerImplemented(mockReflexGame.Object, mockConsoleView.Object);
-            levelController.Medium();
-
-            mockReflexGame.VerifySet(game => game.MaxTime = It.IsAny<TimeSpan>(), Times.Once());
-        }
-
-        [Fact]
-        public void Medium_ShouldGetMedium()
-        {
-            var mockReflexGame = new Mock<ReflexGame>();
-            var mockConsoleView = new Mock<ConsoleView>();
-
-            var levelController = new LevelControllerImplemented(mockReflexGame.Object, mockConsoleView.Object);
-            levelController.Medium();
-
-            mockReflexGame.VerifyGet(game => game.MediumMode);
-        }
-
-        [Fact]
-        public void Hard_ShouldSetMaxTime()
-        {
-            var mockReflexGame = new Mock<ReflexGame>();
-            var mockConsoleView = new Mock<ConsoleView>();
-
-            var levelController = new LevelControllerImplemented(mockReflexGame.Object, mockConsoleView.Object);
-            levelController.Hard();
-
-            mockReflexGame.VerifySet(game => game.MaxTime = It.IsAny<TimeSpan>(), Times.Once());
-        }
-
-        [Fact]
-        public void Hard_ShouldGetHard()
-        {
-            var mockReflexGame = new Mock<ReflexGame>();
-            var mockConsoleView = new Mock<ConsoleView>();
-
-            var levelController = new LevelControllerImplemented(mockReflexGame.Object, mockConsoleView.Object);
-            levelController.Hard();
-
-            mockReflexGame.VerifyGet(game => game.HardMode);
-        }
-
     }
 }

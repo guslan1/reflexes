@@ -1,5 +1,4 @@
-﻿using System;
-using reflexes.Model;
+﻿using reflexes.Model;
 using reflexes.View;
 
 namespace reflexes.Controller
