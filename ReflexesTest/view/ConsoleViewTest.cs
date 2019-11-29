@@ -57,6 +57,22 @@ namespace reflexesTest
         }
 
         [Fact]
+        public void DisplayEasyLevel_ShouldDisplayHardLevel()
+        {
+            using (StringWriter sw = new StringWriter())
+            {
+                Console.SetOut(sw);
+
+                var sut = new ConsoleViewImplemented();
+                sut.DisplayHardLevel();
+
+                string expected = sut._hardLevelMessage + "\r\n\r\n";
+                Assert.Equal(expected, sw.ToString());
+                sw.Close();
+            }
+        }
+
+        [Fact]
         public void DisplayMenuChoices_ShouldDisplayMenuChoices()
         {
             using (StringWriter sw = new StringWriter())
