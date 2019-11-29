@@ -8,6 +8,13 @@ namespace reflexesTest
     public class ConsoleViewTest
     {
         [Fact]
+        public void ConsoleView_NewConsoleViewShouldReturnConsoleView()
+        {
+            var view = new ConsoleViewImplemented();
+            Assert.IsType<ConsoleViewImplemented>(view);
+        }
+
+        [Fact]
         public void DisplayGreetingMessage_ShouldDisplayGreetingMessage()
         {
             using (StringWriter sw = new StringWriter())

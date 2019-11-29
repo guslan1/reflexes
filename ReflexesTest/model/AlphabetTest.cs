@@ -8,6 +8,13 @@ namespace reflexesTest
     public class AlphabetTest
     {
         [Fact]
+        public void Alphabet_NewAlphabetShouldReturnAlphabet()
+        {
+            var alphabet = new AlphabetImplemented();
+            Assert.IsType<AlphabetImplemented>(alphabet);
+        }
+
+        [Fact]
         public void GetAlphabet_ShouldReturnCompleteAlphabet()
         {
             AlphabetImplemented sut = new AlphabetImplemented();
