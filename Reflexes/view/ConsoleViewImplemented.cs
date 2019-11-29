@@ -7,28 +7,44 @@ namespace reflexes.View
 {
     public class ConsoleViewImplemented : ConsoleView
     {
-        internal string _greeting = "Welcome to Reflexes!";
-        internal string _greetingInstructions = "Pick a level to start training your reflexes.";
+        internal string _greetingMessage = "Welcome to Reflexes!";
+        internal string _greetingInstructionsMessage = "Time to start training your reflexes.";
+        internal string[] _menuChoices = new string[] { "1. Easy", "2. Medium", "3. Hard", "4. Exit" };
         internal string _selectLevelMessage = "Select a level to start playing : ";
         internal string _selectLevelClarificationMessage = "\n MAKE A SELECTION! 0 to 4.\n";
         internal string _easyLevelMessage = "\n PLAYING EASY LEVEL! \n";
         internal string _mediumLevelMessage = "\n PLAYING MEDIUM LEVEL! \n";
         internal string _hardLevelMessage = "\n PLAYING HARD LEVEL! \n";
-        internal string _gameCompleted = "You win! Game completed.";
-        internal string _gameOver1 = "You lost with ";
-        internal string _gameOver2 = " characters remaining.";
-        internal string _presentLetterInfo = "Type the letter: ";
-        internal string _tooLongTime = "You answered too late.";
-        internal string[] _nextActionArray = new string[] { "1. Easy", "2. Medium", "3. Hard", "4. Exit" };
-        internal string _pressKeyToContinue = "\n   Press a key to continue   ";
+        internal string _presentLetterInfoMessage = "Type the letter: ";
+        internal string _gameCompletedMessage = "You win! Game completed.";
+        internal string _gameOverFirstMessage = "You lost with ";
+        internal string _gameOverSecondMessage = " characters remaining.";
+        internal string _tooLongTimeMessage = "You answered too late.";
+        internal string _pressKeyToContinueMessage = "\n   Press a key to continue   ";
 
         public void DisplayGreetingMessage()
         {
-            Console.WriteLine(_greeting);
+            Console.WriteLine(_greetingMessage);
             Console.WriteLine("");
-            Console.WriteLine(_greetingInstructions);
+            Console.WriteLine(_greetingInstructionsMessage);
             Console.WriteLine("");
         }
+
+        public void DisplayMenuChoices()
+        {
+            foreach (string option in _menuChoices)
+            {
+                Console.WriteLine(option);
+            }
+        }
+
+        public int GetAction()
+        {
+            int.TryParse(Console.ReadLine(), out int input);
+            return input;
+        }
+
+        public void DisplayLevelSelection() => Console.Write(_selectLevelMessage);
 
         public void DisplayEasyLevel()
         {
@@ -48,64 +64,39 @@ namespace reflexes.View
             Console.WriteLine("");
         }
 
-        public void DisplayMenuChoices()
-        {
-            foreach (string option in _nextActionArray)
-            {
-                Console.WriteLine(option);
-            }
-        }
-
-        public void DisplayLevelSelectionClarification()
-        {
-            Console.WriteLine(_selectLevelClarificationMessage);
-        }
-
-        public void DisplayLevelSelection()
-        {
-            Console.Write(_selectLevelMessage);
-        }
-
-
-        public int GetAction()
-        {
-            int input;
-            int.TryParse(Console.ReadLine(), out input);
-            return input;
-        }
+        public void DisplayLevelSelectionClarification() => Console.WriteLine(_selectLevelClarificationMessage);
 
         public void GameOver(int wordsLeft)
         {
-            Console.Write(_gameOver1);
+            Console.Write(_gameOverFirstMessage);
             Console.Write(wordsLeft);
-            Console.WriteLine(_gameOver2);
+            Console.WriteLine(_gameOverSecondMessage);
         }
 
         public void GameCompleted()
         {
-            Console.WriteLine(_gameCompleted);
+            Console.WriteLine(_gameCompletedMessage);
             Console.WriteLine("");
         }
+
+        public void DisplayPressAKeyToContinue() => Console.Write(_pressKeyToContinueMessage);
+
+        public string ReadKey() => Console.ReadLine();
+
+        public string GetInput() => Console.ReadLine();
 
         public void TooLongTime()
         {
-            Console.WriteLine(_tooLongTime);
+            Console.WriteLine(_tooLongTimeMessage);
             Console.WriteLine("");
         }
 
-
         public void PresentLetter(string letter)
         {
-            Console.Write(_presentLetterInfo);
+            Console.Write(_presentLetterInfoMessage);
             Console.Write(letter);
             Console.WriteLine("");
             Console.WriteLine("");
         }
-
-        public string GetInput() => Console.ReadLine();
-
-        public void DisplayPressAKeyToContinue() => Console.Write(_pressKeyToContinue);
-
-        public string ReadKey() => Console.ReadLine();
     }
 }

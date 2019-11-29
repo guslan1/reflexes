@@ -1,5 +1,4 @@
-﻿using System;
-using Xunit;
+﻿using Xunit;
 using Moq;
 using reflexes.Controller;
 using reflexes.Model;

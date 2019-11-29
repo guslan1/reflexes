@@ -8,34 +8,32 @@ namespace reflexes.View
     {
         void DisplayGreetingMessage();
 
+        void DisplayMenuChoices();
+
+        int GetAction();
+
+        void DisplayLevelSelection();
+
         void DisplayEasyLevel();
 
         void DisplayMediumLevel();
 
         void DisplayHardLevel();
 
-        void DisplayMenuChoices();
-
         void DisplayLevelSelectionClarification();
-
-        void DisplayLevelSelection();
-
-        int GetAction();
 
         void GameOver(int wordsLeft);
 
         void GameCompleted();
 
-        void TooLongTime();
+        void DisplayPressAKeyToContinue();
+
+        string ReadKey();
 
         void PresentLetter(string letter);
 
         string GetInput();
 
-        void DisplayPressAKeyToContinue();
-
-        string ReadKey();
-
-
+        void TooLongTime();
     }
 }
