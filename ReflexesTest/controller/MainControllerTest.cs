@@ -276,5 +276,19 @@ namespace reflexesTest
             mockLevelController.Verify(levelController => levelController.Medium(), Times.Once());
         }
 
+        [Fact]
+        public void RunApplication_CaseThreeShouldCallHard()
+        {
+            var mockReflexGame = new Mock<ReflexGame>();
+            var mockConsoleView = new Mock<ConsoleView>();
+            var mockLevelController = new Mock<LevelController>();
+
+            var mainController = new MainController(mockReflexGame.Object, mockConsoleView.Object, mockLevelController.Object);
+            mockConsoleView.SetupSequence(view => view.GetAction()).Returns(3).Returns(4);
+
+            mainController.RunApplication();
+            mockLevelController.Verify(levelController => levelController.Hard(), Times.Once());
+        }
+
     }
 }
