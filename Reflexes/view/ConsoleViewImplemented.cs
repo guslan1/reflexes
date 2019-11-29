@@ -11,7 +11,7 @@ namespace reflexes.View
         internal string _greetingInstructions = "Pick a level to start training your reflexes.";
         internal string _selectLevelMessage = "Select a level to start playing : ";
         internal string _selectLevelClarificationMessage = "\n MAKE A SELECTION! 0 to 4.\n";
-        internal string _easyLevelMessage = "Easy level starting in";
+        internal string _easyLevelMessage = "\n PLAYING EASY LEVEL! \n";
         internal string _mediumLevelMessage = "\n PLAYING MEDIUM LEVEL! \n";
         internal string _gameCompleted = "You win! Game completed.";
         internal string _gameOver1 = "You lost with ";
