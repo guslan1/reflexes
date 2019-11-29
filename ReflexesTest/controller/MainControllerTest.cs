@@ -1,8 +1,8 @@
 ﻿using Xunit;
 using Moq;
-using reflexes.Controller;
 using reflexes.Model;
 using reflexes.View;
+using reflexes.Controller;
 
 namespace reflexesTest
 {

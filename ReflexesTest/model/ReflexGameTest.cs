@@ -1,8 +1,8 @@
 ﻿using System;
+using System.Threading;
 using Xunit;
 using Moq;
 using reflexes.Model;
-using System.Threading;
 
 namespace reflexesTest
 {
