@@ -42,6 +42,13 @@ namespace reflexesTest
         }
 
         [Fact]
+        public void StartGame_ShouldThrowExceptionOnNullArgument()
+        {
+            var sut = new ReflexGameImplemented();
+            Assert.Throws<ArgumentException>(() => sut.StartGame(null));
+        }
+
+        [Fact]
         public void WordsLeft_ShouldReturnAllLettersInAlphabet()
         {
             var sut = new ReflexGameImplemented();
