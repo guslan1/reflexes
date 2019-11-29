@@ -233,5 +233,20 @@ namespace reflexesTest
             mockReflexGame.Verify(game => game.StartGame(It.IsAny<AlphabetImplemented>()), Times.Once());
         }
 
+        [Fact]
+        public void RunApplication_CaseThreeShouldCallPlay()
+        {
+            var mockReflexGame = new Mock<ReflexGame>();
+            var mockConsoleView = new Mock<ConsoleView>();
+            var mockLevelController = new Mock<LevelController>();
+
+            var mainController = new MainController(mockReflexGame.Object, mockConsoleView.Object, mockLevelController.Object);
+            mockLevelController.SetupSequence(levelController => levelController.Play()).Returns(true).Returns(false);
+            mockConsoleView.SetupSequence(view => view.GetAction()).Returns(3).Returns(4);
+
+            mainController.RunApplication();
+            mockLevelController.Verify(levelcontroller => levelcontroller.Play(), Times.AtLeastOnce());
+        }
+
     }
 }
