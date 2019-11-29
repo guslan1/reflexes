@@ -41,13 +41,11 @@ namespace reflexes.Controller
                         break;
                     case 2:
                         _reflexGame.StartGame(new AlphabetImplemented());
-                        _consoleView.DisplayEasyLevel();
                         _levelController.Medium();
                         while (_levelController.Play()) ;
                         break;
                     case 3:
                         _reflexGame.StartGame(new AlphabetImplemented());
-                        _consoleView.DisplayEasyLevel();
                         _levelController.Hard();
                         while (_levelController.Play()) ;
                         break;
