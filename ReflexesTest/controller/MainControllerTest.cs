@@ -36,20 +36,6 @@ namespace reflexesTest
         }
 
         [Fact]
-        public void RunApplication_CaseOneShouldCallDisplayEasyLevel()
-        {
-            var mockReflexGame = new Mock<ReflexGame>();
-            var mockConsoleView = new Mock<ConsoleView>();
-            var mockLevelController = new Mock<LevelController>();
-
-            var mainController = new MainController(mockReflexGame.Object, mockConsoleView.Object, mockLevelController.Object);
-            mockConsoleView.SetupSequence(view => view.GetAction()).Returns(1).Returns(4);
-
-            mainController.RunApplication();
-            mockConsoleView.Verify(view => view.DisplayEasyLevel(), Times.Once());
-        }
-
-        [Fact]
         public void RunApplication_ShouldCallDisplayLevelSelectionClarification()
         {
             var mockReflexGame = new Mock<ReflexGame>();
@@ -149,34 +135,6 @@ namespace reflexesTest
         }
 
         [Fact]
-        public void RunApplication_ShouldCallDisplayEasyLevel2()
-        {
-            var mockReflexGame = new Mock<ReflexGame>();
-            var mockConsoleView = new Mock<ConsoleView>();
-            var mockLevelController = new Mock<LevelController>();
-
-            var mainController = new MainController(mockReflexGame.Object, mockConsoleView.Object, mockLevelController.Object);
-            mockConsoleView.SetupSequence(view => view.GetAction()).Returns(2).Returns(4);
-
-            mainController.RunApplication();
-            mockConsoleView.Verify(view => view.DisplayEasyLevel(), Times.Once());
-        }
-
-        [Fact]
-        public void RunApplication_ShouldCallDisplayEasyLevel3()
-        {
-            var mockReflexGame = new Mock<ReflexGame>();
-            var mockConsoleView = new Mock<ConsoleView>();
-            var mockLevelController = new Mock<LevelController>();
-
-            var mainController = new MainController(mockReflexGame.Object, mockConsoleView.Object, mockLevelController.Object);
-            mockConsoleView.SetupSequence(view => view.GetAction()).Returns(3).Returns(4);
-
-            mainController.RunApplication();
-            mockConsoleView.Verify(view => view.DisplayEasyLevel(), Times.Once());
-        }
-
-        [Fact]
         public void RunApplication_CaseOneShouldCallStartGameWithAlphabetImplementedAsArgument()
         {
             var mockReflexGame = new Mock<ReflexGame>();
@@ -188,6 +146,34 @@ namespace reflexesTest
 
             mainController.RunApplication();
             mockReflexGame.Verify(game => game.StartGame(It.IsAny<AlphabetImplemented>()), Times.Once());
+        }
+
+        [Fact]
+        public void RunApplication_CaseOneShouldCallDisplayEasyLevel()
+        {
+            var mockReflexGame = new Mock<ReflexGame>();
+            var mockConsoleView = new Mock<ConsoleView>();
+            var mockLevelController = new Mock<LevelController>();
+
+            var mainController = new MainController(mockReflexGame.Object, mockConsoleView.Object, mockLevelController.Object);
+            mockConsoleView.SetupSequence(view => view.GetAction()).Returns(1).Returns(4);
+
+            mainController.RunApplication();
+            mockConsoleView.Verify(view => view.DisplayEasyLevel(), Times.Once());
+        }
+
+        [Fact]
+        public void RunApplication_CaseOneShouldCallEasy()
+        {
+            var mockReflexGame = new Mock<ReflexGame>();
+            var mockConsoleView = new Mock<ConsoleView>();
+            var mockLevelController = new Mock<LevelController>();
+
+            var mainController = new MainController(mockReflexGame.Object, mockConsoleView.Object, mockLevelController.Object);
+            mockConsoleView.SetupSequence(view => view.GetAction()).Returns(1).Returns(4);
+
+            mainController.RunApplication();
+            mockLevelController.Verify(levelController => levelController.Easy(), Times.Once());
         }
 
         [Fact]
@@ -220,20 +206,6 @@ namespace reflexesTest
         }
 
         [Fact]
-        public void RunApplication_CaseThreeShouldCallStartGameWithAlphabetImplementedAsArgument()
-        {
-            var mockReflexGame = new Mock<ReflexGame>();
-            var mockConsoleView = new Mock<ConsoleView>();
-            var mockLevelController = new Mock<LevelController>();
-
-            var mainController = new MainController(mockReflexGame.Object, mockConsoleView.Object, mockLevelController.Object);
-            mockConsoleView.SetupSequence(view => view.GetAction()).Returns(3).Returns(4);
-
-            mainController.RunApplication();
-            mockReflexGame.Verify(game => game.StartGame(It.IsAny<AlphabetImplemented>()), Times.Once());
-        }
-
-        [Fact]
         public void RunApplication_CaseThreeShouldCallPlay()
         {
             var mockReflexGame = new Mock<ReflexGame>();
@@ -249,20 +221,6 @@ namespace reflexesTest
         }
 
         [Fact]
-        public void RunApplication_CaseOneShouldCallEasy()
-        {
-            var mockReflexGame = new Mock<ReflexGame>();
-            var mockConsoleView = new Mock<ConsoleView>();
-            var mockLevelController = new Mock<LevelController>();
-
-            var mainController = new MainController(mockReflexGame.Object, mockConsoleView.Object, mockLevelController.Object);
-            mockConsoleView.SetupSequence(view => view.GetAction()).Returns(1).Returns(4);
-
-            mainController.RunApplication();
-            mockLevelController.Verify(levelController => levelController.Easy(), Times.Once());
-        }
-
-        [Fact]
         public void RunApplication_CaseTwoShouldCallMedium()
         {
             var mockReflexGame = new Mock<ReflexGame>();
@@ -274,6 +232,20 @@ namespace reflexesTest
 
             mainController.RunApplication();
             mockLevelController.Verify(levelController => levelController.Medium(), Times.Once());
+        }
+
+        [Fact]
+        public void RunApplication_CaseThreeShouldCallStartGameWithAlphabetImplementedAsArgument()
+        {
+            var mockReflexGame = new Mock<ReflexGame>();
+            var mockConsoleView = new Mock<ConsoleView>();
+            var mockLevelController = new Mock<LevelController>();
+
+            var mainController = new MainController(mockReflexGame.Object, mockConsoleView.Object, mockLevelController.Object);
+            mockConsoleView.SetupSequence(view => view.GetAction()).Returns(3).Returns(4);
+
+            mainController.RunApplication();
+            mockReflexGame.Verify(game => game.StartGame(It.IsAny<AlphabetImplemented>()), Times.Once());
         }
 
         [Fact]
