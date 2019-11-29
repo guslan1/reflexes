@@ -64,7 +64,7 @@ namespace reflexesTest
             mockAlphabet.Setup(alphabet => alphabet.IsAlphabetEmpty()).Returns(() => true);
             sut.StartGame(mockAlphabet.Object);
 
-            bool actual = sut.IsGameCompleted();
+            var actual = sut.IsGameCompleted();
             Assert.True(actual);
         }
 
@@ -77,7 +77,7 @@ namespace reflexesTest
             mockAlphabet.Setup(alphabet => alphabet.IsAlphabetEmpty()).Returns(() => false);
             sut.StartGame(mockAlphabet.Object);
 
-            bool actual = sut.IsGameCompleted();
+            var actual = sut.IsGameCompleted();
             Assert.False(actual);
         }
 
@@ -92,7 +92,7 @@ namespace reflexesTest
             sut.StartGame(mockAlphabet.Object);
 
             string expected = "a";
-            string actual = sut.GetNewLetter();
+            var actual = sut.GetNewLetter();
             Assert.Equal(expected, actual);
         }
 
@@ -104,7 +104,7 @@ namespace reflexesTest
             sut.CreateStopwatch();
 
             TimeSpan expected = new TimeSpan(0, 0, 0);
-            TimeSpan actual = sut.TimeElapsed;
+            var actual = sut.TimeElapsed;
 
             Assert.Equal<TimeSpan>(expected, actual);
         }
@@ -118,7 +118,7 @@ namespace reflexesTest
             sut.StartStopwatch();
 
             TimeSpan expected = new TimeSpan(0, 0, 0);
-            TimeSpan actual = sut.TimeElapsed;
+            var actual = sut.TimeElapsed;
 
             Assert.NotEqual<TimeSpan>(expected, actual);
         }
@@ -136,7 +136,7 @@ namespace reflexesTest
             sut.StopStopwatch();
 
             TimeSpan expected = sut.TimeElapsed;
-            TimeSpan actual = sut.TimeElapsed;
+            var actual = sut.TimeElapsed;
 
             Assert.Equal<TimeSpan>(expected, actual);
         }
@@ -177,7 +177,7 @@ namespace reflexesTest
             sut.StartGame(mockAlphabet.Object);
 
             int expected = 25;
-            int actual = sut.WordsLeft();
+            var actual = sut.WordsLeft();
             Assert.Equal(expected, actual);
         }
 
@@ -193,7 +193,7 @@ namespace reflexesTest
             sut.StartGame(mockAlphabet.Object);
             sut.GetNewLetter();
 
-            bool actual = sut.IsCorrectInput(letter);
+            var actual = sut.IsCorrectInput(letter);
 
             Assert.True(actual);
         }
@@ -210,7 +210,7 @@ namespace reflexesTest
             sut.StartGame(mockAlphabet.Object);
             sut.GetNewLetter();
 
-            bool actual = sut.IsCorrectInput("b");
+            var actual = sut.IsCorrectInput("b");
 
             Assert.False(actual);
         }

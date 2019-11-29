@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Runtime.CompilerServices;
-using System.Threading;
 [assembly: InternalsVisibleTo("reflexesTest")]
 
 namespace reflexes.View

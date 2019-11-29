@@ -48,7 +48,7 @@ namespace reflexesTest
             AlphabetImplemented sut = new AlphabetImplemented();
             sut.ClearAlphabetForTestOnly();
             bool expected = true;
-            bool actual = sut.IsAlphabetEmpty();
+            var actual = sut.IsAlphabetEmpty();
             Assert.Equal(expected, actual);
         }
 
@@ -57,7 +57,7 @@ namespace reflexesTest
         {
             AlphabetImplemented sut = new AlphabetImplemented();
             bool expected = false;
-            bool actual = sut.IsAlphabetEmpty();
+            var actual = sut.IsAlphabetEmpty();
             Assert.Equal(expected, actual);
         }
 
@@ -67,7 +67,7 @@ namespace reflexesTest
             AlphabetImplemented sut = new AlphabetImplemented();
             IReadOnlyList<string> randomAlphabet = sut.GetAlphabet;
             string expected = randomAlphabet[0];
-            string actual = sut.GetLetter();
+            var actual = sut.GetLetter();
             Assert.Equal(expected, actual);
         }
 
@@ -76,7 +76,7 @@ namespace reflexesTest
         {
             AlphabetImplemented sut = new AlphabetImplemented();
             int expected = 25;
-            int actual = sut.WordsLeft();
+            var actual = sut.WordsLeft();
             Assert.Equal(expected, actual);
         }
 
@@ -98,7 +98,6 @@ namespace reflexesTest
                     actual = true;
                 }
             }
-
             Assert.False(actual);
         }
 
@@ -108,7 +107,7 @@ namespace reflexesTest
             AlphabetImplemented sut = new AlphabetImplemented();
             int expected = 24;
             sut.RemoveLetter();
-            int actual = sut.WordsLeft();
+            var actual = sut.WordsLeft();
             Assert.Equal(expected, actual);
         }
     }

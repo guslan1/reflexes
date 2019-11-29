@@ -56,7 +56,6 @@ namespace reflexes.Controller
                         _consoleView.ReadKey();
                         break;
                 }
-
             }
         }
     }

@@ -63,11 +63,11 @@ namespace reflexesTest
             using (StringWriter sw = new StringWriter())
             {
                 var sut = new ConsoleViewImplemented();
-                int result = sut.GetAction();
+                var actual = sut.GetAction();
 
                 int expected = 1;
 
-                Assert.Equal(expected, result);
+                Assert.Equal(expected, actual);
                 input.Close();
             }
         }
@@ -83,11 +83,11 @@ namespace reflexesTest
             using (StringWriter sw = new StringWriter())
             {
                 var sut = new ConsoleViewImplemented();
-                int result = sut.GetAction();
+                var actual = sut.GetAction();
 
                 int expected = 0;
 
-                Assert.Equal(expected, result);
+                Assert.Equal(expected, actual);
                 input.Close();
             }
         }
@@ -247,11 +247,11 @@ namespace reflexesTest
             using (StringWriter sw = new StringWriter())
             {
                 var sut = new ConsoleViewImplemented();
-                string result = sut.ReadKey();
+                var actual = sut.ReadKey();
 
                 string expected = "1";
 
-                Assert.Equal(expected, result);
+                Assert.Equal(expected, actual);
                 input.Close();
             }
         }
@@ -267,11 +267,11 @@ namespace reflexesTest
             using (StringWriter sw = new StringWriter())
             {
                 var sut = new ConsoleViewImplemented();
-                string result = sut.GetInput();
+                var actual = sut.GetInput();
 
                 string expected = "a";
 
-                Assert.Equal(expected, result);
+                Assert.Equal(expected, actual);
                 input.Close();
             }
         }

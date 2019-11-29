@@ -5,7 +5,6 @@ namespace reflexes.Controller
 {
     public class LevelControllerImplemented : LevelController
     {
-
         private ReflexGame _reflexGame;
         private ConsoleView _consoleView;
 
@@ -57,11 +56,8 @@ namespace reflexes.Controller
                 }
 
                 _reflexGame.RemoveLetterFromAlphabet();
-
-
-
-
             }
+
             return true;
         }
     }
