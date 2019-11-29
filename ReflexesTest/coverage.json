@@ -155,18 +155,18 @@
       "reflexes.Model.AlphabetImplemented": {
         "System.Collections.Generic.List`1<System.String> reflexes.Model.AlphabetImplemented::RandomAlphabet(System.Collections.Generic.List`1<System.String>)": {
           "Lines": {
-            "18": 9,
-            "19": 9,
-            "20": 9,
-            "21": 9,
-            "23": 234,
-            "24": 225,
-            "25": 225,
-            "26": 225,
-            "27": 225,
-            "28": 225,
-            "29": 9,
-            "30": 9
+            "18": 15,
+            "19": 15,
+            "20": 15,
+            "21": 15,
+            "23": 390,
+            "24": 375,
+            "25": 375,
+            "26": 375,
+            "27": 375,
+            "28": 375,
+            "29": 15,
+            "30": 15
           },
           "Branches": [
             {
@@ -175,7 +175,7 @@
               "EndOffset": 17,
               "Path": 1,
               "Ordinal": 1,
-              "Hits": 225
+              "Hits": 375
             },
             {
               "Line": 23,
@@ -183,20 +183,20 @@
               "EndOffset": 68,
               "Path": 0,
               "Ordinal": 0,
-              "Hits": 9
+              "Hits": 15
             }
           ]
         },
         "System.Collections.Generic.List`1<System.String> reflexes.Model.AlphabetImplemented::AlphabetList()": {
           "Lines": {
-            "33": 9,
-            "34": 9,
-            "35": 477,
-            "36": 225,
-            "37": 225,
-            "38": 225,
-            "39": 9,
-            "40": 9
+            "33": 15,
+            "34": 15,
+            "35": 795,
+            "36": 375,
+            "37": 375,
+            "38": 375,
+            "39": 15,
+            "40": 15
           },
           "Branches": [
             {
@@ -205,7 +205,7 @@
               "EndOffset": 21,
               "Path": 1,
               "Ordinal": 1,
-              "Hits": 225
+              "Hits": 375
             },
             {
               "Line": 35,
@@ -213,7 +213,7 @@
               "EndOffset": 45,
               "Path": 0,
               "Ordinal": 0,
-              "Hits": 9
+              "Hits": 15
             }
           ]
         },
@@ -285,11 +285,11 @@
         },
         "System.Void reflexes.Model.AlphabetImplemented::.ctor()": {
           "Lines": {
-            "9": 9,
-            "12": 9,
-            "13": 9,
-            "14": 9,
-            "15": 9
+            "9": 15,
+            "12": 15,
+            "13": 15,
+            "14": 15,
+            "15": 15
           },
           "Branches": []
         }
@@ -524,53 +524,57 @@
       "reflexes.Controller.MainController": {
         "System.Void reflexes.Controller.MainController::RunApplication()": {
           "Lines": {
-            "24": 12,
-            "26": 12,
-            "27": 32,
-            "28": 20,
-            "29": 20,
-            "30": 20,
-            "31": 20,
-            "32": 20,
-            "34": 20,
+            "24": 16,
+            "26": 16,
+            "27": 44,
+            "28": 28,
+            "29": 28,
+            "30": 28,
+            "31": 28,
+            "32": 28,
+            "34": 28,
             "37": 3,
             "38": 3,
             "39": 5,
             "40": 3,
-            "42": 1,
-            "43": 1,
-            "45": 1,
-            "46": 1,
-            "48": 12,
-            "49": 12,
-            "51": 3,
-            "52": 3,
-            "53": 3,
-            "54": 3,
-            "57": 20,
-            "58": 12
+            "42": 3,
+            "43": 3,
+            "44": 5,
+            "45": 3,
+            "47": 3,
+            "48": 3,
+            "49": 5,
+            "50": 3,
+            "52": 16,
+            "53": 16,
+            "55": 3,
+            "56": 3,
+            "57": 3,
+            "58": 3,
+            "61": 28,
+            "62": 16
           },
           "Branches": [
             {
               "Line": 27,
-              "Offset": 214,
+              "Offset": 294,
               "EndOffset": 8,
               "Path": 1,
-              "Ordinal": 8,
-              "Hits": 20
+              "Ordinal": 12,
+              "Hits": 28
             },
             {
               "Line": 34,
               "Offset": 64,
-              "EndOffset": 87,
+              "EndOffset": 90,
               "Path": 1,
               "Ordinal": 1,
               "Hits": 3
             },
             {
               "Line": 39,
-              "Offset": 134,
-              "EndOffset": 118,
+              "Offset": 137,
+              "EndOffset": 121,
               "Path": 1,
               "Ordinal": 6,
               "Hits": 1
@@ -578,61 +582,93 @@
             {
               "Line": 34,
               "Offset": 64,
-              "EndOffset": 138,
+              "EndOffset": 144,
               "Path": 2,
               "Ordinal": 2,
+              "Hits": 3
+            },
+            {
+              "Line": 44,
+              "Offset": 191,
+              "EndOffset": 175,
+              "Path": 1,
+              "Ordinal": 8,
               "Hits": 1
             },
             {
               "Line": 34,
               "Offset": 64,
-              "EndOffset": 152,
+              "EndOffset": 195,
               "Path": 3,
               "Ordinal": 3,
+              "Hits": 3
+            },
+            {
+              "Line": 49,
+              "Offset": 242,
+              "EndOffset": 226,
+              "Path": 1,
+              "Ordinal": 10,
               "Hits": 1
             },
             {
               "Line": 34,
               "Offset": 64,
-              "EndOffset": 166,
+              "EndOffset": 246,
               "Path": 4,
               "Ordinal": 4,
-              "Hits": 12
+              "Hits": 16
             },
             {
               "Line": 34,
               "Offset": 64,
-              "EndOffset": 170,
+              "EndOffset": 250,
               "Path": 0,
               "Ordinal": 0,
               "Hits": 3
             },
             {
               "Line": 39,
-              "Offset": 134,
-              "EndOffset": 208,
+              "Offset": 137,
+              "EndOffset": 288,
               "Path": 0,
               "Ordinal": 5,
-              "Hits": 20
+              "Hits": 28
+            },
+            {
+              "Line": 44,
+              "Offset": 191,
+              "EndOffset": 288,
+              "Path": 0,
+              "Ordinal": 7,
+              "Hits": 28
+            },
+            {
+              "Line": 49,
+              "Offset": 242,
+              "EndOffset": 288,
+              "Path": 0,
+              "Ordinal": 9,
+              "Hits": 28
             },
             {
               "Line": 27,
-              "Offset": 214,
-              "EndOffset": 219,
+              "Offset": 294,
+              "EndOffset": 299,
               "Path": 0,
-              "Ordinal": 7,
-              "Hits": 12
+              "Ordinal": 11,
+              "Hits": 16
             }
           ]
         },
         "System.Void reflexes.Controller.MainController::.ctor(reflexes.Model.ReflexGame,reflexes.View.ConsoleView,reflexes.Controller.LevelController)": {
           "Lines": {
-            "16": 13,
-            "17": 13,
-            "18": 13,
-            "19": 13,
-            "20": 13,
-            "21": 13
+            "16": 17,
+            "17": 17,
+            "18": 17,
+            "19": 17,
+            "20": 17,
+            "21": 17
           },
           "Branches": []
         }
