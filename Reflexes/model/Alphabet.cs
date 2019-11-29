@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Collections.Generic;
 
 namespace reflexes.Model
 {
@@ -17,6 +15,5 @@ namespace reflexes.Model
         void ClearAlphabet();
 
         string GetLetter();
-
     }
 }

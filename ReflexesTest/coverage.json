@@ -155,22 +155,22 @@
       "reflexes.Model.AlphabetImplemented": {
         "System.Collections.Generic.List`1<System.String> reflexes.Model.AlphabetImplemented::RandomAlphabet(System.Collections.Generic.List`1<System.String>)": {
           "Lines": {
+            "17": 16,
             "18": 16,
             "19": 16,
             "20": 16,
-            "21": 16,
-            "23": 416,
+            "22": 416,
+            "23": 400,
             "24": 400,
             "25": 400,
             "26": 400,
             "27": 400,
-            "28": 400,
-            "29": 16,
-            "30": 16
+            "28": 16,
+            "29": 16
           },
           "Branches": [
             {
-              "Line": 23,
+              "Line": 22,
               "Offset": 66,
               "EndOffset": 17,
               "Path": 1,
@@ -178,7 +178,7 @@
               "Hits": 400
             },
             {
-              "Line": 23,
+              "Line": 22,
               "Offset": 66,
               "EndOffset": 68,
               "Path": 0,
@@ -189,18 +189,18 @@
         },
         "System.Collections.Generic.List`1<System.String> reflexes.Model.AlphabetImplemented::AlphabetList()": {
           "Lines": {
+            "32": 16,
             "33": 16,
-            "34": 16,
-            "35": 848,
+            "34": 848,
+            "35": 400,
             "36": 400,
             "37": 400,
-            "38": 400,
-            "39": 16,
-            "40": 16
+            "38": 16,
+            "39": 16
           },
           "Branches": [
             {
-              "Line": 35,
+              "Line": 34,
               "Offset": 43,
               "EndOffset": 21,
               "Path": 1,
@@ -208,7 +208,7 @@
               "Hits": 400
             },
             {
-              "Line": 35,
+              "Line": 34,
               "Offset": 43,
               "EndOffset": 45,
               "Path": 0,
@@ -219,24 +219,24 @@
         },
         "System.Int32 reflexes.Model.AlphabetImplemented::WordsLeft()": {
           "Lines": {
+            "42": 2,
             "43": 2,
-            "44": 2,
-            "45": 2
+            "44": 2
           },
           "Branches": []
         },
         "System.Boolean reflexes.Model.AlphabetImplemented::IsAlphabetEmpty()": {
           "Lines": {
+            "47": 2,
             "48": 2,
-            "49": 2,
+            "49": 1,
             "50": 1,
-            "51": 1,
-            "53": 1,
-            "54": 2
+            "52": 1,
+            "53": 2
           },
           "Branches": [
             {
-              "Line": 49,
+              "Line": 48,
               "Offset": 17,
               "EndOffset": 19,
               "Path": 0,
@@ -244,7 +244,7 @@
               "Hits": 1
             },
             {
-              "Line": 49,
+              "Line": 48,
               "Offset": 17,
               "EndOffset": 24,
               "Path": 1,
@@ -255,41 +255,41 @@
         },
         "System.Void reflexes.Model.AlphabetImplemented::RemoveLetter()": {
           "Lines": {
+            "56": 2,
             "57": 2,
-            "58": 2,
-            "59": 2
+            "58": 2
           },
           "Branches": []
         },
         "System.Collections.Generic.IReadOnlyList`1<System.String> reflexes.Model.AlphabetImplemented::get_GetAlphabet()": {
           "Lines": {
-            "63": 12
+            "62": 12
           },
           "Branches": []
         },
         "System.Void reflexes.Model.AlphabetImplemented::ClearAlphabet()": {
           "Lines": {
+            "66": 1,
             "67": 1,
-            "68": 1,
-            "69": 1
+            "68": 1
           },
           "Branches": []
         },
         "System.String reflexes.Model.AlphabetImplemented::GetLetter()": {
           "Lines": {
+            "71": 2,
             "72": 2,
-            "73": 2,
-            "74": 2
+            "73": 2
           },
           "Branches": []
         },
         "System.Void reflexes.Model.AlphabetImplemented::.ctor()": {
           "Lines": {
-            "9": 16,
+            "8": 16,
+            "11": 16,
             "12": 16,
             "13": 16,
-            "14": 16,
-            "15": 16
+            "14": 16
           },
           "Branches": []
         }
@@ -299,106 +299,106 @@
       "reflexes.Model.ReflexGameImplemented": {
         "System.TimeSpan reflexes.Model.ReflexGameImplemented::get_EasyMode()": {
           "Lines": {
-            "15": 1
+            "13": 1
           },
           "Branches": []
         },
         "System.TimeSpan reflexes.Model.ReflexGameImplemented::get_MediumMode()": {
           "Lines": {
-            "17": 1
+            "15": 1
           },
           "Branches": []
         },
         "System.TimeSpan reflexes.Model.ReflexGameImplemented::get_HardMode()": {
           "Lines": {
-            "19": 1
+            "17": 1
           },
           "Branches": []
         },
         "System.Void reflexes.Model.ReflexGameImplemented::StartGame(reflexes.Model.Alphabet)": {
           "Lines": {
-            "21": 7
+            "19": 7
           },
           "Branches": []
         },
         "System.TimeSpan reflexes.Model.ReflexGameImplemented::get_MaxTime()": {
           "Lines": {
-            "23": 6
+            "21": 6
           },
           "Branches": []
         },
         "System.Int32 reflexes.Model.ReflexGameImplemented::WordsLeft()": {
           "Lines": {
-            "25": 1
+            "23": 1
           },
           "Branches": []
         },
         "System.Boolean reflexes.Model.ReflexGameImplemented::IsGameCompleted()": {
           "Lines": {
-            "27": 2
+            "25": 2
           },
           "Branches": []
         },
         "System.String reflexes.Model.ReflexGameImplemented::GetNewLetter()": {
           "Lines": {
+            "28": 3,
+            "29": 3,
             "30": 3,
-            "31": 3,
-            "32": 3,
-            "33": 3
+            "31": 3
           },
           "Branches": []
         },
         "System.Boolean reflexes.Model.ReflexGameImplemented::IsCorrectInput(System.String)": {
           "Lines": {
-            "35": 2
+            "33": 2
           },
           "Branches": []
         },
         "System.Boolean reflexes.Model.ReflexGameImplemented::ValidateCharacter(System.String)": {
           "Lines": {
-            "37": 2
+            "35": 2
           },
           "Branches": []
         },
         "System.Void reflexes.Model.ReflexGameImplemented::RemoveLetterFromAlphabet()": {
           "Lines": {
-            "39": 1
+            "37": 1
           },
           "Branches": []
         },
         "System.Void reflexes.Model.ReflexGameImplemented::CreateStopwatch()": {
           "Lines": {
-            "41": 5
+            "39": 5
           },
           "Branches": []
         },
         "System.Void reflexes.Model.ReflexGameImplemented::StartStopwatch()": {
           "Lines": {
-            "43": 4
+            "41": 4
           },
           "Branches": []
         },
         "System.Void reflexes.Model.ReflexGameImplemented::StopStopwatch()": {
           "Lines": {
-            "45": 3
+            "43": 3
           },
           "Branches": []
         },
         "System.TimeSpan reflexes.Model.ReflexGameImplemented::get_TimeElapsed()": {
           "Lines": {
-            "47": 18
+            "45": 18
           },
           "Branches": []
         },
         "System.Boolean reflexes.Model.ReflexGameImplemented::IsInTime()": {
           "Lines": {
-            "49": 2
+            "47": 2
           },
           "Branches": []
         },
         "System.Void reflexes.Model.ReflexGameImplemented::.ctor()": {
           "Lines": {
-            "13": 17
+            "11": 17
           },
           "Branches": []
         }
@@ -524,40 +524,40 @@
       "reflexes.Controller.MainController": {
         "System.Void reflexes.Controller.MainController::RunApplication()": {
           "Lines": {
-            "24": 17,
-            "26": 17,
-            "27": 47,
+            "20": 17,
+            "22": 17,
+            "23": 47,
+            "24": 30,
+            "25": 30,
+            "26": 30,
+            "27": 30,
             "28": 30,
-            "29": 30,
             "30": 30,
-            "31": 30,
-            "32": 30,
-            "34": 30,
+            "33": 4,
+            "34": 4,
+            "35": 4,
+            "36": 6,
             "37": 4,
-            "38": 4,
-            "39": 4,
-            "40": 6,
-            "41": 4,
-            "43": 3,
+            "39": 3,
+            "40": 3,
+            "41": 5,
+            "42": 3,
             "44": 3,
-            "45": 5,
-            "46": 3,
-            "48": 3,
-            "49": 3,
-            "50": 5,
-            "51": 3,
-            "53": 17,
-            "54": 17,
-            "56": 3,
-            "57": 3,
-            "58": 3,
-            "59": 3,
-            "62": 30,
-            "63": 17
+            "45": 3,
+            "46": 5,
+            "47": 3,
+            "49": 17,
+            "50": 17,
+            "52": 3,
+            "53": 3,
+            "54": 3,
+            "55": 3,
+            "58": 30,
+            "59": 17
           },
           "Branches": [
             {
-              "Line": 27,
+              "Line": 23,
               "Offset": 306,
               "EndOffset": 8,
               "Path": 1,
@@ -565,7 +565,7 @@
               "Hits": 30
             },
             {
-              "Line": 34,
+              "Line": 30,
               "Offset": 64,
               "EndOffset": 90,
               "Path": 1,
@@ -573,7 +573,7 @@
               "Hits": 4
             },
             {
-              "Line": 40,
+              "Line": 36,
               "Offset": 149,
               "EndOffset": 133,
               "Path": 1,
@@ -581,7 +581,7 @@
               "Hits": 1
             },
             {
-              "Line": 34,
+              "Line": 30,
               "Offset": 64,
               "EndOffset": 156,
               "Path": 2,
@@ -589,7 +589,7 @@
               "Hits": 3
             },
             {
-              "Line": 45,
+              "Line": 41,
               "Offset": 203,
               "EndOffset": 187,
               "Path": 1,
@@ -597,7 +597,7 @@
               "Hits": 1
             },
             {
-              "Line": 34,
+              "Line": 30,
               "Offset": 64,
               "EndOffset": 207,
               "Path": 3,
@@ -605,7 +605,7 @@
               "Hits": 3
             },
             {
-              "Line": 50,
+              "Line": 46,
               "Offset": 254,
               "EndOffset": 238,
               "Path": 1,
@@ -613,7 +613,7 @@
               "Hits": 1
             },
             {
-              "Line": 34,
+              "Line": 30,
               "Offset": 64,
               "EndOffset": 258,
               "Path": 4,
@@ -621,7 +621,7 @@
               "Hits": 17
             },
             {
-              "Line": 34,
+              "Line": 30,
               "Offset": 64,
               "EndOffset": 262,
               "Path": 0,
@@ -629,7 +629,7 @@
               "Hits": 3
             },
             {
-              "Line": 40,
+              "Line": 36,
               "Offset": 149,
               "EndOffset": 300,
               "Path": 0,
@@ -637,7 +637,7 @@
               "Hits": 30
             },
             {
-              "Line": 45,
+              "Line": 41,
               "Offset": 203,
               "EndOffset": 300,
               "Path": 0,
@@ -645,7 +645,7 @@
               "Hits": 30
             },
             {
-              "Line": 50,
+              "Line": 46,
               "Offset": 254,
               "EndOffset": 300,
               "Path": 0,
@@ -653,7 +653,7 @@
               "Hits": 30
             },
             {
-              "Line": 27,
+              "Line": 23,
               "Offset": 306,
               "EndOffset": 311,
               "Path": 0,
@@ -664,12 +664,12 @@
         },
         "System.Void reflexes.Controller.MainController::.ctor(reflexes.Model.ReflexGame,reflexes.View.ConsoleView,reflexes.Controller.LevelController)": {
           "Lines": {
+            "12": 18,
+            "13": 18,
+            "14": 18,
+            "15": 18,
             "16": 18,
-            "17": 18,
-            "18": 18,
-            "19": 18,
-            "20": 18,
-            "21": 18
+            "17": 18
           },
           "Branches": []
         }
