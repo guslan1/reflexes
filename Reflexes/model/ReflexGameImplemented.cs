@@ -7,8 +7,8 @@ namespace reflexes.Model
     {
         private Alphabet _alphabet;
         private Stopwatch _stopwatch;
-        private string _currentChar;
         private TimeSpan _maxTime = new TimeSpan(0, 0, 3);
+        private string _currentChar;
 
         public TimeSpan EasyMode => new TimeSpan(0, 0, 3);
 
@@ -18,9 +18,7 @@ namespace reflexes.Model
 
         public void StartGame(Alphabet alphabet) => _alphabet = alphabet;
 
-        public TimeSpan MaxTime { get { return _maxTime; } set { _maxTime = value; } }
-
-        public int WordsLeft() => _alphabet.WordsLeft();
+        private bool IsValidGame(Alphabet game) => (game != null);
 
         public bool IsGameCompleted() => _alphabet.IsAlphabetEmpty();
 
@@ -30,21 +28,26 @@ namespace reflexes.Model
             return _currentChar;
         }
 
-        public bool IsCorrectInput(string character) => ValidateCharacter(character);
-
-        private bool ValidateCharacter(string character) => character == _currentChar;
-
-        public void RemoveLetterFromAlphabet() => _alphabet.RemoveLetter();
-
         public void CreateStopwatch() => _stopwatch = new Stopwatch();
 
         public void StartStopwatch() => _stopwatch.Start();
 
         public void StopStopwatch() => _stopwatch.Stop();
 
+        public bool IsInTime() => TimeElapsed < MaxTime;
+
         public TimeSpan TimeElapsed { get { return _stopwatch.Elapsed; } }
 
-        public bool IsInTime() => TimeElapsed < MaxTime;
+        public TimeSpan MaxTime { get { return _maxTime; } set { _maxTime = value; } }
+
+        public int WordsLeft() => _alphabet.WordsLeft();
+
+        public bool IsCorrectInput(string character) => ValidateCharacter(character);
+
+        private bool ValidateCharacter(string character) => character == _currentChar;
+
+        public void RemoveLetterFromAlphabet() => _alphabet.RemoveLetter();
+
 
     }
 }

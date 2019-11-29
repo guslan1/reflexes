@@ -8,6 +8,38 @@ namespace reflexesTest
 {
     public class ReflexGameTest
     {
+        [Fact]
+        public void EasyMode_ShouldGetThreeSecondTimeSpan()
+        {
+            var sut = new ReflexGameImplemented();
+
+            var actual = sut.EasyMode;
+            var expected = new TimeSpan(0, 0, 3);
+
+            Assert.Equal(expected, actual);
+        }
+
+        [Fact]
+        public void MediumMode_ShouldGetTwoSecondTimeSpan()
+        {
+            var sut = new ReflexGameImplemented();
+
+            var actual = sut.MediumMode;
+            var expected = new TimeSpan(0, 0, 2);
+
+            Assert.Equal(expected, actual);
+        }
+
+        [Fact]
+        public void HardMode_ShouldGetOneSecondTimeSpan()
+        {
+            var sut = new ReflexGameImplemented();
+
+            var actual = sut.HardMode;
+            var expected = new TimeSpan(0, 0, 1);
+
+            Assert.Equal(expected, actual);
+        }
 
         [Fact]
         public void WordsLeft_ShouldReturnAllLettersInAlphabet()
@@ -181,38 +213,7 @@ namespace reflexesTest
             Assert.False(sut.IsInTime());
         }
 
-        [Fact]
-        public void EasyMode_ShouldGetThreeSecondTimeSpan()
-        {
-            var sut = new ReflexGameImplemented();
 
-            var actual = sut.EasyMode;
-            var expected = new TimeSpan(0, 0, 3);
-
-            Assert.Equal(expected, actual);
-        }
-
-        [Fact]
-        public void MediumMode_ShouldGetTwoSecondTimeSpan()
-        {
-            var sut = new ReflexGameImplemented();
-
-            var actual = sut.MediumMode;
-            var expected = new TimeSpan(0, 0, 2);
-
-            Assert.Equal(expected, actual);
-        }
-
-        [Fact]
-        public void HardMode_ShouldGetOneSecondTimeSpan()
-        {
-            var sut = new ReflexGameImplemented();
-
-            var actual = sut.HardMode;
-            var expected = new TimeSpan(0, 0, 1);
-
-            Assert.Equal(expected, actual);
-        }
 
     }
 }

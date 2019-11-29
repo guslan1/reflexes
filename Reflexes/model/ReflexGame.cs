@@ -4,17 +4,17 @@ namespace reflexes.Model
 {
     public interface ReflexGame
     {
-        void StartGame(Alphabet alphabet);
+        TimeSpan EasyMode { get; }
 
-        int WordsLeft();
+        TimeSpan MediumMode { get; }
+
+        TimeSpan HardMode { get; }
+
+        void StartGame(Alphabet alphabet);
 
         bool IsGameCompleted();
 
         string GetNewLetter();
-
-        bool IsCorrectInput(string character);
-
-        void RemoveLetterFromAlphabet();
 
         void CreateStopwatch();
 
@@ -22,17 +22,16 @@ namespace reflexes.Model
 
         void StopStopwatch();
 
+        bool IsInTime();
+
         TimeSpan TimeElapsed { get; }
-
-        TimeSpan EasyMode { get; }
-
-        TimeSpan MediumMode { get; }
-
-        TimeSpan HardMode { get; }
 
         TimeSpan MaxTime { get; set; }
 
-        bool IsInTime();
+        int WordsLeft();
 
+        bool IsCorrectInput(string character);
+
+        void RemoveLetterFromAlphabet();
     }
 }

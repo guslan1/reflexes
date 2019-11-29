@@ -4,7 +4,6 @@ namespace reflexes.Model
 {
     public interface Alphabet
     {
-
         IReadOnlyList<string> GetAlphabet { get; }
 
         bool IsAlphabetEmpty();
