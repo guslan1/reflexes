@@ -190,6 +190,20 @@ namespace reflexesTest
             mockReflexGame.Verify(game => game.StartGame(It.IsAny<AlphabetImplemented>()), Times.Once());
         }
 
+        [Fact]
+        public void RunApplication_CaseTwoShouldCallStartGameWithAlphabetImplementedAsArgument()
+        {
+            var mockReflexGame = new Mock<ReflexGame>();
+            var mockConsoleView = new Mock<ConsoleView>();
+            var mockLevelController = new Mock<LevelController>();
+
+            var mainController = new MainController(mockReflexGame.Object, mockConsoleView.Object, mockLevelController.Object);
+            mockConsoleView.SetupSequence(view => view.GetAction()).Returns(2).Returns(4);
+
+            mainController.RunApplication();
+            mockReflexGame.Verify(game => game.StartGame(It.IsAny<AlphabetImplemented>()), Times.Once());
+        }
+
 
     }
 }
