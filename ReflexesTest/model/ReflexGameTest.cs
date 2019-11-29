@@ -49,21 +49,6 @@ namespace reflexesTest
         }
 
         [Fact]
-        public void WordsLeft_ShouldReturnAllLettersInAlphabet()
-        {
-            var sut = new ReflexGameImplemented();
-            var mockAlphabet = new Mock<Alphabet>();
-
-            int count = 25;
-            mockAlphabet.Setup(alphabet => alphabet.WordsLeft()).Returns(() => count);
-            sut.StartGame(mockAlphabet.Object);
-
-            int expected = 25;
-            int actual = sut.WordsLeft();
-            Assert.Equal(expected, actual);
-        }
-
-        [Fact]
         public void IsGameCompleted_GameShouldBeCompleted()
         {
             var sut = new ReflexGameImplemented();
@@ -101,6 +86,91 @@ namespace reflexesTest
 
             string expected = "a";
             string actual = sut.GetNewLetter();
+            Assert.Equal(expected, actual);
+        }
+
+        [Fact]
+        public void CreateStopwatch_SuccessfullyCreatesStopwatch()
+        {
+            var sut = new ReflexGameImplemented();
+
+            sut.CreateStopwatch();
+
+            TimeSpan expected = new TimeSpan(0, 0, 0);
+            TimeSpan actual = sut.TimeElapsed;
+
+            Assert.Equal<TimeSpan>(expected, actual);
+        }
+
+        [Fact]
+        public void StartStopwatch_SuccesfullyStartsStopwatch()
+        {
+            var sut = new ReflexGameImplemented();
+
+            sut.CreateStopwatch();
+            sut.StartStopwatch();
+
+            TimeSpan expected = new TimeSpan(0, 0, 0);
+            TimeSpan actual = sut.TimeElapsed;
+
+            Assert.NotEqual<TimeSpan>(expected, actual);
+        }
+
+        [Fact]
+        public void StopStopwatch_StoppingStopwatchWorks()
+        {
+            var sut = new ReflexGameImplemented();
+
+            sut.CreateStopwatch();
+            sut.StartStopwatch();
+
+            TimeSpan startTime = new TimeSpan(0, 0, 0);
+
+            sut.StopStopwatch();
+
+            TimeSpan expected = sut.TimeElapsed;
+            TimeSpan actual = sut.TimeElapsed;
+
+            Assert.Equal<TimeSpan>(expected, actual);
+        }
+
+        [Fact]
+        public void IsInTime_ShouldReturnTrue()
+        {
+            var sut = new ReflexGameImplemented();
+
+            sut.CreateStopwatch();
+            sut.StartStopwatch();
+            sut.StopStopwatch();
+
+            Assert.True(sut.IsInTime());
+        }
+
+        [Fact]
+        public void IsInTime_ShouldReturnFalse()
+        {
+            var sut = new ReflexGameImplemented();
+
+            sut.CreateStopwatch();
+            sut.StartStopwatch();
+            Thread.Sleep(3001);
+            sut.StopStopwatch();
+
+            Assert.False(sut.IsInTime());
+        }
+
+        [Fact]
+        public void WordsLeft_ShouldReturnAllLettersInAlphabet()
+        {
+            var sut = new ReflexGameImplemented();
+            var mockAlphabet = new Mock<Alphabet>();
+
+            int count = 25;
+            mockAlphabet.Setup(alphabet => alphabet.WordsLeft()).Returns(() => count);
+            sut.StartGame(mockAlphabet.Object);
+
+            int expected = 25;
+            int actual = sut.WordsLeft();
             Assert.Equal(expected, actual);
         }
 
@@ -149,78 +219,5 @@ namespace reflexesTest
 
             mockAlphabet.Verify(alphabet => alphabet.RemoveLetter(), Times.Once());
         }
-
-        [Fact]
-        public void CreateStopwatch_SuccessfullyCreatesStopwatch()
-        {
-            var sut = new ReflexGameImplemented();
-
-            sut.CreateStopwatch();
-
-            TimeSpan expected = new TimeSpan(0, 0, 0);
-            TimeSpan actual = sut.TimeElapsed;
-
-            Assert.Equal<TimeSpan>(expected, actual);
-        }
-
-        [Fact]
-        public void StartStopwatch_SuccesfullyStartsStopwatch()
-        {
-            var sut = new ReflexGameImplemented();
-
-            sut.CreateStopwatch();
-            sut.StartStopwatch();
-
-            TimeSpan expected = new TimeSpan(0, 0, 0);
-            TimeSpan actual = sut.TimeElapsed;
-
-            Assert.NotEqual<TimeSpan>(expected, actual);
-        }
-
-        [Fact]
-        public void StopStopwatch_StoppingStopwatchWorks()
-        {
-            var sut = new ReflexGameImplemented();
-
-            sut.CreateStopwatch();
-            sut.StartStopwatch();
-
-            TimeSpan startTime = new TimeSpan(0, 0, 0);
-            
-            sut.StopStopwatch();
-
-            TimeSpan expected = sut.TimeElapsed;
-            TimeSpan actual = sut.TimeElapsed;
-
-            Assert.Equal<TimeSpan>(expected, actual);
-        }
-
-        [Fact]
-        public void IsInTime_ShouldReturnTrue()
-        {
-            var sut = new ReflexGameImplemented();
-
-            sut.CreateStopwatch();
-            sut.StartStopwatch();
-            sut.StopStopwatch();
-
-            Assert.True(sut.IsInTime());
-        }
-
-        [Fact]
-        public void IsInTime_ShouldReturnFalse()
-        {
-            var sut = new ReflexGameImplemented();
-
-            sut.CreateStopwatch();
-            sut.StartStopwatch();
-            Thread.Sleep(3001);
-            sut.StopStopwatch();
-
-            Assert.False(sut.IsInTime());
-        }
-
-
-
     }
 }
