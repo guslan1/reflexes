@@ -16,7 +16,7 @@ namespace reflexes.Model
 
         public TimeSpan HardMode => new TimeSpan(0, 0, 1);
 
-        public void StartGame(Alphabet alphabet) => _alphabet = alphabet;
+        public void StartGame(Alphabet alphabet) => _alphabet = IsValidGame(alphabet) ? alphabet : throw new ArgumentException();
 
         private bool IsValidGame(Alphabet game) => (game != null);
 

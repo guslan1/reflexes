@@ -241,31 +241,31 @@
         },
         "System.Boolean reflexes.Model.AlphabetImplemented::IsAlphabetEmpty()": {
           "Lines": {
-            "46": 2
+            "43": 2
           },
           "Branches": []
         },
         "System.String reflexes.Model.AlphabetImplemented::GetLetter()": {
           "Lines": {
-            "48": 2
+            "45": 2
           },
           "Branches": []
         },
         "System.Int32 reflexes.Model.AlphabetImplemented::WordsLeft()": {
           "Lines": {
-            "50": 2
+            "47": 2
           },
           "Branches": []
         },
         "System.Void reflexes.Model.AlphabetImplemented::RemoveLetter()": {
           "Lines": {
-            "52": 2
+            "49": 2
           },
           "Branches": []
         },
         "System.Void reflexes.Model.AlphabetImplemented::ClearAlphabetForTestOnly()": {
           "Lines": {
-            "54": 1
+            "51": 1
           },
           "Branches": []
         },
@@ -303,88 +303,111 @@
         },
         "System.Void reflexes.Model.ReflexGameImplemented::StartGame(reflexes.Model.Alphabet)": {
           "Lines": {
-            "19": 7
+            "19": 8
           },
-          "Branches": []
+          "Branches": [
+            {
+              "Line": 19,
+              "Offset": 8,
+              "EndOffset": 10,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 1
+            },
+            {
+              "Line": 19,
+              "Offset": 8,
+              "EndOffset": 16,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 7
+            }
+          ]
         },
-        "System.TimeSpan reflexes.Model.ReflexGameImplemented::get_MaxTime()": {
+        "System.Boolean reflexes.Model.ReflexGameImplemented::IsValidGame(reflexes.Model.Alphabet)": {
           "Lines": {
-            "21": 6
-          },
-          "Branches": []
-        },
-        "System.Int32 reflexes.Model.ReflexGameImplemented::WordsLeft()": {
-          "Lines": {
-            "23": 1
+            "21": 8
           },
           "Branches": []
         },
         "System.Boolean reflexes.Model.ReflexGameImplemented::IsGameCompleted()": {
           "Lines": {
-            "25": 2
+            "23": 2
           },
           "Branches": []
         },
         "System.String reflexes.Model.ReflexGameImplemented::GetNewLetter()": {
           "Lines": {
+            "26": 3,
+            "27": 3,
             "28": 3,
-            "29": 3,
-            "30": 3,
-            "31": 3
-          },
-          "Branches": []
-        },
-        "System.Boolean reflexes.Model.ReflexGameImplemented::IsCorrectInput(System.String)": {
-          "Lines": {
-            "33": 2
-          },
-          "Branches": []
-        },
-        "System.Boolean reflexes.Model.ReflexGameImplemented::ValidateCharacter(System.String)": {
-          "Lines": {
-            "35": 2
-          },
-          "Branches": []
-        },
-        "System.Void reflexes.Model.ReflexGameImplemented::RemoveLetterFromAlphabet()": {
-          "Lines": {
-            "37": 1
+            "29": 3
           },
           "Branches": []
         },
         "System.Void reflexes.Model.ReflexGameImplemented::CreateStopwatch()": {
           "Lines": {
-            "39": 5
+            "31": 5
           },
           "Branches": []
         },
         "System.Void reflexes.Model.ReflexGameImplemented::StartStopwatch()": {
           "Lines": {
-            "41": 4
+            "33": 4
           },
           "Branches": []
         },
         "System.Void reflexes.Model.ReflexGameImplemented::StopStopwatch()": {
           "Lines": {
-            "43": 3
-          },
-          "Branches": []
-        },
-        "System.TimeSpan reflexes.Model.ReflexGameImplemented::get_TimeElapsed()": {
-          "Lines": {
-            "45": 18
+            "35": 3
           },
           "Branches": []
         },
         "System.Boolean reflexes.Model.ReflexGameImplemented::IsInTime()": {
           "Lines": {
+            "37": 2
+          },
+          "Branches": []
+        },
+        "System.TimeSpan reflexes.Model.ReflexGameImplemented::get_TimeElapsed()": {
+          "Lines": {
+            "39": 18
+          },
+          "Branches": []
+        },
+        "System.TimeSpan reflexes.Model.ReflexGameImplemented::get_MaxTime()": {
+          "Lines": {
+            "41": 6
+          },
+          "Branches": []
+        },
+        "System.Int32 reflexes.Model.ReflexGameImplemented::WordsLeft()": {
+          "Lines": {
+            "43": 1
+          },
+          "Branches": []
+        },
+        "System.Boolean reflexes.Model.ReflexGameImplemented::IsCorrectInput(System.String)": {
+          "Lines": {
+            "45": 2
+          },
+          "Branches": []
+        },
+        "System.Boolean reflexes.Model.ReflexGameImplemented::ValidateCharacter(System.String)": {
+          "Lines": {
             "47": 2
+          },
+          "Branches": []
+        },
+        "System.Void reflexes.Model.ReflexGameImplemented::RemoveLetterFromAlphabet()": {
+          "Lines": {
+            "49": 1
           },
           "Branches": []
         },
         "System.Void reflexes.Model.ReflexGameImplemented::.ctor()": {
           "Lines": {
-            "11": 17
+            "10": 18
           },
           "Branches": []
         }
