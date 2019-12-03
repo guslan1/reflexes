@@ -9,13 +9,6 @@ namespace reflexesTest
     public class ReflexGameTest
     {
         [Fact]
-        public void ReflexGame_NewReflexGameShouldReturnReflexGame()
-        {
-            var reflexgame = new ReflexGameImplemented();
-            Assert.IsType<ReflexGameImplemented>(reflexgame);
-        }
-
-        [Fact]
         public void EasyMode_ShouldGetThreeSecondTimeSpan()
         {
             var sut = new ReflexGameImplemented();

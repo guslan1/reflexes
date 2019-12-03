@@ -9,17 +9,6 @@ namespace reflexesTest
     public class MainControllerTest
     {
         [Fact]
-        public void MainController_NewMainControllerShouldReturnMainController()
-        {
-            var reflexGame = new ReflexGameImplemented();
-            var consoleView = new ConsoleViewImplemented();
-            var levelController = new LevelControllerImplemented(reflexGame, consoleView);
-            var mainController = new MainController(reflexGame, consoleView, levelController);
-
-            Assert.IsType<MainController>(mainController);
-        }
-
-        [Fact]
         public void RunApplication_ShouldCallDisplayGreetingMessage()
         {
             var mockReflexGame = new Mock<ReflexGame>();

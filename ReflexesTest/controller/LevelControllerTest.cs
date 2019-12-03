@@ -10,16 +10,6 @@ namespace reflexesTest
     public class LevelControllerTest
     {
         [Fact]
-        public void LevelController_NewLevelControllerShouldReturnLevelController()
-        {
-            var reflexGame = new ReflexGameImplemented();
-            var consoleView = new ConsoleViewImplemented();
-            var controller = new LevelControllerImplemented(reflexGame, consoleView);
-
-            Assert.IsType<LevelControllerImplemented>(controller);
-        }
-
-        [Fact]
         public void Easy_ShouldSetMaxTime()
         {
             var mockReflexGame = new Mock<ReflexGame>();
